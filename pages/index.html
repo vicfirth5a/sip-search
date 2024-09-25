@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/font/Web-TT/Flaviotte.css" />
+    <!-- <link rel="stylesheet" href="../assets/font/Web-TT/Flaviotte.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>index</title>
     <style>
       h1 {
@@ -15,66 +19,160 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <h1>sip and search</h1>
+    <h1>sip and search 123</h1>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit,
-          iusto odio assumenda alias id nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <section class="section section-popular-bars bg-dark">
+      <div class="container">
+        <h5 class="eng-font text-center">Popular Bars</h5>
+        <h2 class="text-center">熱門酒吧</h2>
+        <div class="row button-row justify-content-end">
+          <div class="col-1 d-flex justify-content-center">
+            <a href="#" class="swiper-button-prev swiper-button">
+              <span class="material-symbols-outlined fs-4 inherit">
+                arrow_back
+              </span>
+            </a>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              關閉
-            </button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="col-1 d-flex justify-content-center">
+            <a href="#" class="swiper-button-next swiper-button">
+              <span class="material-symbols-outlined d-block fs-4">
+                arrow_forward
+              </span>
+            </a>
           </div>
         </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide position-relative">
+              <img src="../assets/images/bar01.png" alt="bar" class="bar-pic" />
+
+              <div
+                class="content d-flex position-absolute top-0 bottom-0 w-100"
+              >
+                <div
+                  class="main-content w-50 d-flex flex-column justify-content-between"
+                >
+                  <h2 class="title">貓下去敦北俱樂部</h2>
+
+                  <div class="txt">
+                    <div class="tag rounded-pill mb-6">最多人按讚</div>
+                    <p class="introduce fs-5">
+                      結合復古風情與現代創意，提供精緻調酒與特別氛圍，是品味夜晚的絕佳去處！
+                    </p>
+                  </div>
+                </div>
+                <div class="w-50 d-flex">
+                  <a
+                    href="#"
+                    class="d-flex mt-auto ms-auto more btn-big align-items-center gap-3"
+                    >查看更多<span class="material-symbols-outlined fs-5">
+                      chevron_right
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative">
+              <img src="../assets/images/bar01.png" alt="bar" class="bar-pic" />
+
+              <div
+                class="content d-flex position-absolute top-0 bottom-0 w-100"
+              >
+                <div
+                  class="main-content w-50 d-flex flex-column justify-content-between"
+                >
+                  <h2 class="title">貓下去敦北俱樂部</h2>
+
+                  <div class="txt">
+                    <div class="tag rounded-pill mb-6">最多人按讚</div>
+                    <p class="introduce fs-5">
+                      結合復古風情與現代創意，提供精緻調酒與特別氛圍，是品味夜晚的絕佳去處！
+                    </p>
+                  </div>
+                </div>
+                <div class="w-50 d-flex">
+                  <a
+                    href="#"
+                    class="d-flex mt-auto ms-auto more btn-big align-items-center gap-3"
+                    >查看更多<span class="material-symbols-outlined fs-5">
+                      chevron_right
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide position-relative">
+              <img src="../assets/images/bar01.png" alt="bar" class="bar-pic" />
+
+              <div
+                class="content d-flex position-absolute top-0 bottom-0 w-100"
+              >
+                <div
+                  class="main-content w-50 d-flex flex-column justify-content-between"
+                >
+                  <h2 class="title">貓下去敦北俱樂部</h2>
+
+                  <div class="txt">
+                    <div class="tag rounded-pill mb-6">最多人按讚</div>
+                    <p class="introduce fs-5">
+                      結合復古風情與現代創意，提供精緻調酒與特別氛圍，是品味夜晚的絕佳去處！
+                    </p>
+                  </div>
+                </div>
+                <div class="w-50 d-flex">
+                  <a
+                    href="#"
+                    class="d-flex mt-auto ms-auto more btn-big align-items-center gap-3"
+                    >查看更多<span class="material-symbols-outlined fs-5">
+                      chevron_right
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <%- include('./layout/footer'); -%>
+    <!-- <%- include('./layout/footer'); -%> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        // direction: "vertical",
+        loop: true,
 
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+      });
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

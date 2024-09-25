@@ -1,3 +1,66 @@
+@import "../base/font.scss";
+
 .index-title {
   font-size: 100px;
+}
+.btn-big {
+  padding: 24px 40px;
+  background-color: $primary-3;
+  font-size: 24px;
+  transition: 0.5s;
+}
+.btn-big:hover {
+  color: $primary-4;
+  background-color: $primary-1;
+}
+.section-popular-bars {
+  color: $primary-1;
+  .material-symbols-outlined {
+    color: $primary-1;
+  }
+  .button-row {
+    margin-top: 72px;
+    margin-bottom: 24px;
+  }
+  .swiper {
+    max-width: 1296px;
+    .tag {
+      width: fit-content;
+      color: $primary-4;
+      font-size: 24px;
+      padding: 12px 24px;
+      background-color: $primary-1;
+    }
+    .bar-pic {
+      filter: brightness(0.7);
+    }
+  }
+}
+
+.swiper {
+  width: 1296px;
+  height: 894px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none; /* Hide default arrow icons */
+}
+.swiper-button {
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #7f7973;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-popular-bars .content {
+  padding: 96px 64px;
 }
