@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <title>index</title>
     <style>
       h1 {
@@ -16,8 +20,149 @@
       }
     </style>
   </head>
+
   <body>
     <%- include('./layout/header'); -%>
+
+    <!-- 第一區 -->
+    <div class="banner">
+      <div class="container container-lg container-md container-sm">
+        <div class="banner-content">
+          <h2 class="text-primary-1 fs-1 text-center">
+            探索微醺魅力，從這裡開始
+          </h2>
+          <div class="select-bar">
+            <div class="selector">
+              <button class="h6">酒譜</button><button class="h6">酒吧</button>
+            </div>
+            <div class="search">
+              <div class="search-area input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="立即搜尋"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <a
+                    href="#"
+                    class="material-symbols-outlined search-area-btn text-center align-middle"
+                    >search</a
+                  >
+                </button>
+              </div>
+              <ul class="search-result d-flex">
+                <li
+                  class="search-result-items rounded-pill d-flex justify-content-between"
+                >
+                  <div class="d-flex picked-items">
+                    <a href="#">台北市</a>
+                    <span class="material-symbols-outlined items-close-btn"
+                      >close</span
+                    >
+                  </div>
+                </li>
+                <li
+                  class="search-result-items rounded-pill d-flex justify-content-center"
+                >
+                  <div class="d-flex picked-items">
+                    <a href="#">停車場</a>
+                    <span class="material-symbols-outlined items-close-btn"
+                      >close</span
+                    >
+                  </div>
+                </li>
+                <li class="search-result-clean ms-auto">
+                  <a href="#" class="text-center">清除所有條件</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第二三區 -->
+    <div class="webinfo-1">
+      <div class="container container-lg container-md container-sm">
+        <h3 class="fs-3 text-center text-primary-4">
+          Discover Recipes & Local Bars
+        </h3>
+        <h3 class="fs-2 text-center text-primary-4">探索調酒與酒吧</h3>
+        <div class="discover-cocktail">
+          <div class="discover-container d-flex">
+            <div class="img-ctrl">
+              <img
+                class="discover-img"
+                src="../assets/images/webinfo-1.jpg"
+                alt="cocktail"
+              />
+            </div>
+            <div class="discover-text">
+              <p class="fs-3 text-primary-4">
+                探索專屬調酒之旅，<br />
+                輕鬆找尋酒譜，<br />
+                每一杯都是放鬆時光！
+              </p>
+              <div class="btn-md">
+                <a href="#" class="fs-6 text-primary-1 btn-md-text"
+                  >我想找酒譜</a
+                ><a
+                  class="material-symbols-outlined text-primary-1 btn-md-symbols"
+                >
+                  arrow_forward_ios
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discover-bar">
+          <div class="discover-container d-flex">
+            <div class="discover-text">
+              <p class="fs-3 text-primary-1">
+                探索台灣隱藏酒吧，<br />
+                從城市到鄉鎮，<br />
+                發現喝酒的好去處！
+              </p>
+              <div class="btn-md">
+                <a href="#" class="fs-6 text-primary-1 btn-md-text"
+                  >我想找酒譜</a
+                ><a
+                  class="material-symbols-outlined text-primary-1 btn-md-symbols"
+                >
+                  arrow_forward_ios
+                </a>
+              </div>
+            </div>
+            <div class="img-ctrl">
+              <img
+                class="discover-img"
+                src="../assets/images/webinfo-2.jpg"
+                alt="cocktail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第四區 -->
+    <div class="webinfo-2">
+      <div class="container container-lg container-md container-sm">
+        <h2 class="h1 text-primary-1 text-center">
+          加入會員<br />解鎖每月專屬微醺體驗
+        </h2>
+        <div class="text-center d-flex justify-content-center join-input">
+          <input
+            type="text"
+            placeholder="請輸入您的 Email"
+            class="join-input-text"
+          />
+          <a href="#" class="join-input-btn fs-6">加入會員</a>
+        </div>
+      </div>
+    </div>
 
     <h1>sip and search 123</h1>
 
@@ -148,7 +293,236 @@
       </div>
     </section>
 
-    <!-- <%- include('./layout/footer'); -%> -->
+    <div class="container">
+      <section class="event">
+        <div class="event-title text-center">
+          <p class="fs-5 text-primary-1 mb-4">Latest Events</p>
+          <h2 class="h2 text-primary-1">最新活動</h2>
+        </div>
+
+        <div class="event-content">
+          <div class="event-bg">
+            <div class="pt-13 ms-11">
+              <h2 class="fs-2 text-primary-1">換友俱樂部</h2>
+            </div>
+          </div>
+
+          <div class="event-list bg-primary-4 p-12">
+            <div class="event-list-title">
+              <h3 class="fs-3 text-primary-1 border-bottom fw-bold pb-3">
+                近期酒吧活動
+              </h3>
+            </div>
+
+            <ul class="event-list-content mt-11 fw-medium">
+              <li class="event-list-card">
+                <a class="event-list-a border p-5" href="#">
+                  <div
+                    class="event-list-card-date fs-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
+                  >
+                    <p class="me-3">週三</p>
+                    <p>9/11</p>
+                  </div>
+                  <div
+                    class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
+                  >
+                    <p class="fs-5">台北＿Fuzzy April 四月餐酒館</p>
+                    <span class="material-symbols-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="event-list-card">
+                <a class="event-list-a border p-5" href="#">
+                  <div
+                    class="event-list-card-date fs-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
+                  >
+                    <p class="me-3">週三</p>
+                    <p>9/11</p>
+                  </div>
+                  <div
+                    class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
+                  >
+                    <p class="fs-5">新北＿Mono Mono</p>
+                    <span class="material-symbols-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="event-list-card">
+                <a class="event-list-a border p-5" href="#">
+                  <div
+                    class="event-list-card-date fs-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
+                  >
+                    <p class="me-3">週三</p>
+                    <p>9/11</p>
+                  </div>
+                  <div
+                    class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
+                  >
+                    <p class="fs-5">台北＿Fuzzy April 四月餐酒館</p>
+                    <span class="material-symbols-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="event-list-card">
+                <a class="event-list-a border p-5" href="#">
+                  <div
+                    class="event-list-card-date fs-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
+                  >
+                    <p class="me-3">週三</p>
+                    <p>9/11</p>
+                  </div>
+                  <div
+                    class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
+                  >
+                    <p class="fs-5">台北＿Fuzzy April 四月餐酒館</p>
+                    <span class="material-symbols-outlined">
+                      arrow_forward_ios
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a
+              class="event-btn d-flex justify-content-end align-items-center text-primary-1"
+              href="#"
+            >
+              <p class="fs-5 me-5">查看更多</p>
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="comments text-primary-4">
+        <div class="comments-title text-center">
+          <p class="fs-5 text-primary-1 mb-4">Top Comments</p>
+          <h2 class="h2 text-primary-1">熱門留言</h2>
+        </div>
+
+        <ul class="comments-list bg-primary-1 d-flex">
+          <li class="comments-list-item">
+            <div class="comments-list-item-title d-flex mb-8">
+              <img src="../assets/images/Ellipse 6.png" alt="user-1" />
+              <div class="comments-list-item-name ms-5">
+                <h3 class="fs-5 text-primary-3 mb-2">eilloee</h3>
+                <div class="d-flex align-items-center">
+                  <span class="material-symbols-outlined comments-icon">
+                    location_on
+                  </span>
+                  <p class="fs-lg-6 fs-8 ms-2">The Whiskey House</p>
+                </div>
+              </div>
+            </div>
+            <p class="comments-list-item-text fs-lg-6 fs-9 mb-8">
+              第一次來，這裡提供高雅的氛圍，柔軟的座椅與昏暗的燈光非常適合私密對話。調酒單獨具創意，經典與現代完美融合。服務人員周到且細心。對於喜愛精緻飲品和舒適環境的人來說，這是一個不容錯過的好地方！
+            </p>
+            <button
+              class="comments-list-item-btn d-flex bg-primary-3 text-primary-1"
+            >
+              <p class="fs-lg-6 fs-9">查看更多</p>
+              <span class="material-symbols-outlined ms-3">
+                arrow_forward_ios
+              </span>
+            </button>
+          </li>
+
+          <div class="comments-divider"></div>
+          <!-- 中間的間隔線 -->
+
+          <li class="comments-list-item">
+            <div class="comments-list-item-title d-flex mb-8">
+              <img src="../assets/images/Ellipse 2.png" alt="user-2" />
+              <div class="comments-list-item-name ms-5">
+                <h3 class="fs-5 text-primary-3 mb-2">Mindy Lo</h3>
+                <div class="d-flex align-items-center">
+                  <span class="material-symbols-outlined comments-icon">
+                    location_on
+                  </span>
+                  <p class="fs-lg-6 fs-8 ms-2">絨夜酒吧</p>
+                </div>
+              </div>
+            </div>
+            <p class="comments-item-text fs-lg-6 fs-9 mb-8">
+              以異國風情裝潢與熱帶氛圍帶你進入另一個世界。充滿熱帶風情的雞尾酒不僅外觀精美，口感也令人驚豔。調酒師技藝高超，每杯飲品都精雕細琢。這裡是與朋友共度歡樂夜晚的絕佳去處，每一刻都充滿驚喜。
+            </p>
+            <button
+              class="comments-list-item-btn d-flex bg-primary-3 text-primary-1"
+            >
+              <p class="fs-lg-6 fs-9">查看更多</p>
+              <span class="material-symbols-outlined ms-3">
+                arrow_forward_ios
+              </span>
+            </button>
+          </li>
+
+          <li class="comments-list-item">
+            <div class="comments-list-item-title d-flex mb-8">
+              <img src="../assets/images/Ellipse 7.png" alt="user-3" />
+              <div class="comments-list-item-name ms-5">
+                <h3 class="fs-5 text-primary-3 mb-2">bboyhaha</h3>
+                <div class="d-flex align-items-center">
+                  <span class="material-symbols-outlined comments-icon">
+                    location_on
+                  </span>
+                  <p class="fs-lg-6 fs-8 ms-2">Speakeasy</p>
+                </div>
+              </div>
+            </div>
+            <p class="comments-list-item-text fs-lg-6 fs-9 mb-8">
+              超推！！溫暖的色調和舒適的氛圍成為下班後放鬆的好去處。這裡的調酒師用心創作，每杯飲品都帶來驚喜。特別推薦這裡的經典調酒，既保持傳統風味，又增添了獨特的現代感。非常適合喜歡經典與創新的飲酒愛好者。
+            </p>
+            <button
+              class="comments-list-item-btn d-flex bg-primary-3 text-primary-1"
+            >
+              <p class="fs-lg-6 fs-9">查看更多</p>
+              <span class="material-symbols-outlined ms-3">
+                arrow_forward_ios
+              </span>
+            </button>
+          </li>
+
+          <div class="comments-divider"></div>
+          <!-- 中間的間隔線 -->
+
+          <li class="comments-list-item">
+            <div class="comments-list-item-title d-flex mb-8">
+              <img src="../assets/images/Ellipse 5.png" alt="user-4" />
+              <div class="comments-list-item-name ms-5">
+                <h3 class="fs-5 text-primary-3 mb-2">xxxcindysss</h3>
+                <div class="d-flex align-items-center">
+                  <span class="material-symbols-outlined comments-icon">
+                    location_on
+                  </span>
+                  <p class="fs-lg-6 fs-8 ms-2">MoMo Lane</p>
+                </div>
+              </div>
+            </div>
+            <p class="comments-list-item-text fs-lg-6 fs-9 mb-8">
+              隱藏在都市的一角，以其溫馨的氛圍和獨特的調酒風格吸引了眾多愛酒之人。這裡的酒單精挑細選，從經典到創新一應俱全。服務生親切且專業，讓你感受到家的溫暖。非常適合與好友一同來此小酌，度過一個愉快的夜晚。
+            </p>
+            <button
+              class="comments-list-item-btn d-flex bg-primary-3 text-primary-1"
+            >
+              <p class="fs-lg-6 fs-9">查看更多</p>
+              <span class="material-symbols-outlined ms-3">
+                arrow_forward_ios
+              </span>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
