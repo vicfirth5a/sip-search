@@ -306,6 +306,17 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+
+$primary-1:       #ECDEC3;
+$primary-2:       rgba(236, 222, 195, 0.4);
+$primary-3:       #B5650E;
+$primary-4:       #743200;
+
+$neutral-1:       #ffffff;
+$neutral-2:       rgba(255, 255, 255, 0.5);
+$neutral-3:       #7F7973;
+$neutral-4:       #000000;
+$neutral-5:       #2E2828;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -317,7 +328,18 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+
+  "primary-1":    $primary-1,
+  "primary-2":    $primary-2,
+  "primary-3":    $primary-3,
+  "primary-4":    $primary-4,
+
+  "neutral-1":    $neutral-1,
+  "neutral-2":    $neutral-2,
+  "neutral-3":    $neutral-3,
+  "neutral-4":    $neutral-4,
+  "neutral-5":    $neutral-5,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -410,11 +432,26 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  // 1: $spacer * .25,
+  // 2: $spacer * .5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 4,
+  12: $spacer * 5,
+  13: $spacer * 6,
+  14: $spacer * 7.5,
+  15: $spacer * 3,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -436,7 +473,8 @@ $position-values: (
 
 $body-text-align:           null !default;
 $body-color:                $gray-900 !default;
-$body-bg:                   $white !default;
+// $body-bg:                   $white !default;
+$body-bg:                   #2E2828  !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
 $body-secondary-bg:         $gray-200 !default;
@@ -630,22 +668,42 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 4.5 !default;
+$h2-font-size:                $font-size-base * 3.5 !default;
+$h3-font-size:                $font-size-base * 3 !default;
+$h4-font-size:                $font-size-base * 2.5 !default;
+$h5-font-size:                $font-size-base * 2 !default;
+$h6-font-size:                $font-size-base * 1.5 !default;
+$h7-font-size:                $font-size-base *1.25 !default;
+$h8-font-size:                $font-size-base !default;
+$h9-font-size:                $font-size-base *0.75 !default;
+$h10-font-size:                $font-size-base *0.625 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  // 4: $h4-font-size,
+  // 5: $h5-font-size,
+  // 6: $h6-font-size
   1: $h1-font-size,
   2: $h2-font-size,
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1212,7 +1270,8 @@ $navbar-light-active-color:         rgba(var(--#{$prefix}emphasis-color-rgb), 1)
 $navbar-light-disabled-color:       rgba(var(--#{$prefix}emphasis-color-rgb), .3) !default;
 $navbar-light-icon-color:           rgba($body-color, .75) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), .15) !default;
+// $navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), .15) !default;
+$navbar-light-toggler-border-color: #ECDEC3 !default;
 $navbar-light-brand-color:          $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:    $navbar-light-active-color !default;
 // scss-docs-end navbar-variables
