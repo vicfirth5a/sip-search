@@ -54,8 +54,8 @@
         display: block; /*將a連結轉成block*/
       }
     }
-    .border-end {
-      border-right: #000;
+    .custom-class .border-end {
+      border: 0px solid red;
     }
   }
 }
