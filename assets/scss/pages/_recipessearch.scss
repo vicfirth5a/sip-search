@@ -1,0 +1,45 @@
+.section-rs {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 620px;
+  background-image: url(/assets/images/image-banner-drinks.png);
+  background-size: cover;
+  margin-top: -104px;
+  padding-top: 104px;
+
+  &.section-rs::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-rs {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 375px;
+    background-image: url(/assets/images/image-banner-drinks.png);
+    background-size: cover;
+    margin-top: -104px;
+    padding-top: 104px;
+
+    &.section-rs::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+  }
+}

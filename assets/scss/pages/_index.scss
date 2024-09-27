@@ -389,10 +389,10 @@
       }
     }
 
-    &-divider {
-      height: 458px; /* 間隔線高度，可以調整 */
-      border: 0.5px solid rgba(181, 101, 14, 1);
-      margin: auto 0px; //使間隔線居中
-    }
+  }
+  &-divider {
+    height: 458px; /* 間隔線高度，可以調整 */
+    border: 0.5px solid rgba(181, 101, 14, 1);
+    margin: auto 0px; //使間隔線居中
   }
 }
