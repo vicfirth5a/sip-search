@@ -376,6 +376,8 @@
     @media (max-width: 768px) {
       flex-wrap: nowrap;
       flex-direction: column;
+      padding: 32px 24px;
+      row-gap: 32px;
     }
 
     &-item {
@@ -384,6 +386,8 @@
       padding: 24px 32px;
       @media (max-width: 768px) {
         width: 100%;
+        //margin-top: 32px;
+        //margin-bottom: 32px;
       }
 
       &-title img{
@@ -396,6 +400,9 @@
       }
       &-text {
         height: 216px;
+        @media (max-width: 768px) {
+          height: 90px;
+        }
       }
       &-btn {
         border: 1px solid;
@@ -420,5 +427,27 @@
     height: 458px; /* 間隔線高度，可以調整 */
     border: 0.5px solid rgba(181, 101, 14, 1);
     margin: auto 0px; //使間隔線居中
+    @media (max-width: 768px) {
+      height: 0px;
+      border: 1.5px solid rgba(181, 101, 14, 1);
+
+      
+    }
   }
+  &-divider-2 {
+    height: 458px; /* 間隔線高度，可以調整 */
+    border: 0.5px solid rgba(181, 101, 14, 1);
+    margin: auto 0px; //使間隔線居中
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      height: 0px;  
+      border: 1.5px solid rgba(181, 101, 14, 1);
+    }
+  }
+
+}
+
+*,::after,*::before{
+  outline: 1px solid black;
 }
