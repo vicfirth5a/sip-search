@@ -403,6 +403,22 @@ $x-large: 1200px;
   }
 
   .swiper {
+    min-height: 530px;
+    display: flex;
+    flex-direction: column;
+    .swiper-wrapper {
+      flex-grow: 1;
+      // flex-direction: column; //swiper已經有下display:flex
+      .swiper-slide {
+        height: auto;
+      }
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+
     .tag {
       width: fit-content;
       color: $primary-4;
