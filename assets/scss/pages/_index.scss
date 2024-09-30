@@ -277,8 +277,14 @@
 
 .event {
   padding: 120px 0px;
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+  }
   &-title {
     margin-bottom: 120px;
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
 
   &-content {
@@ -359,9 +365,15 @@
 
 .comments {
   padding: 120px 0px;
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+  }
 
   &-title {
     margin-bottom: 120px;
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
 
   &-icon {
@@ -404,23 +416,6 @@
           height: 90px;
         }
       }
-      &-btn {
-        border: 1px solid;
-        border-image-source: linear-gradient(
-          100.25deg,
-          #ffc93d 4.04%,
-          #b5650e 97.53%
-        );
-        border-image-slice: 1; //圖像切片設置
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        padding: 24px 40px;
-        @media (max-width: 768px) {
-          padding: 8px 12px;
-          font-size: 12px;
-        }
-      }
     }
   }
   &-divider {
@@ -429,9 +424,7 @@
     margin: auto 0px; //使間隔線居中
     @media (max-width: 768px) {
       height: 0px;
-      border: 1.5px solid rgba(181, 101, 14, 1);
-
-      
+      border: 1.5px solid rgba(181, 101, 14, 1);   
     }
   }
   &-divider-2 {
@@ -450,4 +443,34 @@
 
 *,::after,*::before{
   outline: 1px solid black;
+}
+
+
+.comments-list-item-btn{
+  display: block;
+  background: var(--bs-primary-3);
+  transition: 0.5s;
+  color: var(--bs-primary-1);
+  border: 1px solid;
+  border-image-source: linear-gradient(100.25deg, #ffc93d 4.04%, #b5650e 97.53%
+        );
+  border-image-slice: 1; //圖像切片設置
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding: 24px 40px;
+  @media (max-width: 768px) {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  &:hover{
+    background: var(--bs-neutral-3);
+    color: var(--bs-neutral-1);
+    transition: 0.5s;
+  }
+  &:active{
+    background: var(--bs-primary-4);
+    transition: 0.5s;
+  }
+
 }
