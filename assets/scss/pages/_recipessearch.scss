@@ -8,7 +8,7 @@
   margin-top: -104px;
   padding-top: 104px;
 
-  &.section-rs1::after {
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -26,6 +26,14 @@
 .section-rs2 {
   .btn-outline-primary-3:hover {
     color: #ecdec3;
+  }
+
+  .card {
+    height: 536px;
+    background-color: #ecdec3;
+  }
+  .scrollBar::-webkit-scrollbar {
+    display: none;
   }
 }
 
