@@ -1,5 +1,5 @@
 body {
-  font-family: "Noto Sans TC", Flaviotte, Georgia;
+  font-family: Flaviotte, "Noto Sans TC", Georgia;
   font-weight: 500;
 }
 a {
@@ -15,15 +15,16 @@ img {
 .eng-font {
   font-family: Flaviotte, Georgia;
 }
-ul,li {
+ul,
+li {
   list-style: none;
-   }
+}
 
-ul{
-    padding: 0px;
-   }
+ul {
+  padding: 0px;
+}
 
-p{
-    margin: 0px;
-    letter-spacing: 0.04em;
-   }
+p {
+  margin: 0px;
+  letter-spacing: 0.04em;
+}

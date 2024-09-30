@@ -196,26 +196,174 @@
     }
   }
 }
+//
+$medium: 768px;
+$large: 992px;
+$x-large: 1200px;
 
-.index-title {
-  font-size: 100px;
+@mixin respond-to($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+//swiper共用
+.section {
+  padding: 120px 0px;
+  @include respond-to($medium) {
+    padding: 40px 0 0;
+  }
 }
 
-.btn-big {
-  padding: 24px 40px;
-  background-color: $primary-3;
-  font-size: 24px;
-  transition: 0.5s;
+// .swiper {
+//   max-width: 1296px;
+// }
+
+//熱門酒譜
+.section-popular-recipes {
+  .main-title {
+    h2 {
+      @include respond-to($large) {
+        font-size: 20px;
+      }
+    }
+  }
+  .decoration {
+    .wrap {
+      width: 40px;
+      height: 40px;
+      @include respond-to($large) {
+        width: 22px;
+        height: 22px;
+      }
+      border-right: 1px solid $primary-4;
+      border-bottom: 1px solid $primary-4;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-left: 1px solid $primary-4;
+        border-top: 1px solid $primary-4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+        @include respond-to($large) {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    max-width: 1296px;
+    font-size: 18px;
+    background-color: $primary-1;
+    transition: 0.5s;
+    @include respond-to($x-large) {
+      max-width: 960px;
+    }
+    @include respond-to($large) {
+      max-width: 295px;
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+    img {
+      max-width: 384px;
+      @include respond-to($large) {
+        max-width: 152px;
+      }
+    }
+    .txt {
+      width: 50%;
+      @include respond-to($large) {
+        width: auto;
+      }
+      .wine-name {
+        h4 {
+          @include respond-to($large) {
+            font-size: 24px;
+          }
+        }
+      }
+      .wine-tags {
+        font-size: 20px;
+        @include respond-to($large) {
+          font-size: 10px;
+        }
+        span {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .wine-intro {
+        font-size: 24px;
+        @include respond-to($large) {
+          font-size: 12px;
+        }
+      }
+    }
+    .pic {
+      width: 50%;
+      @include respond-to($large) {
+        width: auto;
+      }
+    }
+  }
+
+  .arrow {
+    right: 48px;
+    a {
+      width: 80px;
+      height: 80px;
+      @include respond-to($large) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .material-symbols-outlined {
+      // width: 40px;
+      // height: 40px;
+      @include respond-to($large) {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
-.btn-big:hover {
-  color: $primary-4;
-  background-color: $primary-1;
-}
+// 熱門酒吧
 
 .section-popular-bars {
   color: $primary-1;
+  .main-title {
+    h2 {
+      @include respond-to($large) {
+        font-size: 20px;
+      }
+    }
+  }
+  .content {
+    padding: 96px 64px;
+    @include respond-to($large) {
+      padding: 64px 24px;
+    }
 
+    .txt-content {
+      div {
+        width: 50%;
+        @include respond-to($large) {
+          width: auto;
+        }
+      }
+    }
+  }
   .material-symbols-outlined {
     color: $primary-1;
   }
@@ -223,54 +371,76 @@
   .button-row {
     margin-top: 72px;
     margin-bottom: 24px;
+    @include respond-to($large) {
+      margin-top: 24px;
+      margin-bottom: 20px;
+    }
+
+    .swiper-button {
+      display: block;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #7f7973;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include respond-to($large) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      display: none;
+      /* Hide default arrow icons */
+    }
   }
 
   .swiper {
-    max-width: 1296px;
-
     .tag {
       width: fit-content;
       color: $primary-4;
       font-size: 24px;
       padding: 12px 24px;
       background-color: $primary-1;
+      @include respond-to($large) {
+        font-size: 10px;
+        padding: 4px 8px;
+      }
     }
 
     .bar-pic {
       filter: brightness(0.7);
     }
   }
-}
 
-.swiper {
-  width: 1296px;
-  height: 894px;
-}
+  .btn-big {
+    padding: 24px 40px;
+    background-color: $primary-3;
+    font-size: 24px;
+    transition: 0.5s;
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-  /* Hide default arrow icons */
-}
+    width: fit-content;
+    @include respond-to($large) {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  }
 
-.swiper-button {
-  display: block;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #7f7973;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-popular-bars .content {
-  padding: 96px 64px;
+  .btn-big:hover {
+    color: $primary-4;
+    background-color: $primary-1;
+    transition: 0.5s;
+    .material-symbols-outlined {
+      color: $primary-4;
+    }
+  }
 }
 
 .event {
@@ -325,6 +495,7 @@
     }
     &-a {
       width: 100%;
+      display: inline-block;
     }
     &-card-date {
       width: 160px;
