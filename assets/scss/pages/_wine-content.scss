@@ -1,0 +1,86 @@
+*,::after,*::before{
+    //outline: 1px solid rgb(233, 235, 224);
+  }
+
+  .wine-content-title{
+    margin-bottom: 120px;
+  }
+
+  .methods-item-1{
+    width: 447px;
+  }
+
+  
+
+  .methods-icon{
+    width: 100%;
+    padding: 24px 16px;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 0px;
+    
+  
+
+
+  }
+  .material-symbols-outlined{
+    width: 40px;
+    //height: 42px;
+    text-align: center;
+    font-size: 36px;
+
+    
+  }
+
+  .methods-icon-item{
+    align-items: center;
+    gap: 12px;
+  }
+  .methods-icon-item p{
+    line-height: 1;
+  }
+
+
+ .wine-content-methods{
+    gap: 96px;
+ }
+
+ .methods-tags{
+    gap: 24px;
+ }
+
+ .btn-tags{
+   display: block;
+   border: 1px solid var(--bs-primary-3);
+   background: #2e2828;
+   padding: 8px 24px 8px 24px;
+   border-radius: 100px 100px 100px 100px;
+ }
+
+ .methods-item-2{
+    width: 753px;
+ }
+.step-comtent{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 0px;
+
+}
+.step-comtent li{
+    list-style: disc;
+   
+    
+}
+
+.methods-item-2-step{
+    border: 1px solid $primary-3;
+    //position: relative;
+}
+
+.step-title{
+    width: 228px;
+    background: $primary-3;
+    //position: absolute;
+}
