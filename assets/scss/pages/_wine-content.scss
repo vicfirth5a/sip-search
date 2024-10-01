@@ -6,8 +6,18 @@
     margin-bottom: 120px;
   }
 
+
+  @media (max-width: 768px) {
+    .wine-content-methods{
+        flex-direction: column;
+
+
+    }    
+  }
+
+
   .methods-item-1{
-    width: 447px;
+    max-width: 447px;
   }
 
   
@@ -58,7 +68,7 @@
  }
 
  .methods-item-2{
-    width: 753px;
+    max-width: 753px;
  }
 .step-comtent{
     list-style-position: inside;
@@ -83,4 +93,20 @@
     width: 228px;
     background: $primary-3;
     //position: absolute;
+}
+
+//品酒討論區
+
+.wine-comments{
+    padding: 120px 0px;
+}
+@media (max-width: 768px) {
+    .wine-comments{
+        padding: 40px 0px;
+    }
+}
+
+.wine-comments img{
+    width: 80px;
+    height: 80px;
 }
