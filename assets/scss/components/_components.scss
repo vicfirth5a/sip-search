@@ -113,3 +113,10 @@ $line-thickness: 1px;
 .cardImg-hover {
   max-width: 128px;
 }
+
+//響應式
+@media (max-width: 768px) {
+  .wineBtn {
+    min-width: 37px;
+  }
+}
