@@ -52,6 +52,31 @@ $line-thickness: 1px;
   }
 }
 
+@media (max-width: 992px) {
+  .cross-container {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-color: inherit;
+    margin-top: 10px;
+    margin-left: 10px;
+    .cross-line {
+      position: absolute;
+      background-color: $line-color;
+    }
+
+    .horizontal {
+      width: 16px;
+      height: $line-thickness;
+    }
+
+    .vertical {
+      width: $line-thickness;
+      height: 16px;
+    }
+  }
+}
+
 //酒譜中的按紐元件
 .cardImg {
   max-width: 192px;
