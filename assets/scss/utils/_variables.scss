@@ -307,6 +307,7 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
+$dark-brown: #2e2828 !default;
 
 $primary-1: #ecdec3;
 $primary-2: rgba(236, 222, 195, 0.4
@@ -332,6 +333,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "dark-brown": #2e2828,
 
   "primary-1": $primary-1,
   "primary-2": $primary-2,
@@ -455,11 +457,9 @@ $spacers: (
   9: $spacer * 2.25,
   10: $spacer * 2.5,
   11: $spacer * 3,
-
   12: $spacer * 4,
   13: $spacer * 5,
   14: $spacer * 6,
-
   15: $spacer * 7.5,
   ) !default;
 // scss-docs-end spacer-variables-maps
