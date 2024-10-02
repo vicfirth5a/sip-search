@@ -102,17 +102,6 @@
   }
 }
 
-&::placeholder {
-  color: $primary-1;
-  font-size: 24px;
-}
-
-&:focus {
-  background: transparent;
-  border-color: $primary-1;
-  box-shadow: $primary-1;
-}
-
 .search {
   margin-left: 24px;
   max-width: 729px;
