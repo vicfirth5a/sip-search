@@ -10,11 +10,13 @@
 @import "./helpers/mixins.scss";
 @import "../../node_modules/bootstrap";
 
+
 $utilities: map-merge($utilities,
         ("font-size": map-merge(map-get($utilities, "font-size"),
                 (responsive: true,
                 )),
         ));
+
 
 @import "bootstrap/scss/utilities/api";
 
@@ -28,4 +30,6 @@ $utilities: map-merge($utilities,
 
 @import "./pages/index.scss";
 @import "./pages/wine-content.scss";
+
 @import "/assets/scss/pages/recipessearch";
+
