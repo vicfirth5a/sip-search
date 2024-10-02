@@ -1,0 +1,179 @@
+// 酒譜卡片的十字架裝飾
+$container-size: 32px;
+$background-color: transparent;
+$line-color: #b5650e;
+$horizontal-length: 32px;
+$vertical-length: 32px;
+$line-thickness: 1px;
+
+.cross-container {
+  width: $container-size;
+  height: $container-size;
+  position: relative;
+  background-color: inherit;
+  margin-top: 40px;
+  margin-left: 40px;
+
+  .cross-line {
+    position: absolute;
+    background-color: $line-color;
+  }
+
+  .horizontal {
+    width: $horizontal-length;
+    height: $line-thickness;
+  }
+
+  .vertical {
+    width: $line-thickness;
+    height: $vertical-length;
+  }
+
+  .cross-1 {
+    .horizontal {
+      top: 50%;
+      left: 100%;
+    }
+    .vertical {
+      top: 50%;
+      left: 100%;
+    }
+  }
+
+  .cross-2 {
+    .horizontal {
+      top: 100%;
+      left: 50%;
+    }
+    .vertical {
+      top: 0;
+      left: 150%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .cross-container {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-color: inherit;
+    margin-top: 10px;
+    margin-left: 10px;
+    .cross-line {
+      position: absolute;
+      background-color: $line-color;
+    }
+
+    .horizontal {
+      width: 16px;
+      height: $line-thickness;
+    }
+
+    .vertical {
+      width: $line-thickness;
+      height: 16px;
+    }
+  }
+}
+
+//酒譜中的按紐元件
+.cardImg {
+  max-width: 192px;
+  margin: 24px 16px 24px 16px;
+  object-fit: cover;
+}
+
+.wineBtn {
+  min-width: 92px;
+  white-space: nowrap;
+}
+.cardBtn {
+  min-width: 40px;
+  //   min-height: 44px;
+  height: 44px;
+  padding: 10px;
+}
+.cardBtn-b {
+  min-width: 80px;
+  height: 80px;
+}
+
+.pageBtn {
+  height: 44px;
+  width: 48px;
+  min-width: 0px;
+}
+
+//酒譜中的卡片hover
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 536px;
+}
+
+.card,
+.card-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.card {
+  background-color: lightblue;
+}
+
+.card-hover {
+  background-color: #fbfbfb;
+  opacity: 0;
+}
+
+.card-container:hover .card {
+  opacity: 0;
+}
+
+.card-container:hover .card-hover {
+  opacity: 1;
+}
+
+.cardImg-hover {
+  max-width: 128px;
+}
+
+//喜愛與收藏區的圖片漸層border
+.img-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 73%;
+  padding: 3px; /* 為邊框創造空間 */
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #ffc93d 0%, #b5650e 100%);
+  border-top-left-radius: 50rem;
+  border-top-right-radius: 50rem;
+  z-index: -1;
+}
+.img-gradient-border {
+  display: block;
+  border-top-left-radius: 50rem;
+  border-top-right-radius: 50rem;
+}
+
+//響應式
+@media (max-width: 768px) {
+  .wineBtn {
+    min-width: 37px;
+  }
+}

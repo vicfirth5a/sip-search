@@ -1,8 +1,10 @@
 body {
   font-family: Flaviotte, "Noto Sans TC", Georgia;
   font-weight: 500;
+  line-height: 1.5;
 }
 a {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
 }

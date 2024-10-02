@@ -1,0 +1,133 @@
+.section-rs1 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 720px;
+  background-image: url(/assets/images/image-banner-drinks.png);
+  background-size: cover;
+  margin-top: -104px;
+  padding-top: 104px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+
+  .my-180 {
+    margin-top: 180px;
+  }
+}
+.section-rs2 {
+  .btn-outline-primary-3:hover {
+    color: #ecdec3;
+  }
+
+  .card {
+    height: 536px;
+    background-color: #ecdec3;
+  }
+  .scrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  .border-lg {
+    border: 1px solid #b5650e;
+    border-radius: 50rem;
+  }
+}
+
+.section-rs3 {
+  .rs-content {
+    height: 536px;
+  }
+  .likes {
+    font-family: "Noto Sans TC";
+  }
+  .gradient-border {
+    border: 1px solid transparent; /* 設置為透明以便顯示漸層 */
+    border-image-source: linear-gradient(
+      180deg,
+      #ffc93d 0%,
+      #b5650e 100%
+    ); /* 設置漸層 */
+    border-image-slice: 1; /* 切片設置為 1，以便漸層完全顯示 */
+  }
+  .rsbg-custom {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 34.72%
+    );
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .card-img1 {
+    border-top-left-radius: 50rem;
+    border-top-right-radius: 50rem;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .section-rs3 {
+    .rs-content {
+      height: 100%;
+    }
+  }
+  .section-rs2 {
+    .border-lg {
+      border: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section-rs1 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 375px;
+    background-image: url(/assets/images/image-banner-drinks.png);
+    background-size: cover;
+    margin-top: -104px;
+    padding-top: 104px;
+
+    &.section-rs1::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+  }
+}
