@@ -4,7 +4,7 @@
   // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
   //   url(../assets/images/index-banner.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(../assets/images/index-banner.png);
+    url(/assets/images/index-banner.png);
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@
 .webinfo-1 {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(../assets/images/index-info.png);
+  background-image: url(/assets/images/index-info.png);
   background-size: cover;
   background-position: center;
   // z-index: -2;
