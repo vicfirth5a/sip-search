@@ -1,12 +1,15 @@
 @import "../base/font.scss";
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(/assets/images/index-banner.png);
 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+
+
+    url(/assets/images/index-banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
 
   &-content {
     margin: 0 auto;
@@ -23,10 +26,11 @@
   }
 }
 
-@media (max-width: 540px) {
+@media(max-width:720px) {
+
   .banner {
     &-content {
-      padding-top: 112px;
+      padding-top: 160px;
       padding-bottom: 112px;
     }
 
@@ -46,7 +50,8 @@
   }
 }
 
-@media (max-width: 540px) {
+@media(max-width:720px) {
+
   .banner {
     &-content {
       max-width: 297px;
@@ -74,20 +79,38 @@
   color: white;
 }
 
-.input-group {
-  border: 0.8px solid $primary-1;
 
-  .btn {
-    display: flex;
-    align-items: center;
-    color: $primary-1;
+.banner-selector-input {
+  .input-group {
+    border: 0.8px solid $primary-1;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      color: $primary-1;
+    }
   }
+
+  .form-control {
+    background-color: transparent;
+    padding: 24px;
+    border: none;
+
+
+    &::placeholder {
+      color: $primary-1;
+      font-size: 24px;
+    }
+
+    &:focus {
+      background: transparent;
+      border-color: $primary-1;
+      box-shadow: $primary-1;
+    }
+  }
+
 }
 
-.form-control {
-  background-color: transparent;
-  padding: 24px;
-  border: none;
 
   &::placeholder {
     color: $primary-1;
@@ -130,9 +153,11 @@
 }
 
 .webinfo-1 {
+
   padding-top: 120px;
   padding-bottom: 120px;
   background-image: url(/assets/images/index-info.png);
+
   background-size: cover;
   background-position: center;
   // z-index: -2;
@@ -183,9 +208,6 @@
     width: 50%;
     line-height: 1.2;
 
-    & p {
-      padding-bottom: 64px;
-    }
   }
 
   .discover-bar {
@@ -216,7 +238,7 @@
 
 .webinfo-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(../assets/images/webinfo-3.jpg);
+    url(/assets/images/webinfo-3.jpg);
   padding-top: 325px;
   padding-bottom: 325px;
   background-size: cover;
