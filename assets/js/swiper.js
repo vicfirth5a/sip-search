@@ -1,7 +1,7 @@
 
 
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper-rs", {
   slidesPerView: "auto",
   spaceBetween: 48    ,
   slidesPerView: 3,
@@ -11,8 +11,8 @@ var swiper = new Swiper(".mySwiper", {
     type: "fraction",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".custom-button-next",
+    prevEl: null,
   },
   breakpoints: {
     // 991: {
