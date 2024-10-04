@@ -854,8 +854,7 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
       <script>
-        const dynamicOffset = (window.innerWidth - 1296) / 2;
-        const swiper_popular_recipe = new Swiper(".swiper-popular-recipe", {
+          const swiper_popular_recipe = new Swiper(".swiper-popular-recipe", {
           direction: "horizontal",
           slidesPerView: "auto",
           // loop: true,
@@ -892,11 +891,7 @@
             clickable: true,
           },
         });
-        // 當窗口大小改變時，更新 Swiper 的 offset
-        // window.addEventListener("resize", () => {
-        //   swiper.params.slidesOffsetBefore = (window.innerWidth - 1296) / 2;
-        //   swiper.update();
-        // });
+        
 
         //酒吧區
         const swiper_popular_bars = new Swiper(".swiper-popular-bars", {
