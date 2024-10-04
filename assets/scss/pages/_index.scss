@@ -24,64 +24,39 @@
   &-btn {
     background: transparent;
     color: $primary-1;
-  &:focus {
+    &:focus {
       background: $primary-3;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
-
     }
-   .material-symbols-outlined {
+    .material-symbols-outlined {
       font-size: 24px;
     }
 
-    
-    
+    @media (max-width: 767px) {
+      .banner {
+        &-content {
+          padding-top: 160px;
+          padding-bottom: 112px;
+          max-width: 351px;
+        }
 
-
-  
-
-    
-   
-  
-
-
-
-
-@media (max-width:767px) {
-
-
- 
-  .banner {
-    &-content {
-      padding-top: 160px;
-      padding-bottom: 112px;
-       max-width: 351px;
-    }
-
-    &-title {
-      max-width: 253px;
-      font-size: 24px;
-      padding-bottom: 24px;
-    }
+        &-title {
+          max-width: 253px;
+          font-size: 24px;
+          padding-bottom: 24px;
+        }
         &-btn {
-      font-size: 12px;
-      padding: 8px 12px;
-    }
-  }
-}
-
-
-  
-}
-
-
-
-
-    &-btn {
-      font-size: 12px;
-      padding: 8px 12px;
+          font-size: 12px;
+          padding: 8px 12px;
+        }
+      }
     }
   }
 
+  &-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 }
 
 .banner-selector-section {
@@ -113,11 +88,9 @@
     border: none;
     color: $primary-1;
 
-
     &::placeholder {
       color: $primary-2;
       font-size: 24px;
-
     }
 
     &:focus {
@@ -127,42 +100,29 @@
   }
 }
 
-
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .banner-selector-input {
-
     padding: 12px;
-
   }
-
 }
 
-
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .banner-selector-input {
-
     .input-group {
-
       .material-symbols-outlined {
         font-size: 12px;
       }
-
     }
 
     .form-control {
-
       padding: 8px;
 
       &::placeholder {
         font-size: 12px;
       }
     }
-
   }
 }
-
-
-
 
 .search {
   margin-left: 24px;
@@ -214,9 +174,6 @@
     border-radius: 300px 300px 0 0;
     background: transparent;
 
-
-
-
     &::before {
       width: 100%;
       height: 100%;
@@ -230,7 +187,6 @@
         linear-gradient(to bottom, #ffc93d, #b5650e) border-box;
       z-index: 1;
     }
-
   }
 
   .discover-cocktail {
@@ -261,17 +217,12 @@
   }
 }
 
-
-@media(max-width: 767px) {
-
-
-
+@media (max-width: 767px) {
   .webinfo-1 {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
-
+}
 .btn-md {
   max-width: 248px;
   background: $primary-3;
@@ -281,15 +232,11 @@
   border-style: solid;
 
   border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
-
-
- 
-
 }
 
 .webinfo-2 {
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/assets/images/webinfo-3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(/assets/images/webinfo-3.jpg);
 
   padding-top: 325px;
   padding-bottom: 325px;
