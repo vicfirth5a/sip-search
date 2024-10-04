@@ -1,15 +1,11 @@
 @import "../base/font.scss";
 
 .banner {
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-
-
     url(/assets/images/index-banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 
   &-content {
     margin: 0 auto;
@@ -25,52 +21,68 @@
     text-align: center;
     color: $primary-1;
   }
-
   &-btn {
     background: transparent;
     color: $primary-1;
-
-    &:focus {
+  &:focus {
       background: $primary-3;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
 
     }
-
-    .material-symbols-outlined {
+   .material-symbols-outlined {
       font-size: 24px;
     }
-  }
 
-}
+    
+    
+
+
+  
+
+    
+   
+  
+
+
 
 
 @media (max-width:767px) {
 
-  .banner {
 
+ 
+  .banner {
     &-content {
       padding-top: 160px;
       padding-bottom: 112px;
-      max-width: 351px;
+       max-width: 351px;
     }
-
 
     &-title {
       max-width: 253px;
       font-size: 24px;
       padding-bottom: 24px;
-
     }
+        &-btn {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+}
+
+
+  
+}
+
+
+
 
     &-btn {
       font-size: 12px;
       padding: 8px 12px;
     }
-
   }
 
 }
-
 
 .banner-selector-section {
   max-width: 596px;
@@ -87,7 +99,6 @@
   color: white;
 }
 
-
 .banner-selector-input {
   justify-content: space-between;
 
@@ -102,6 +113,7 @@
     border: none;
     color: $primary-1;
 
+
     &::placeholder {
       color: $primary-2;
       font-size: 24px;
@@ -113,8 +125,8 @@
       border-color: $primary-1;
     }
   }
-
 }
+
 
 @media (max-width:992px) {
   .banner-selector-input {
@@ -151,6 +163,7 @@
 
 
 
+
 .search {
   margin-left: 24px;
   max-width: 729px;
@@ -165,29 +178,21 @@
         align-items: center;
         padding: 6px 8px;
         color: $primary-4;
-
-
       }
 
       .items-close-btn {
-
         margin-left: 8px;
         color: $primary-4;
-
       }
-
     }
 
     &-clean a {
       color: $primary-1;
     }
-
   }
 }
 
-
 .webinfo-1 {
-
   padding-top: 120px;
   padding-bottom: 120px;
   background-image: url(/assets/images/index-info.png);
@@ -211,6 +216,7 @@
 
 
 
+
     &::before {
       width: 100%;
       height: 100%;
@@ -224,6 +230,7 @@
         linear-gradient(to bottom, #ffc93d, #b5650e) border-box;
       z-index: 1;
     }
+
   }
 
   .discover-cocktail {
@@ -238,15 +245,11 @@
     height: 100%;
     border-radius: 300px 300px 0px 0px;
     object-fit: cover;
-
-
-
   }
 
   .discover-text {
     width: 50%;
     line-height: 1.2;
-
   }
 
   .discover-bar {
@@ -258,13 +261,16 @@
   }
 }
 
+
 @media(max-width: 767px) {
+
+
+
   .webinfo-1 {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 
-}
 
 .btn-md {
   max-width: 248px;
@@ -273,19 +279,22 @@
   justify-content: center;
   border-width: 1px;
   border-style: solid;
+
   border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
+
+
+ 
 
 }
 
-
-
 .webinfo-2 {
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/assets/images/webinfo-3.jpg);
+
   padding-top: 325px;
   padding-bottom: 325px;
   background-size: cover;
   background-position: center;
-
 
   .join-input {
     padding-top: 48px;
@@ -469,7 +478,6 @@ $x-large: 1200px;
     }
 
     .material-symbols-outlined {
-
       // width: 40px;
       // height: 40px;
       @include respond-to($large) {
@@ -641,10 +649,12 @@ $x-large: 1200px;
 
   &-bg {
     width: 476px;
-    background-image: linear-gradient(180.02deg,
+    background-image: linear-gradient(
+        180.02deg,
         rgba(0, 0, 0, 0.8) 0.01%,
         rgba(0, 0, 0, 0) 50.5%,
-        rgba(0, 0, 0, 0.8) 99.99%),
+        rgba(0, 0, 0, 0.8) 99.99%
+      ),
       url(../images/index-event-bg.png);
     //background-size: cover;
     background-size: 450% auto;
@@ -728,8 +738,6 @@ $x-large: 1200px;
     }
   }
 }
-
-
 
 //留言
 
@@ -820,9 +828,7 @@ $x-large: 1200px;
       border: 1.5px solid rgba(181, 101, 14, 1);
     }
   }
-
 }
-
 
 .comments-list-item-btn {
   display: block;
@@ -830,7 +836,11 @@ $x-large: 1200px;
   transition: 0.5s;
   color: var(--bs-primary-1);
   border: 1px solid;
-  border-image-source: linear-gradient(100.25deg, #ffc93d 4.04%, #b5650e 97.53%);
+  border-image-source: linear-gradient(
+    100.25deg,
+    #ffc93d 4.04%,
+    #b5650e 97.53%
+  );
   border-image-slice: 1; //圖像切片設置
   justify-content: center;
   align-items: center;
@@ -852,5 +862,4 @@ $x-large: 1200px;
     background: var(--bs-primary-4);
     transition: 0.5s;
   }
-
 }
