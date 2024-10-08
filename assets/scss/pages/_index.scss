@@ -344,6 +344,7 @@ $x-large: 1200px;
     font-size: 18px;
     background-color: $primary-1;
     transition: 0.5s;
+    text-align: start;
 
     @include respond-to($x-large) {
       max-width: 960px;
@@ -517,6 +518,7 @@ $x-large: 1200px;
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
         height: auto;
+        text-align: start;
       }
     }
 

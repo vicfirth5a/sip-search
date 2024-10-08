@@ -90,11 +90,15 @@ $x-large: 1200px;
             border-radius: 100px;
             cursor: pointer;
             transition: 0.4s;
-            &:hover,
-            &.selected {
+            &:hover {
               background-color: $primary-1;
               color: $neutral-5;
               border: 1px solid $neutral-5;
+            }
+            &.selected {
+              background-color: $primary-3;
+              color: $primary-1;
+              border: 1px solid $primary-3;
             }
           }
         }
@@ -143,9 +147,10 @@ $x-large: 1200px;
   }
 }
 
-.section-popular-bars {
+.sectionPopularBars {
   // border: 1px solid #a00;
   padding: 120px 0;
+  color: $primary-1;
   @include respond-to($medium) {
     padding: 40px 0;
   }
@@ -187,6 +192,9 @@ $x-large: 1200px;
             padding: 40px 24px 24px;
           }
           .title {
+            h4 {
+              color: $neutral-white;
+            }
             .material-symbols-outlined {
               cursor: pointer;
               transition: 1s;
@@ -241,6 +249,7 @@ $x-large: 1200px;
         filter: brightness(0.8);
       }
       .material-symbols-outlined {
+        color: $primary-1;
         font-size: 40px;
       }
     }
