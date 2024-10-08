@@ -177,3 +177,18 @@ $line-thickness: 1px;
     min-width: 37px;
   }
 }
+
+//酒吧搜尋頁標籤
+.section-popular-bars .tag,
+.section-unique-bars .tag {
+  padding: 12px 24px;
+  font-size: 24px;
+  border-radius: 1000px;
+}
+@media (max-width: 768px) {
+  .section-popular-bars .tag,
+  .section-unique-bars .tag {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}

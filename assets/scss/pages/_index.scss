@@ -282,7 +282,7 @@ $x-large: 1200px;
 .section {
   padding: 120px 0px;
 
-  @include respond-to($medium) {
+  @include respond-to($large) {
     padding: 40px 0 0;
   }
 }
