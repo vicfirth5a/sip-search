@@ -1,7 +1,11 @@
 
 
 
-var swiper = new Swiper(".mySwiper-rs", {
+
+const swiper = new Swiper(".mySwiper", {
+
+
+
   slidesPerView: "auto",
   spaceBetween: 24    ,
   slidesPerView: 2,
