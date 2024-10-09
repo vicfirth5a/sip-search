@@ -1,24 +1,24 @@
 
 
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper-rs", {
   slidesPerView: "auto",
-  spaceBetween: 48    ,
-  slidesPerView: 3,
+  spaceBetween: 24    ,
+  slidesPerView: 2,
   slidesPerGroup: 1,
   pagination: {
     el: ".swiper-pagination-custom",
     type: "fraction",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".custom-button-next",
+    prevEl: null,
   },
   breakpoints: {
-    // 991: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 48,
-    // },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 48,
+    },
   },
 });
 
