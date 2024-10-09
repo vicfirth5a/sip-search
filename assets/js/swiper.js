@@ -3,9 +3,6 @@
 
 
 const swiper = new Swiper(".mySwiper-rs", {
-
-
-
   slidesPerView: "auto",
   spaceBetween: 24    ,
   slidesPerView: 2,
