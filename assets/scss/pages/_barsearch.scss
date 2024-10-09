@@ -1,0 +1,40 @@
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.nearby-event {
+
+
+
+    .nearby-card {
+        width: 468px;
+        height: 924px;
+
+        & img {
+            position: absolute;
+            width: 468px;
+            height: 924px;
+        }
+
+
+
+        .card-body {
+            height: 100%;
+            position: relative;
+
+        }
+
+
+
+
+    }
+
+
+}

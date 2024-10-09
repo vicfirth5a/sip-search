@@ -1,7 +1,7 @@
 
 
 
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   spaceBetween: 48    ,
   slidesPerView: 3,
