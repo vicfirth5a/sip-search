@@ -22,9 +22,6 @@
   .my-180 {
     margin-top: 180px;
   }
-  .input-group {
-    z-index: 3;
-  }
 }
 .section-rs2 {
   .btn-outline-primary-3:hover {
@@ -70,7 +67,6 @@
 }
 
 .swiper {
-  position: relative;
   width: 100%;
   height: 80%;
 }
@@ -98,21 +94,6 @@
 
 .swiper-slide {
   width: 100%;
-}
-.custom-button-next {
-  position: absolute;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.custom-button-next {
-  width: 72px;
-  height: 72px;
-  top: 40%;
-  left: 90%;
-  position: absolute;
-  z-index: 10;
-  cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -147,11 +128,6 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 2;
-    }
-  }
-  .section-rs3 {
-    .custom-button-next {
-      display: none;
     }
   }
 }
