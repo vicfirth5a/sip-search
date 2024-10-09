@@ -77,10 +77,10 @@ $line-thickness: 1px;
   }
 }
 
-//酒譜中的按紐元件
+//酒譜中的按紐元件、圖片
 .cardImg {
   max-width: 192px;
-  max-height: 249px;
+  height: 250px;
   margin: 24px 16px 24px 16px;
   object-fit: cover;
 }
@@ -136,6 +136,7 @@ $line-thickness: 1px;
   height: 180px;
   object-fit: cover;
 }
+
 .card-container:hover .card {
   opacity: 0;
 }
@@ -176,9 +177,28 @@ $line-thickness: 1px;
 }
 
 //響應式
+@media (max-width: 992px) {
+}
+
 @media (max-width: 768px) {
   .wineBtn {
     min-width: 37px;
+  }
+  .section-rs2 {
+    .card-container {
+      height: 420px;
+    }
+    .cardImg {
+      max-width: 128px;
+      height: 190px;
+      margin: 24px 16px 24px 16px;
+      object-fit: cover;
+    }
+  }
+  .section-rs3 {
+    .img-container {
+      margin-bottom: 8px;
+    }
   }
 }
 
