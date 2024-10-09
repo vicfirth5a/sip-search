@@ -7,7 +7,7 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
+    <!-- banner區塊 -->
     <section
       class="section section-bar-search-banner text-center text-primary-1"
       style="
@@ -133,6 +133,7 @@
       </div>
     </section>
 
+    <!-- 熱門酒吧區塊 -->
     <section class="section sectionPopularBars">
       <div class="container">
         <div class="main-title">
@@ -345,6 +346,7 @@
       </div>
     </section>
 
+    <!-- 獨特酒吧 -->
     <section class="section section-unique-bars text-primary-1">
       <div class="container">
         <div class="row">
@@ -459,8 +461,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/barsearch.js"></script>
+
     <!-- swiper -->
-    <script>
+    <!-- <script>
       let swiper = new Swiper(".popularBarsSwiper", {
         navigation: {
           nextEl: ".swiper-button-next",
@@ -555,6 +559,6 @@
           );
           modal.hide();
         });
-    </script>
+    </script> -->
   </body>
 </html>
