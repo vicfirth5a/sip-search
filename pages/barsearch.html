@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>酒吧搜尋頁</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
+
   <body>
     <%- include('./layout/header'); -%>
-    <!-- banner區塊 -->
+
     <section
       class="section section-bar-search-banner text-center text-primary-1"
       style="
@@ -453,6 +466,78 @@
       </div>
     </section>
 
+    <div class="nearby-event bg-primary-4">
+      <div class="container py-15">
+        <h3 class="fs-lg-3 fs-md-5 fs-8 text-center text-primary-1 pb-4">
+          Latest Events Around You
+        </h3>
+        <h3 class="fs-lg-2 fs-md-4 fs-7 text-center text-primary-1 pb-15">
+          你周圍的最新活動
+        </h3>
+        <div class="swiper mySwipe">
+          <div class="swiper-wrapper w-75 m-auto">
+            <div class="swiper-slide nearby-card me-12 text-start">
+              <img src="/assets/images/bar-nearby-1.jpg" alt="bar" />
+              <div
+                class="card-body d-flex py-12 px-10 flex-column justify-content-between"
+              >
+                <h5 class="card-title fs-lg-3 text-neutral-1">Mono Mono</h5>
+                <div class="mt-auto">
+                  <a href="#" class="bg-primary-1 py-3 px-5 text-primary-4 mb-5"
+                    >週五 9/13</a
+                  >
+                  <p class="card-text text-neutral-1 mb-11 fs-lg-6">
+                    TGIF!! 邀請世界知名 DJ
+                    Anderson和多位饒舌歌手一起迎接假日，還享限定優惠！
+                  </p>
+                  <a
+                    href="#"
+                    class="d-flex fs-5 text-primary-1 align-items-center"
+                    >查看更多<span
+                      class="material-symbols-outlined fs-lg-5 inherit ps-4"
+                    >
+                      arrow_forward_ios
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide nearby-card text-start">
+              <img src="/assets/images/bar-nearby-2.jpg" alt="bar" />
+              <div
+                class="card-body d-flex py-12 px-10 flex-column justify-content-between"
+              >
+                <h5 class="card-title fs-lg-3 text-neutral-1">隱士餐酒館</h5>
+                <div class="mt-auto">
+                  <a href="#" class="bg-primary-1 py-3 px-5 text-primary-4 mb-5"
+                    >週二 9/17</a
+                  >
+                  <p class="card-text text-neutral-1 mb-11 fs-lg-6">
+                    週二夜限定！來餐酒館享受特調雞尾酒買一送一，讓週中夜晚更愉快！
+                  </p>
+                  <a
+                    href="#"
+                    class="d-flex fs-5 text-primary-1 align-items-center"
+                    >查看更多<span
+                      class="material-symbols-outlined fs-lg-5 inherit ps-4"
+                    >
+                      arrow_forward_ios
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              Slid
+              <div class="nearby-img-3"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
@@ -463,102 +548,19 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- swiper -->
-    <!-- <script>
-      let swiper = new Swiper(".popularBarsSwiper", {
+    <script>
+      // 周邊酒吧活動
+      const swiper = new Swiper(".mySwipe", {
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 72,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        loop: true,
-        breakpoints: {
-          768: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-          },
-          992: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-          },
-        },
       });
-    </script> -->
-
-    <!-- <script>
-      // 監聽所有 .tag 和 .item 元素的點擊事件
-      document.querySelectorAll(".city-item,.other-item").forEach((element) => {
-        element.addEventListener("click", function () {
-          // 切換 'selected' class 來改變背景顏色
-          this.classList.toggle("selected");
-        });
-      });
-
-      // 當點擊 "Add Selected Tags" 按鈕時，將選中的 tag 添加到 banner 下方
-      document
-        .getElementById("addTagsBtn")
-        .addEventListener("click", function () {
-          const selectedTagsContainer =
-            document.getElementById("selected-tags");
-
-          // 獲取所有已經選中的 tag
-          document
-            .querySelectorAll(".city-item.selected,.other-item.selected")
-            .forEach((selectedElement) => {
-              const tagName = selectedElement.textContent.trim();
-
-              // 檢查該 tag 是否已經存在於外部 banner
-              if (
-                !selectedTagsContainer.querySelector(`[data-tag="${tagName}"]`)
-              ) {
-                // 創建新元素來顯示選中的 tag
-                const selectedTag = document.createElement("div");
-                selectedTag.classList.add("selected-tag");
-                selectedTag.textContent = tagName;
-                selectedTag.setAttribute("data-tag", tagName);
-                // 創建關閉圖標
-                const closeIcon = document.createElement("span");
-                closeIcon.classList.add(
-                  "material-symbols-outlined",
-                  "close-icon"
-                );
-                closeIcon.textContent = "close";
-
-                // 關閉圖標點擊事件，點擊後移除該 tag
-                closeIcon.addEventListener("click", function (event) {
-                  selectedTagsContainer.removeChild(selectedTag);
-                });
-
-                // 將關閉圖標添加到 tag 內部
-                selectedTag.appendChild(closeIcon);
-                // 添加到 banner 下方
-                selectedTagsContainer.appendChild(selectedTag);
-
-                // 選擇完成後，清除選中狀態
-                document
-                  .querySelectorAll(".city-item.selected, .other-item.selected")
-                  .forEach((selectedElement) => {
-                    selectedElement.classList.remove("selected");
-                  });
-                // 點擊外部 tag 可以移除
-                // selectedTag.addEventListener("click", function () {
-                //   selectedTagsContainer.removeChild(this);
-                // });
-              }
-            });
-
-          // 選擇完成後，清除選中狀態並關閉 modal
-          document
-            .querySelectorAll(".tag.selected, .item.selected")
-            .forEach((selectedElement) => {
-              selectedElement.classList.remove("selected");
-            });
-
-          // 手動關閉 modal （如果沒有使用 data-bs-dismiss="modal"）
-          const modal = bootstrap.Modal.getInstance(
-            document.getElementById("searchModal")
-          );
-          modal.hide();
-        });
-    </script> -->
+    </script>
   </body>
 </html>
