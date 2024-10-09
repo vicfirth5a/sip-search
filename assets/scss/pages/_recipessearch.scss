@@ -101,6 +101,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 34.72%);
   }
+
   .swiper {
     position: relative;
     width: 100%;
@@ -115,6 +116,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .card-img1 {
       border-top-left-radius: 50rem;
       border-top-right-radius: 50rem;
@@ -133,6 +135,7 @@
   .swiper-slide {
     width: 100%;
   }
+
   .custom-button-next {
     position: absolute;
     z-index: 10;
@@ -187,7 +190,7 @@
     }
   }
 
-}
+
 
   .section-rs3 {
     .custom-button-next {
@@ -195,4 +198,3 @@
     }
   }
 }
-
