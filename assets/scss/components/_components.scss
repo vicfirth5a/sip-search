@@ -80,6 +80,7 @@ $line-thickness: 1px;
 //酒譜中的按紐元件
 .cardImg {
   max-width: 192px;
+  max-height: 249px;
   margin: 24px 16px 24px 16px;
   object-fit: cover;
 }
@@ -131,7 +132,10 @@ $line-thickness: 1px;
   background-color: #fbfbfb;
   opacity: 0;
 }
-
+.card-hoverImg {
+  height: 180px;
+  object-fit: cover;
+}
 .card-container:hover .card {
   opacity: 0;
 }
