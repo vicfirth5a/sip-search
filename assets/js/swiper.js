@@ -2,7 +2,7 @@
 
 
 
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper-rs", {
 
 
 
