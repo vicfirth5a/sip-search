@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>酒吧搜尋頁</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
+  <body>
+    <%- include('./layout/header'); -%>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>酒吧搜尋頁</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-
-<body>
-  <%- include('./layout/header'); -%>
-
-    <section class="section section-bar-search-banner text-center text-primary-1" style="background-image: linear-gradient(
+    <section
+      class="section section-bar-search-banner text-center text-primary-1"
+      style="
+        background-image: linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.6)
           ),
           url(../assets/images/barsearch/bar-search-banner.png);
-      ">
-
-  
-  
-    
-    
+      "
+    >
       <div class="container">
         <div class="main-title mb-6 mb-md-11">
           <h1 class="fs-6 fs-md-1">尋找你周圍最棒的酒吧</h1>
         </div>
         <div class="main-content text-primary-1">
           <div class="input-group mx-auto mb-5">
-            <input type="text" class="form-control p-2 p-md-6 search-input" placeholder="立即搜尋" aria-label="Search"
-              data-bs-toggle="modal" data-bs-target="#exampleModal" />
-            <span class="input-group-text material-symbols-outlined fs-8 fs-md-5">
+            <input
+              type="text"
+              class="form-control p-2 p-md-6 search-input"
+              placeholder="立即搜尋"
+              aria-label="Search"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+            <span
+              class="input-group-text material-symbols-outlined fs-8 fs-md-5"
+            >
               search
             </span>
           </div>
@@ -43,14 +55,25 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
                   你想找哪兒的酒吧
                 </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
               <div class="modal-body text-primary-1">
                 <div class="region mb-6">
@@ -101,11 +124,19 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-outline-light fs-7 rounded-pill" data-bs-dismiss="modal">
+                <button
+                  type="button"
+                  class="btn btn-outline-light fs-7 rounded-pill"
+                  data-bs-dismiss="modal"
+                >
                   關閉
                 </button>
-                <button type="submit" class="btn btn-outline-light fs-7 rounded-pill" data-bs-dismiss="modal"
-                  id="addTagsBtn">
+                <button
+                  type="submit"
+                  class="btn btn-outline-light fs-7 rounded-pill"
+                  data-bs-dismiss="modal"
+                  id="addTagsBtn"
+                >
                   儲存變更
                 </button>
               </div>
@@ -130,20 +161,27 @@
           <div class="swiper popularBarsSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="popularBarsItem d-flex flex-column" style="
+                <div
+                  class="popularBarsItem d-flex flex-column"
+                  style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.5),
                         rgba(0, 0, 0, 0.6)
                       ),
                       url(../assets/images/barsearch/popularbar01.png);
-                  ">
+                  "
+                >
                   <div class="title text-neutral-white d-flex mb-auto">
                     <h4 class="fs-7 fs-md-3">HANKO 60</h4>
-                    <span class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto">
+                    <span
+                      class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto"
+                    >
                       favorite
                     </span>
                   </div>
-                  <p class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6">
+                  <p
+                    class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6"
+                  >
                     紅樓夢的發想就是以賈寶玉以及林黛玉這對兩小無猜的愛情為主軸注入在這杯調酒裡面。
                   </p>
                   <div class="tags text-primary-4 d-flex flex-wrap gap-4">
@@ -153,20 +191,27 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="popularBarsItem d-flex flex-column" style="
+                <div
+                  class="popularBarsItem d-flex flex-column"
+                  style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.5),
                         rgba(0, 0, 0, 0.6)
                       ),
                       url(../assets/images/barsearch/popularbar02.png);
-                  ">
+                  "
+                >
                   <div class="title text-neutral-white d-flex mb-auto">
                     <h4 class="fs-7 fs-md-3">Dream youth</h4>
-                    <span class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto">
+                    <span
+                      class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto"
+                    >
                       favorite
                     </span>
                   </div>
-                  <p class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6">
+                  <p
+                    class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6"
+                  >
                     紅樓夢的發想就是以賈寶玉以及林黛玉這對兩小無猜的愛情為主軸注入在這杯調酒裡面。
                   </p>
                   <div class="tags text-primary-4 d-flex flex-wrap gap-4">
@@ -176,20 +221,27 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="popularBarsItem d-flex flex-column" style="
+                <div
+                  class="popularBarsItem d-flex flex-column"
+                  style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.5),
                         rgba(0, 0, 0, 0.6)
                       ),
                       url(../assets/images/barsearch/popularbar03.png);
-                  ">
+                  "
+                >
                   <div class="title text-neutral-white d-flex mb-auto">
                     <h4 class="fs-7 fs-md-3">Vender Bar</h4>
-                    <span class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto">
+                    <span
+                      class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto"
+                    >
                       favorite
                     </span>
                   </div>
-                  <p class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6">
+                  <p
+                    class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6"
+                  >
                     紅樓夢的發想就是以賈寶玉以及林黛玉這對兩小無猜的愛情為主軸注入在這杯調酒裡面。
                   </p>
                   <div class="tags text-primary-4 d-flex flex-wrap gap-4">
@@ -199,20 +251,27 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="popularBarsItem d-flex flex-column" style="
+                <div
+                  class="popularBarsItem d-flex flex-column"
+                  style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.5),
                         rgba(0, 0, 0, 0.6)
                       ),
                       url(../assets/images/barsearch/popularbar04.png);
-                  ">
+                  "
+                >
                   <div class="title text-neutral-white d-flex mb-auto">
                     <h4 class="fs-7 fs-md-3">HANKO 60</h4>
-                    <span class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto">
+                    <span
+                      class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto"
+                    >
                       favorite
                     </span>
                   </div>
-                  <p class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6">
+                  <p
+                    class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6"
+                  >
                     紅樓夢的發想就是以賈寶玉以及林黛玉這對兩小無猜的愛情為主軸注入在這杯調酒裡面。
                   </p>
                   <div class="tags text-primary-4 d-flex flex-wrap gap-4">
@@ -222,20 +281,27 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="popularBarsItem d-flex flex-column" style="
+                <div
+                  class="popularBarsItem d-flex flex-column"
+                  style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.5),
                         rgba(0, 0, 0, 0.6)
                       ),
                       url(../assets/images/barsearch/popularbar05.png);
-                  ">
+                  "
+                >
                   <div class="title text-neutral-white d-flex mb-auto">
                     <h4 class="fs-7 fs-md-3">HANKO 60</h4>
-                    <span class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto">
+                    <span
+                      class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto"
+                    >
                       favorite
                     </span>
                   </div>
-                  <p class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6">
+                  <p
+                    class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6"
+                  >
                     紅樓夢的發想就是以賈寶玉以及林黛玉這對兩小無猜的愛情為主軸注入在這杯調酒裡面。
                   </p>
                   <div class="tags text-primary-4 d-flex flex-wrap gap-4">
@@ -245,20 +311,27 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="popularBarsItem d-flex flex-column" style="
+                <div
+                  class="popularBarsItem d-flex flex-column"
+                  style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.5),
                         rgba(0, 0, 0, 0.6)
                       ),
                       url(../assets/images/barsearch/popularbar03.png);
-                  ">
+                  "
+                >
                   <div class="title text-neutral-white d-flex mb-auto">
                     <h4 class="fs-7 fs-md-3">HANKO 60</h4>
-                    <span class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto">
+                    <span
+                      class="material-symbols-outlined fs-7 fs-md-4 text-neutral-white ms-auto"
+                    >
                       favorite
                     </span>
                   </div>
-                  <p class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6">
+                  <p
+                    class="barIntro text-neutral-white fs-8 fs-md-6 mt-auto mb-8 mb-md-6"
+                  >
                     紅樓夢的發想就是以賈寶玉以及林黛玉這對兩小無猜的愛情為主軸注入在這杯調酒裡面。
                   </p>
                   <div class="tags text-primary-4 d-flex flex-wrap gap-4">
@@ -275,9 +348,11 @@
               </a>
             </div>
             <div class="swiper-button-next">
-              <a href="" class="swiperButton d-block d-flex align-items-center"><span class="material-symbols-outlined">
+              <a href="" class="swiperButton d-block d-flex align-items-center"
+                ><span class="material-symbols-outlined">
                   arrow_forward
-                </span></a>
+                </span></a
+              >
             </div>
           </div>
         </div>
@@ -298,18 +373,26 @@
               <div class="unique-bar-list mb-11 mb-lg-13">
                 <div class="unique-bar-item d-flex flex-column">
                   <div class="pic">
-                    <img src="../assets/images/barsearch/uniquebar01.png" alt="bar" />
+                    <img
+                      src="../assets/images/barsearch/uniquebar01.png"
+                      alt="bar"
+                    />
                   </div>
                   <div class="txt text-white">
                     <h4 class="fs-6 fs-md-4 my-3 my-md-6">貓下去敦北俱樂部</h4>
                     <div class="tags mb-3 mb-md-5 d-flex flex-wrap gap-3">
-                      <span class="tag">可供訂位</span><span class="tag">台北市</span>
+                      <span class="tag">可供訂位</span
+                      ><span class="tag">台北市</span>
                     </div>
                     <p class="fs-9 fs-md-6 mb-6 mb-md-11">
                       令人放鬆的餐館，供應麵食與台式牛排等在地美食，以及葡萄酒和啤酒。
                     </p>
-                    <div class="more text-primary-1 mt-auto d-flex gap-6 align-items-center">
-                      <a href="#" class="d-inline-block fs-8 fs-md-5">查看更多</a>
+                    <div
+                      class="more text-primary-1 mt-auto d-flex gap-6 align-items-center"
+                    >
+                      <a href="#" class="d-inline-block fs-8 fs-md-5"
+                        >查看更多</a
+                      >
                       <span class="material-symbols-outlined fs-md-4">
                         chevron_right
                       </span>
@@ -318,17 +401,23 @@
                 </div>
                 <div class="unique-bar-item d-flex flex-column">
                   <div class="pic">
-                    <img src="../assets/images/barsearch/uniquebar02.png" alt="bar" />
+                    <img
+                      src="../assets/images/barsearch/uniquebar02.png"
+                      alt="bar"
+                    />
                   </div>
                   <div class="txt text-white">
                     <h4 class="fs-6 fs-md-4 my-3 my-md-6">貓下去敦北俱樂部</h4>
                     <div class="tags mb-3 mb-md-5 d-flex flex-wrap gap-3">
-                      <span class="tag">可供訂位</span><span class="tag">台北市</span>
+                      <span class="tag">可供訂位</span
+                      ><span class="tag">台北市</span>
                     </div>
                     <p class="fs-9 fs-md-6 mb-6 mb-md-11">
                       令人放鬆的餐館，供應麵食與台式牛排等在地美食，以及葡萄酒和啤酒。
                     </p>
-                    <div class="more text-primary-1 mt-auto d-flex gap-6 align-items-center">
+                    <div
+                      class="more text-primary-1 mt-auto d-flex gap-6 align-items-center"
+                    >
                       <a href="#" class="d-block fs-8 fs-md-5">查看更多</a>
                       <span class="material-symbols-outlined fs-md-4">
                         chevron_right
@@ -338,17 +427,23 @@
                 </div>
                 <div class="unique-bar-item d-flex flex-column">
                   <div class="pic">
-                    <img src="../assets/images/barsearch/uniquebar03.png" alt="bar" />
+                    <img
+                      src="../assets/images/barsearch/uniquebar03.png"
+                      alt="bar"
+                    />
                   </div>
                   <div class="txt text-white">
                     <h4 class="fs-6 fs-md-4 my-3 my-md-6">貓下去敦北俱樂部</h4>
                     <div class="tags mb-3 mb-md-5 d-flex flex-wrap gap-3">
-                      <span class="tag">可供訂位</span><span class="tag">台北市</span>
+                      <span class="tag">可供訂位</span
+                      ><span class="tag">台北市</span>
                     </div>
                     <p class="fs-9 fs-md-6 mb-6 mb-md-11">
                       令人放鬆的餐館，供應麵食與台式牛排等在地美食，以及葡萄酒和啤酒。
                     </p>
-                    <div class="more text-primary-1 mt-auto d-flex gap-6 align-items-center">
+                    <div
+                      class="more text-primary-1 mt-auto d-flex gap-6 align-items-center"
+                    >
                       <a href="#" class="d-block fs-8 fs-md-5">查看更多</a>
                       <span class="material-symbols-outlined fs-md-4">
                         chevron_right
@@ -359,7 +454,11 @@
               </div>
 
               <div class="btn-more text-primary-1 text-center">
-                <a href="#" class="d-inline-block fs-9 fs-md-6 py-2 py-md-6 px-3 px-10">了解更多特色酒吧</a>
+                <a
+                  href="#"
+                  class="d-inline-block fs-9 fs-md-6 py-2 py-md-6 px-3 px-10"
+                  >了解更多特色酒吧</a
+                >
               </div>
             </div>
           </div>
@@ -372,38 +471,64 @@
         <h3 class="fs-lg-3 fs-md-5 fs-8 text-center text-primary-1 pb-4">
           Latest Events Around You
         </h3>
-        <h3 class="fs-lg-2 fs-md-4 fs-7 text-center text-primary-1 pb-15">你周圍的最新活動</h3>
+        <h3 class="fs-lg-2 fs-md-4 fs-7 text-center text-primary-1 pb-15">
+          你周圍的最新活動
+        </h3>
         <div class="swiper mySwipe">
           <div class="swiper-wrapper w-75 m-auto">
             <div class="swiper-slide nearby-card me-12 text-start">
-              <img src="/assets/images/bar-nearby-1.jpg" alt="bar">
-              <div class="card-body d-flex py-12 px-10 flex-column justify-content-between">
+              <img src="/assets/images/bar-nearby-1.jpg" alt="bar" />
+              <div
+                class="card-body d-flex py-12 px-10 flex-column justify-content-between"
+              >
                 <h5 class="card-title fs-lg-3 text-neutral-1">Mono Mono</h5>
                 <div class="mt-auto">
-                  <a href="#" class="bg-primary-1 py-3 px-5 text-primary-4 mb-5">週五 9/13</a>
-                  <p class="card-text text-neutral-1 mb-11 fs-lg-6">TGIF!! 邀請世界知名 DJ Anderson和多位饒舌歌手一起迎接假日，還享限定優惠！</p>
-                  <a href="#" class="d-flex fs-5 text-primary-1 align-items-center">查看更多<span
-                      class="material-symbols-outlined fs-lg-5 inherit ps-4">
+                  <a href="#" class="bg-primary-1 py-3 px-5 text-primary-4 mb-5"
+                    >週五 9/13</a
+                  >
+                  <p class="card-text text-neutral-1 mb-11 fs-lg-6">
+                    TGIF!! 邀請世界知名 DJ
+                    Anderson和多位饒舌歌手一起迎接假日，還享限定優惠！
+                  </p>
+                  <a
+                    href="#"
+                    class="d-flex fs-5 text-primary-1 align-items-center"
+                    >查看更多<span
+                      class="material-symbols-outlined fs-lg-5 inherit ps-4"
+                    >
                       arrow_forward_ios
-                    </span></a>
+                    </span></a
+                  >
                 </div>
               </div>
             </div>
             <div class="swiper-slide nearby-card text-start">
-              <img src="/assets/images/bar-nearby-2.jpg" alt="bar">
-              <div class="card-body d-flex py-12 px-10 flex-column justify-content-between">
+              <img src="/assets/images/bar-nearby-2.jpg" alt="bar" />
+              <div
+                class="card-body d-flex py-12 px-10 flex-column justify-content-between"
+              >
                 <h5 class="card-title fs-lg-3 text-neutral-1">隱士餐酒館</h5>
                 <div class="mt-auto">
-                  <a href="#" class="bg-primary-1 py-3 px-5 text-primary-4 mb-5">週二 9/17</a>
-                  <p class="card-text text-neutral-1 mb-11 fs-lg-6">週二夜限定！來餐酒館享受特調雞尾酒買一送一，讓週中夜晚更愉快！</p>
-                  <a href="#" class="d-flex fs-5 text-primary-1 align-items-center">查看更多<span
-                      class="material-symbols-outlined fs-lg-5 inherit ps-4">
+                  <a href="#" class="bg-primary-1 py-3 px-5 text-primary-4 mb-5"
+                    >週二 9/17</a
+                  >
+                  <p class="card-text text-neutral-1 mb-11 fs-lg-6">
+                    週二夜限定！來餐酒館享受特調雞尾酒買一送一，讓週中夜晚更愉快！
+                  </p>
+                  <a
+                    href="#"
+                    class="d-flex fs-5 text-primary-1 align-items-center"
+                    >查看更多<span
+                      class="material-symbols-outlined fs-lg-5 inherit ps-4"
+                    >
                       arrow_forward_ios
-                    </span></a>
+                    </span></a
+                  >
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">Slid
+            <div class="swiper-slide">
+              Slid
               <div class="nearby-img-3"></div>
             </div>
           </div>
@@ -411,7 +536,6 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
-    </div>
     </div>
 
     <%- include('./layout/footer'); -%>
@@ -425,32 +549,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/barsearch.js"></script>
 
-    
-     
-
-      
-      <script>
-        // 周邊酒吧活動
-        const swiper = new Swiper(".nearby-event .mySwiper", {
-          loop: true,
-          slidesPerView: 'auto',
-          spaceBetween: 72,
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-        </script>
-
-      
-      
-
-
-
-
-    
+    <script>
+      // 周邊酒吧活動
+      const swiper = new Swiper(".mySwipe", {
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 72,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
-
