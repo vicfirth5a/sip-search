@@ -10,6 +10,7 @@
 @import "./helpers/mixins.scss";
 @import "../../node_modules/bootstrap";
 
+<<<<<<< HEAD
 
 $utilities: map-merge($utilities,
                 ("font-size": map-merge(map-get($utilities, "font-size"),
@@ -17,6 +18,20 @@ $utilities: map-merge($utilities,
                                 )),
                 ));
 
+=======
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+>>>>>>> 06735495e697e2a06518e7ea22b35fd72a90a4f4
 
 @import "bootstrap/scss/utilities/api";
 
@@ -30,6 +45,11 @@ $utilities: map-merge($utilities,
 
 @import "./pages/index.scss";
 @import "./pages/wine-content.scss";
+<<<<<<< HEAD
 @import "./pages/barsearch.scss";
 
 @import "/assets/scss/pages/recipessearch";
+=======
+@import "./pages/barsearch";
+@import "/assets/scss/pages/recipessearch";
+>>>>>>> 06735495e697e2a06518e7ea22b35fd72a90a4f4
