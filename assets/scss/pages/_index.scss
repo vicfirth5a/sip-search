@@ -6,6 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: -104px;
 
   &-content {
     margin: 0 auto;
@@ -123,6 +124,29 @@
     }
   }
 }
+@media (max-width: 992px) {
+  .banner-selector-input {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-selector-input {
+    .input-group {
+      .material-symbols-outlined {
+        font-size: 12px;
+      }
+    }
+
+    .form-control {
+      padding: 8px;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+  }
+}
 
 .search {
   margin-left: 24px;
@@ -138,6 +162,7 @@
         align-items: center;
         padding: 6px 8px;
         color: $primary-4;
+        cursor: pointer;
       }
 
       .items-close-btn {
@@ -159,7 +184,8 @@
 
   background-size: cover;
   background-position: center;
-  z-index: -2;
+  position: relative;
+  z-index: 1;
 
   .discover-container {
     padding: 48px 64px;
@@ -170,7 +196,7 @@
   .img-ctrl {
     position: relative;
     width: 50%;
-    height: 845px;
+    // height: 845px;
     border-radius: 300px 300px 0 0;
     background: transparent;
 
@@ -182,10 +208,8 @@
       left: 24px;
       top: 24px;
       border-radius: 300px 300px 0 0;
-      border: 10px solid transparent;
-      background: linear-gradient(black, white) padding-box,
-        linear-gradient(to bottom, #ffc93d, #b5650e) border-box;
-      z-index: 1;
+      border: 1px solid $primary-3;
+      z-index: 2;
     }
   }
 
@@ -197,8 +221,8 @@
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 563px;
-    height: 100%;
+    // max-width: 563px;
+    // height: 100%;
     border-radius: 300px 300px 0px 0px;
     object-fit: cover;
   }
@@ -206,6 +230,20 @@
   .discover-text {
     width: 50%;
     line-height: 1.2;
+
+    .btn-md {
+      max-width: 248px;
+      background: $primary-3;
+      display: flex;
+      justify-content: center;
+      border-width: 1px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
+
+      a {
+        font-size: 24px;
+      }
+    }
   }
 
   .discover-bar {
@@ -219,10 +257,45 @@
 
 @media (max-width: 767px) {
   .webinfo-1 {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    .discover-text {
+      .btn-md {
+        max-width: 114px;
+
+        a {
+          font-size: 12px;
+          padding: 8px 12px;
+
+          .material-symbols-outlined {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .webinfo-1 {
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      .discover-container {
+        padding: 16px;
+      }
+
+      .discover-cocktail {
+        padding-bottom: 40px;
+      }
+
+      .img-ctrl {
+        &::before {
+          top: 8px;
+          left: 8px;
+        }
+      }
+    }
   }
 }
+
 .btn-md {
   max-width: 248px;
   background: $primary-3;
@@ -248,11 +321,26 @@
 
     &-text {
       width: 597px;
-      background: transparent;
       border: 0.8px solid $primary-1;
+
+      .input-group-text {
+        background: transparent;
+        border: none;
+
+        .material-symbols-outlined {
+          font-size: 36px;
+          font-variation-settings: "FILL" 1;
+        }
+      }
+    }
+
+    .form-control {
+      border: none;
+      background: transparent;
 
       &::placeholder {
         color: $primary-1;
+        font-size: 24px;
       }
     }
 
@@ -263,6 +351,27 @@
       border: 1px solid $primary-3;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
       margin-left: 40px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .webinfo-2 {
+    .join-input {
+      width: 223px;
+      flex-wrap: wrap;
+
+      .form-control {
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &-btn {
+      padding: 8px 12px;
+      margin-left: 0;
+      margin-top: 16px;
     }
   }
 }
@@ -402,35 +511,35 @@ $x-large: 1200px;
         }
       }
     }
+  }
 
-    .pic {
-      width: 50%;
+  .pic {
+    width: 50%;
 
-      @include respond-to($large) {
-        width: auto;
-      }
+    @include respond-to($large) {
+      width: auto;
+    }
+  }
+}
+
+.arrow {
+  right: 48px;
+
+  a {
+    width: 80px;
+    height: 80px;
+
+    @include respond-to($large) {
+      width: 40px;
+      height: 40px;
     }
   }
 
-  .arrow {
-    right: 48px;
-
-    a {
-      width: 80px;
-      height: 80px;
-
-      @include respond-to($large) {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    .material-symbols-outlined {
-      // width: 40px;
-      // height: 40px;
-      @include respond-to($large) {
-        font-size: 20px;
-      }
+  .material-symbols-outlined {
+    // width: 40px;
+    // height: 40px;
+    @include respond-to($large) {
+      font-size: 20px;
     }
   }
 }

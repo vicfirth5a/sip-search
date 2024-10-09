@@ -22,6 +22,32 @@
   .my-180 {
     margin-top: 180px;
   }
+
+  .banner-rs {
+    .input-group {
+      max-width: 729px;
+      border: 1px solid $primary-1;
+      position: relative;
+      z-index: 3;
+
+      .form-control {
+        background-color: transparent;
+        padding: 24px;
+        border: none;
+        color: $primary-1;
+
+        &::placeholder {
+          color: $primary-2;
+          font-size: 24px;
+        }
+
+        &:focus {
+          background: transparent;
+          border-color: $primary-1;
+        }
+      }
+    }
+  }
 }
 .section-rs2 {
   .btn-outline-primary-3:hover {
@@ -49,13 +75,12 @@
     font-family: "Noto Sans TC";
   }
   .gradient-border {
-    border: 1px solid transparent; /* 設置為透明以便顯示漸層 */
-    border-image-source: linear-gradient(
-      180deg,
-      #ffc93d 0%,
-      #b5650e 100%
-    ); /* 設置漸層 */
-    border-image-slice: 1; /* 切片設置為 1，以便漸層完全顯示 */
+    border: 1px solid transparent;
+    /* 設置為透明以便顯示漸層 */
+    border-image-source: linear-gradient(180deg, #ffc93d 0%, #b5650e 100%);
+    /* 設置漸層 */
+    border-image-slice: 1;
+    /* 切片設置為 1，以便漸層完全顯示 */
   }
   .rsbg-custom {
     background: linear-gradient(
@@ -64,24 +89,31 @@
       rgba(0, 0, 0, 0) 34.72%
     );
   }
-}
+  .swiper {
+    position: relative;
+    width: 100%;
+    height: 80%;
+  }
 
-.swiper {
-  width: 100%;
-  height: 80%;
-}
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card-img1 {
+      border-top-left-radius: 50rem;
+      border-top-right-radius: 50rem;
+    }
+  }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .card-img1 {
-    border-top-left-radius: 50rem;
-    border-top-right-radius: 50rem;
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -129,5 +161,11 @@
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 2;
     }
+  }
+}
+
+.section-rs3 {
+  .custom-button-next {
+    display: none;
   }
 }
