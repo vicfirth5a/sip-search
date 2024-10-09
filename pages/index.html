@@ -731,7 +731,7 @@
               </li>
             </ul>
             <!-- 酒譜詳情暫存連結 -->
-            <a href="wine-content.html">
+            <a class="d-block" href="wine-content.html">
               <div class="event-btn d-flex justify-content-end align-items-center ">
                 <p class="fs-8 fs-md-5 me-6">查看更多</p>
                 <span class="material-symbols-outlined"> arrow_forward_ios </span>
@@ -861,72 +861,8 @@
     <%- include('./layout/footer'); -%>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-      <script>
-          const swiper_popular_recipe = new Swiper(".swiper-popular-recipe", {
-          direction: "horizontal",
-          slidesPerView: "auto",
-          // loop: true,
-          speed: 1200,
-          slidesOffsetBefore: 50,
-          spaceBetween: 20,
-          breakpoints: {
-            320: {
-              //当屏幕宽度大于等于320
-              slidesOffsetBefore: 50,
-            },
-            576: {
-              //当屏幕宽度大于等于320
-              slidesOffsetBefore: 100,
-            },
-            768: {
-              //当屏幕宽度大于等于768
-              slidesOffsetBefore: 200,
-              spaceBetween: 20,
-            },
-            1280: {
-              //当屏幕宽度大于等于1280
-              slidesOffsetBefore: 300,
-              spaceBetween: 72,
-            },
-          },
-
-          mousewheel: true,
-          mousewheel: {
-            releaseOnEdges: true,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-        
-
-        //酒吧區
-        const swiper_popular_bars = new Swiper(".swiper-popular-bars", {
-          // Optional parameters
-          loop: true,
-          speed: 2000,
-          effect: "fade",
-          fadeEffect: {
-            crossFade: true, // 同时淡入和淡出
-          },
-
-          // If we need pagination
-          // pagination: {
-          //   el: ".swiper-pagination",
-          // },
-
-          // Navigation arrows
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-
-          // And if we need scrollbar
-          // scrollbar: {
-          //   el: ".swiper-scrollbar",
-          // },
-        });
+      <script src="../assets/js/index.js">
+          
       </script>
 
       <script type="module" src="../main.js"></script>
