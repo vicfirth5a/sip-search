@@ -319,6 +319,7 @@ $neutral-2: rgba(255, 255, 255, 0.5);
 $neutral-3: #7f7973;
 $neutral-4: #000000;
 $neutral-5: #2e2828;
+$neutral-white: #fbfbfb;
 
 // scss-docs-end theme-color-variables
 
@@ -344,6 +345,7 @@ $theme-colors: (
   "neutral-3": $neutral-3,
   "neutral-4": $neutral-4,
   "neutral-5": $neutral-5,
+  "neutral-white": $neutral-white,
 ) !default;
 // scss-docs-end theme-colors-map
 

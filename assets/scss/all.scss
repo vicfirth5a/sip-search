@@ -7,6 +7,7 @@
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import "./utils/variables";
+@import "./helpers/mixins.scss";
 @import "../../node_modules/bootstrap";
 
 $utilities: map-merge(
@@ -33,4 +34,6 @@ $utilities: map-merge(
 @import "/assets/scss/components/components";
 
 @import "./pages/index.scss";
+@import "./pages/wine-content.scss";
+@import "./pages/barsearch";
 @import "/assets/scss/pages/recipessearch";
