@@ -155,13 +155,13 @@ $x-large: 1200px;
     padding: 40px 0;
   }
   .swiper {
-    width: 100%;
+    // width: 100%;
 
     .swiper-wrapper {
       .swiper-slide {
         // border: 1px solid red;
         margin: auto;
-        text-align: start;
+        // text-align: start;
         padding-top: 40px;
 
         @include respond-to($medium) {
@@ -173,6 +173,7 @@ $x-large: 1200px;
           background-size: cover;
           padding: 72px 40px 52px;
           max-width: 437px;
+          margin: auto;
 
           min-height: 692px;
           @include respond-to($medium) {
@@ -211,7 +212,7 @@ $x-large: 1200px;
 
         &:nth-child(odd) {
           .popularBarsItem {
-            margin-right: -100px;
+            // margin-right: -5px;
             @media (max-width: 1250px) {
               margin-right: 0;
             }
@@ -219,7 +220,7 @@ $x-large: 1200px;
         }
         &:nth-child(even) {
           .popularBarsItem {
-            margin-left: -100px;
+            // margin-left: -100px;
             @media (max-width: 1250px) {
               margin-left: 0;
             }
@@ -237,6 +238,7 @@ $x-large: 1200px;
       width: auto;
       height: auto;
     }
+
     .swiperButton {
       width: 80px;
       height: 80px;
