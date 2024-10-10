@@ -89,12 +89,11 @@
   }
 
   .rsbg-custom {
-    background: linear-gradient(
-      270deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0) 34.72%
-    );
+    background: linear-gradient(270deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 34.72%);
   }
+
   .swiper {
     position: relative;
     width: 100%;
@@ -109,6 +108,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .card-img1 {
       border-top-left-radius: 50rem;
       border-top-right-radius: 50rem;
@@ -141,6 +141,24 @@
     cursor: pointer;
   }
 }
+
+.custom-button-next {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.custom-button-next {
+  width: 72px;
+  height: 72px;
+  top: 40%;
+  left: 90%;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
 
 @media (max-width: 992px) {
   .section-rs3 {
