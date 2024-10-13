@@ -554,59 +554,8 @@ $x-large: 1200px;
 
 // 熱門酒吧
 
-.section-popular-bars {
-  color: $primary-1;
-
-  .main-title {
-    h2 {
-      @include respond-to($large) {
-        font-size: 20px;
-      }
-    }
-  }
-
-  .arrow {
-    right: 48px;
-
-    & a {
-      width: 80px;
-      height: 80px;
-
-      @include respond-to($large) {
-        width: 40px;
-        height: 40px;
-
-        .content {
-          padding: 96px 64px;
-
-          @include respond-to($large) {
-            padding: 64px 24px;
-          }
-
-          .txt-content {
-            div {
-              width: 50%;
-
-              @include respond-to($large) {
-                width: auto;
-              }
 
 
-            }
-          }
-        }
-
-        .material-symbols-outlined {
-
-          // width: 40px;
-          // height: 40px;
-          @include respond-to($large) {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-  }
 
   // 熱門酒吧
 
@@ -981,7 +930,6 @@ $x-large: 1200px;
       transition: 0.5s;
     }
 
-    <<<<<<< HEAD
+   
   }
 
-}
