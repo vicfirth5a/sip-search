@@ -1,3 +1,5 @@
+// 周圍最新活動
+
 .nearby-event {
 
   .swiper-slide {
@@ -8,12 +10,12 @@
   }
 
   .nearby-card {
-    width: 468px;
+    max-width: 468px;
     height: 924px;
 
     & img {
       position: absolute;
-      width: 468px;
+      max-width: 468px;
       height: 924px;
     }
 
@@ -25,13 +27,63 @@
 
     }
 
-
-
-
   }
 
 
+
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: auto;
+    height: auto;
+  }
+
+  /* 調整下一個按鈕的位置 */
+  .swiper-button-next {
+    right: -40px;
+    /* 將按鈕向右移動，確保它在容器外 */
+    top: 50%;
+    /* 垂直置中 */
+    transform: translateY(-50%);
+  }
+
+  /* 調整上一個按鈕的位置 */
+  .swiper-button-prev {
+    left: -40px;
+    /* 將按鈕向左移動，確保它在容器外 */
+    top: 50%;
+    /* 垂直置中 */
+    transform: translateY(-50%);
+  }
+
+
+
+  .swiperButton {
+    width: 80px;
+    height: 80px;
+    background-color: $primary-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    .material-symbols-outlined {
+      color: $primary-4;
+      font-size: 40px;
+    }
+  }
+
 }
+
 
 // 獨特酒吧
 $medium: 768px;
