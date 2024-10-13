@@ -239,7 +239,28 @@
 
 // 第三區 -推薦酒譜
 
-.special-list-btn {
+
+.special-list{
+ 
+  .card-container{
+      @media (max-width: 768px) {
+      height: 420px;
+  }
+}
+  .cardImg {
+    @media (max-width: 768px) {
+    max-width: 128px;
+    height: 190px;
+    margin: 24px 16px 24px 16px;
+    object-fit: cover;
+  }
+}
+
+&-card-bg {
+  background: $primary-4;
+}
+
+&-btn {
   color: $primary-1;
   &:hover {
     color: $primary-3;
@@ -249,8 +270,6 @@
   }
 }
 
-.special-list-card-bg {
-  background: $primary-4;
 }
 
 .scrollBar::-webkit-scrollbar {

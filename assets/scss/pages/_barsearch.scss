@@ -266,13 +266,13 @@ $x-large: 1200px;
   }
 
   .swiper {
-    width: 100%;
+    // width: 100%;
 
     .swiper-wrapper {
       .swiper-slide {
         // border: 1px solid red;
         margin: auto;
-        text-align: start;
+        // text-align: start;
         padding-top: 40px;
 
         @include respond-to($medium) {
@@ -284,6 +284,7 @@ $x-large: 1200px;
           background-size: cover;
           padding: 72px 40px 52px;
           max-width: 437px;
+          margin: auto;
 
           min-height: 692px;
 
@@ -331,8 +332,12 @@ $x-large: 1200px;
 
         &:nth-child(odd) {
           .popularBarsItem {
+<<<<<<< HEAD
+            // margin-right: -5px;
+=======
             margin-right: -100px;
 
+>>>>>>> 778500fd2a60b522d9698b2d2ba8f86588585489
             @media (max-width: 1250px) {
               margin-right: 0;
             }
@@ -341,8 +346,12 @@ $x-large: 1200px;
 
         &:nth-child(even) {
           .popularBarsItem {
+<<<<<<< HEAD
+            // margin-left: -100px;
+=======
             margin-left: -100px;
 
+>>>>>>> 778500fd2a60b522d9698b2d2ba8f86588585489
             @media (max-width: 1250px) {
               margin-left: 0;
             }

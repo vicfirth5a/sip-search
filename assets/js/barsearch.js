@@ -67,7 +67,7 @@ document.getElementById("addTagsBtn").addEventListener("click", function () {
 });
 
 // 熱門酒吧swiper
-let swiper = new Swiper(".popularBarsSwiper", {
+let popularBarsSwiper = new Swiper(".popularBarsSwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -84,8 +84,6 @@ let swiper = new Swiper(".popularBarsSwiper", {
     },
   },
 });
-
-
 
 // 周邊酒吧活動
 // const swiper = new Swiper(".mySwipe", {
