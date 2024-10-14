@@ -390,27 +390,71 @@ $x-large: 1200px;
   }
 }
 
+// 周圍最新活動
+
 .nearby-event {
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
+  .swiper-wrapper .swipe-slide {
+    margin: 0 auto;
   }
 
   .nearby-card {
-    width: 468px;
-    height: 924px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     & img {
       position: absolute;
-      width: 468px;
+      width: 437px;
       height: 924px;
+      object-fit: cover;
     }
 
     .card-body {
-      height: 100%;
+      width: 437px;
+      height: 924px;
       position: relative;
+    }
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: auto;
+    height: auto;
+  }
+
+  .swiper-button-next {
+    top: 50%;
+    /* 垂直置中 */
+    transform: translateY(-50%);
+  }
+
+  .swiper-button-prev {
+    top: 50%;
+    /* 垂直置中 */
+    transform: translateY(-50%);
+  }
+
+  .swiperButton {
+    width: 80px;
+    height: 80px;
+    background-color: $primary-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    .material-symbols-outlined {
+      color: $primary-4;
+      font-size: 40px;
     }
   }
 }
