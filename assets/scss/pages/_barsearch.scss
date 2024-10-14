@@ -1,39 +1,4 @@
-.nearby-event {
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nearby-card {
-    width: 468px;
-    height: 924px;
-
-    & img {
-      position: absolute;
-      width: 468px;
-      height: 924px;
-    }
-
-
-
-    .card-body {
-      height: 100%;
-      position: relative;
-
-    }
-
-
-
-
-  }
-
-
-}
-
-// 獨特酒吧
+//Chen變數
 $medium: 768px;
 $large: 992px;
 $x-large: 1200px;
@@ -44,6 +9,7 @@ $x-large: 1200px;
   }
 }
 
+// banner區塊
 .section-bar-search-banner {
   // border: 1px solid red;
   padding: 284px 0 100px;
@@ -63,7 +29,6 @@ $x-large: 1200px;
     }
 
     .main-content {
-
       // display: flex;
       // justify-content: center;
       .input-group {
@@ -78,7 +43,7 @@ $x-large: 1200px;
         }
 
         .form-control:focus,
-        .form-control:focus+.input-group-text {
+        .form-control:focus + .input-group-text {
           border-color: $primary-3;
           // box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* 藍色陰影效果 */
           box-shadow: none;
@@ -204,8 +169,9 @@ $x-large: 1200px;
   }
 }
 
+// 熱門酒吧top5
 .sectionPopularBars {
-  // border: 1px solid #a00;
+  border: 1px solid #a00;
   padding: 120px 0;
   color: $primary-1;
 
@@ -218,8 +184,8 @@ $x-large: 1200px;
 
     .swiper-wrapper {
       .swiper-slide {
-        // border: 1px solid red;
-        margin: auto;
+        border: 1px solid red;
+        // margin: auto;
         // text-align: start;
         padding-top: 40px;
 
@@ -280,12 +246,7 @@ $x-large: 1200px;
 
         &:nth-child(odd) {
           .popularBarsItem {
-<<<<<<< HEAD
-            // margin-right: -5px;
-=======
-            margin-right: -100px;
-
->>>>>>> 778500fd2a60b522d9698b2d2ba8f86588585489
+            // margin-right: -10px;
             @media (max-width: 1250px) {
               margin-right: 0;
             }
@@ -294,12 +255,7 @@ $x-large: 1200px;
 
         &:nth-child(even) {
           .popularBarsItem {
-<<<<<<< HEAD
             // margin-left: -100px;
-=======
-            margin-left: -100px;
-
->>>>>>> 778500fd2a60b522d9698b2d2ba8f86588585489
             @media (max-width: 1250px) {
               margin-left: 0;
             }
@@ -340,6 +296,7 @@ $x-large: 1200px;
   }
 }
 
+// 獨特酒吧
 .section-unique-bars {
   padding: 120px 0;
 
@@ -433,5 +390,57 @@ $x-large: 1200px;
         color: #fff !important;
       }
     }
+  }
+}
+
+//test
+.section-lastest-event {
+  .swiper {
+    position: relative;
+  }
+  .swiper-slide {
+    border: 1px solid blue;
+    .lastestEventItem {
+      color: #fff;
+      margin: auto;
+      min-height: 924px;
+      max-width: 468px;
+      background-position: center;
+      background-size: cover;
+      border: 1px solid red;
+      @include respond-to($large) {
+        max-width: 241px;
+        min-height: 454px;
+      }
+    }
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    .swiperButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+
+      .material-symbols-outlined {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+        color: #a00;
+      }
+    }
+  }
+  .swiper-button-next1013 {
+    right: 0;
   }
 }
