@@ -465,11 +465,17 @@ $x-large: 1200px;
     &:hover {
       background-color: #fff;
     }
+    .wind-card {
+      @include respond-to($large) {
+        max-height: 536px;
+      }
+    }
     img {
       max-width: 384px;
       max-height: 498px;
       @include respond-to($large) {
         max-width: 152px;
+        max-height: 200px;
       }
     }
     .txt {
