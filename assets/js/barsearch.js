@@ -84,33 +84,3 @@ let popularBarsSwiper = new Swiper(".popularBarsSwiper", {
     },
   },
 });
-
-let mySwiper1013 = new Swiper(".mySwiper1013", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop: true,
-  breakpoints: {
-    768: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    992: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-  },
-});
-// 周邊酒吧活動
-// const swiper = new Swiper(".mySwipe", {
-//   loop: true,
-//   slidesPerView: 'auto',
-//   spaceBetween: 72,
-//   slidesPerView: 2,
-//   slidesPerGroup: 2,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
