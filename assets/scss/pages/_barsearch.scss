@@ -1,40 +1,4 @@
-.nearby-event {
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nearby-card {
-    width: 468px;
-    height: 924px;
-
-    & img {
-      position: absolute;
-      width: 468px;
-      height: 924px;
-    }
-
-
-
-    .card-body {
-      height: 100%;
-      position: relative;
-
-    }
-
-
-
-
-  }
-
-
-}
-
-// 獨特酒吧
-$medium: 768px;
+//獨特酒吧 $medium: 768px;
 $large: 992px;
 $x-large: 1200px;
 
@@ -280,12 +244,8 @@ $x-large: 1200px;
 
         &:nth-child(odd) {
           .popularBarsItem {
-<<<<<<< HEAD
-            // margin-right: -5px;
-=======
             margin-right: -100px;
 
->>>>>>> 778500fd2a60b522d9698b2d2ba8f86588585489
             @media (max-width: 1250px) {
               margin-right: 0;
             }
@@ -294,12 +254,8 @@ $x-large: 1200px;
 
         &:nth-child(even) {
           .popularBarsItem {
-<<<<<<< HEAD
-            // margin-left: -100px;
-=======
             margin-left: -100px;
 
->>>>>>> 778500fd2a60b522d9698b2d2ba8f86588585489
             @media (max-width: 1250px) {
               margin-left: 0;
             }
@@ -434,4 +390,85 @@ $x-large: 1200px;
       }
     }
   }
+}
+
+// 周圍最新活動
+
+
+.nearby-event {
+  .swiper-wrapper .swipe-slide {
+    margin: 0 auto;
+  }
+
+  .nearby-card {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+
+      position: absolute;
+      width: 437px;
+      height: 924px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      width: 437px;
+      height: 924px;
+      position: relative;
+    }
+
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: auto;
+    height: auto;
+  }
+
+
+  .swiper-button-next {
+
+    top: 50%;
+    /* 垂直置中 */
+    transform: translateY(-50%);
+  }
+
+
+  .swiper-button-prev {
+
+    top: 50%;
+    /* 垂直置中 */
+    transform: translateY(-50%);
+  }
+
+
+
+  .swiperButton {
+    width: 80px;
+    height: 80px;
+    background-color: $primary-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    .material-symbols-outlined {
+      color: $primary-4;
+      font-size: 40px;
+    }
+  }
+
 }
