@@ -322,7 +322,6 @@
   background-position: center;
 
   .join-input {
-
     &-text {
       width: 597px;
       border: 0.8px solid $primary-1;
@@ -335,14 +334,11 @@
           font-size: 36px;
           font-variation-settings: "FILL" 1;
         }
-
-
       }
 
       .form-control {
         border: none;
         background: transparent;
-
 
         &::placeholder {
           color: $primary-1;
@@ -350,8 +346,6 @@
         }
       }
     }
-
-
 
     &-btn {
       color: $primary-1;
@@ -678,10 +672,6 @@ $x-large: 1200px;
     // color: $primary-4;
     // background-color: $primary-1;
     // transition: 0.5s;
-
-    .material-symbols-outlined {
-      // color: $primary-4;
-    }
   }
 }
 
