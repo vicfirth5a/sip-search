@@ -323,7 +323,6 @@
   background-position: center;
 
   .join-input {
-    padding-top: 48px;
 
     &-text {
       width: 597px;
@@ -337,18 +336,23 @@
           font-size: 36px;
           font-variation-settings: "FILL" 1;
         }
+
+
+      }
+
+      .form-control {
+        border: none;
+        background: transparent;
+
+
+        &::placeholder {
+          color: $primary-1;
+          font-size: 24px;
+        }
       }
     }
 
-    .form-control {
-      border: none;
-      background: transparent;
 
-      &::placeholder {
-        color: $primary-1;
-        font-size: 24px;
-      }
-    }
 
     &-btn {
       color: $primary-1;
@@ -363,6 +367,9 @@
 
 @media (max-width: 767px) {
   .webinfo-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     .join-input {
       width: 223px;
       flex-wrap: wrap;
@@ -372,12 +379,12 @@
           font-size: 12px;
         }
       }
-    }
 
-    &-btn {
-      padding: 8px 12px;
-      margin-left: 0;
-      margin-top: 16px;
+      &-btn {
+        padding: 8px 12px;
+        margin-left: 0;
+        margin-top: 16px;
+      }
     }
   }
 }

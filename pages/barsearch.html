@@ -363,8 +363,8 @@
     </section>
     <!-- 周圍酒吧活動 -->
     <div class="nearby-event bg-primary-4">
-      <div class="container py-15">
-        <div class="nearby-event-title mb-15">
+      <div class="container py-lg-15 py-10">
+        <div class="nearby-event-title mb-lg-15 mb-6">
           <h3 class="fs-lg-3 fs-md-5 fs-8 text-center text-primary-1 mb-4">
             Latest Events Around You
           </h3>
@@ -373,10 +373,9 @@
           </h3>
         </div>
         <div class="nearyby-event-swiper">
-          <div class="swiper mySwipe nearby-event-swipe">
+          <div class="swiper mySwipe nearby-event-swipe px-10">
             <div class="swiper-wrapper">
               <div class="swiper-slide nearby-card">
-
                 <img src="/assets/images/bar-nearby-1.jpg" alt="bar" />
                 <div class="card-body d-flex py-12 px-10 flex-column">
                   <h5 class="fs-lg-3 text-neutral-1">Mono Mono</h5>
@@ -391,7 +390,6 @@
                         arrow_forward_ios
                       </span></a>
                   </div>
-
                 </div>
               </div>
               <div class="swiper-slide nearby-card">
@@ -459,6 +457,26 @@
       </div>
     </div>
 
+    <!-- 加入會員 -->
+    <div class="bar-join-member">
+      <div class="container">
+        <h2 class="h3 text-primary-1 text-center fs-lg-1 fs-6 mb-lg-11 mb-6">
+          加入會員<br />解鎖每月專屬微醺體驗
+        </h2>
+        <div class="text-center d-flex justify-content-center join-input m-auto">
+          <div class="input-group join-input-text">
+            <span class="input-group-text">
+              <span class="material-symbols-outlined text-primary-1 fs-lg-4 fs-8">
+                mail
+              </span>
+            </span>
+            <input type="text" placeholder="請輸入您的 Email" class="form-control text-primary-1" />
+          </div>
+          <a href="#" class="join-input-btn fs-lg-6 fs-9 text-nowrap">加入會員</a>
+        </div>
+      </div>
+    </div>
+
     <!-- <%- include('./layout/footer'); -%> -->
 
     <script type="module" src="../main.js"></script>
@@ -473,6 +491,11 @@
         loop: true,
         slidesPerView: 2,
         slidesPerGroup: 2,
+        breakpoints: {
+          992: {
+            spaceBetween: 30,
+          }
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
