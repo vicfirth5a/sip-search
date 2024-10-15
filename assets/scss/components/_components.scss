@@ -1,3 +1,69 @@
+//首頁按鈕
+.btn-index {
+  font-size: 24px;
+  padding: 24px 40px;
+  @media (max-width: 992px) {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+.btn-index-primary1 {
+  color: $primary-1;
+  background-color: $primary-3;
+  transition: 0.5s;
+  &:hover {
+    color: $primary-3;
+    background-color: $primary-1;
+    .material-symbols-outlined {
+      color: $primary-3;
+    }
+  }
+}
+.btn-index-primaryl-light {
+  color: $primary-1;
+  background-color: $primary-3;
+  transition: 0.5s;
+  &:hover {
+    background-color: $primary-4;
+  }
+}
+.btn-index-primaryl-transparent {
+  color: $primary-1;
+  background-color: transparent;
+  border: 1px solid $primary-1;
+  transition: 0.5s;
+  &:hover {
+    background-color: $primary-3;
+  }
+}
+.wineBtn-outline {
+  color: $primary-3;
+  background-color: transparent;
+  border: 1px solid $primary-3;
+  transition: 0.5s;
+  &:hover {
+    background-color: $primary-1;
+    color: $primary-3;
+  }
+  &:active {
+    background-color: $primary-3;
+    color: $primary-1;
+  }
+}
+
+.cardBtn-primary-4 {
+  color: #fbfbfb;
+  background-color: $primary-4;
+  transition: 0.5s;
+  &:hover {
+    background-color: $neutral-3;
+    color: #fbfbfb;
+  }
+  &:active {
+    background-color: $primary-3;
+  }
+}
+
 // 酒譜卡片的十字架裝飾
 $container-size: 32px;
 $background-color: transparent;
@@ -90,11 +156,15 @@ $line-thickness: 1px;
   white-space: nowrap;
 }
 .cardBtn {
+  position: absolute;
+  bottom: 8%;
+  right: 15%;
   min-width: 40px;
   //   min-height: 44px;
   height: 44px;
   padding: 10px;
 }
+
 .cardBtn-b {
   min-width: 80px;
   height: 80px;
@@ -120,17 +190,19 @@ $line-thickness: 1px;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   backface-visibility: hidden;
 }
 
 .card {
   background-color: lightblue;
+  transform: translateY(0);
 }
 
 .card-hover {
   background-color: #fbfbfb;
   opacity: 0;
+  transform: translateY(150px);
 }
 .card-hoverImg {
   height: 180px;
@@ -139,10 +211,12 @@ $line-thickness: 1px;
 
 .card-container:hover .card {
   opacity: 0;
+  transform: translateY(-150px);
 }
 
 .card-container:hover .card-hover {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .cardImg-hover {

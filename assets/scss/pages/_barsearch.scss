@@ -1,4 +1,5 @@
-//獨特酒吧 $medium: 768px;
+// 定義變數
+$medium: 768px;
 $large: 992px;
 $x-large: 1200px;
 
@@ -8,6 +9,7 @@ $x-large: 1200px;
   }
 }
 
+// banner區塊
 .section-bar-search-banner {
   // border: 1px solid red;
   padding: 284px 0 100px;
@@ -27,7 +29,6 @@ $x-large: 1200px;
     }
 
     .main-content {
-
       // display: flex;
       // justify-content: center;
       .input-group {
@@ -42,7 +43,7 @@ $x-large: 1200px;
         }
 
         .form-control:focus,
-        .form-control:focus+.input-group-text {
+        .form-control:focus + .input-group-text {
           border-color: $primary-3;
           // box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* 藍色陰影效果 */
           box-shadow: none;
@@ -168,6 +169,7 @@ $x-large: 1200px;
   }
 }
 
+// 熱門酒吧top6
 .sectionPopularBars {
   // border: 1px solid #a00;
   padding: 120px 0;
@@ -183,7 +185,7 @@ $x-large: 1200px;
     .swiper-wrapper {
       .swiper-slide {
         // border: 1px solid red;
-        margin: auto;
+        // margin: auto;
         // text-align: start;
         padding-top: 40px;
 
@@ -244,8 +246,7 @@ $x-large: 1200px;
 
         &:nth-child(odd) {
           .popularBarsItem {
-            margin-right: -100px;
-
+            // margin-right: -10px;
             @media (max-width: 1250px) {
               margin-right: 0;
             }
@@ -254,8 +255,7 @@ $x-large: 1200px;
 
         &:nth-child(even) {
           .popularBarsItem {
-            margin-left: -100px;
-
+            // margin-left: -100px;
             @media (max-width: 1250px) {
               margin-left: 0;
             }
@@ -296,6 +296,7 @@ $x-large: 1200px;
   }
 }
 
+// 獨特酒吧
 .section-unique-bars {
   padding: 120px 0;
 
@@ -406,7 +407,6 @@ $x-large: 1200px;
     align-items: center;
 
     & img {
-
       position: absolute;
       width: 437px;
       height: 924px;
@@ -418,7 +418,6 @@ $x-large: 1200px;
       height: 924px;
       position: relative;
     }
-
   }
 
   .swiper-button-next:after,
@@ -432,23 +431,17 @@ $x-large: 1200px;
     height: auto;
   }
 
-
   .swiper-button-next {
-
     top: 50%;
     /* 垂直置中 */
     transform: translateY(-50%);
   }
-
 
   .swiper-button-prev {
-
     top: 50%;
     /* 垂直置中 */
     transform: translateY(-50%);
   }
-
-
 
   .swiperButton {
 
@@ -469,6 +462,7 @@ $x-large: 1200px;
       font-size: 40px;
     }
   }
+
 
 }
 
@@ -575,3 +569,4 @@ $x-large: 1200px;
 
   }
 }
+

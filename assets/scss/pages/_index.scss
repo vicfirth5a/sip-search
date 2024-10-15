@@ -8,7 +8,6 @@
   background-position: center;
   margin-top: -104px;
 
-
   &-content {
     margin: 0 auto;
     max-width: 1011px;
@@ -389,7 +388,6 @@
   }
 }
 
-
 //
 $medium: 768px;
 $large: 992px;
@@ -428,16 +426,13 @@ $x-large: 1200px;
     .wrap {
       width: 40px;
       height: 40px;
-
       @include respond-to($large) {
         width: 22px;
         height: 22px;
       }
-
       border-right: 1px solid $primary-4;
       border-bottom: 1px solid $primary-4;
       position: relative;
-
       &::before {
         content: "";
         display: block;
@@ -449,7 +444,6 @@ $x-large: 1200px;
         top: 0;
         left: 0;
         transform: translate(50%, 50%);
-
         @include respond-to($large) {
           width: 22px;
           height: 22px;
@@ -463,39 +457,40 @@ $x-large: 1200px;
   }
 
   .swiper-slide {
-    max-width: 1296px;
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
     font-size: 18px;
     background-color: $primary-1;
     transition: 0.5s;
     text-align: start;
-
     @include respond-to($x-large) {
       max-width: 960px;
     }
-
     @include respond-to($large) {
       max-width: 295px;
     }
-
     &:hover {
       background-color: #fff;
     }
-
-    img {
-      max-width: 384px;
-
+    .wind-card {
       @include respond-to($large) {
-        max-width: 152px;
+        max-height: 536px;
       }
     }
-
+    img {
+      max-width: 384px;
+      max-height: 498px;
+      @include respond-to($large) {
+        max-width: 152px;
+        max-height: 200px;
+      }
+    }
     .txt {
       width: 50%;
-
       @include respond-to($large) {
         width: auto;
       }
-
       .wine-name {
         h4 {
           @include respond-to($large) {
@@ -503,23 +498,18 @@ $x-large: 1200px;
           }
         }
       }
-
       .wine-tags {
         font-size: 20px;
-
         @include respond-to($large) {
           font-size: 10px;
         }
-
         span {
           display: flex;
           align-items: center;
         }
       }
-
       .wine-intro {
         font-size: 24px;
-
         @include respond-to($large) {
           font-size: 12px;
         }
@@ -529,40 +519,50 @@ $x-large: 1200px;
 
   .pic {
     width: 50%;
-
     @include respond-to($large) {
       width: auto;
     }
   }
 }
-
 .arrow {
   right: 48px;
 
-  a {
+  & a {
     width: 80px;
     height: 80px;
 
     @include respond-to($large) {
       width: 40px;
       height: 40px;
-    }
-  }
 
-  .material-symbols-outlined {
+      .content {
+        padding: 96px 64px;
 
-    // width: 40px;
-    // height: 40px;
-    @include respond-to($large) {
-      font-size: 20px;
+        @include respond-to($large) {
+          padding: 64px 24px;
+        }
+
+        .txt-content {
+          div {
+            width: 50%;
+
+            @include respond-to($large) {
+              width: auto;
+            }
+          }
+        }
+      }
+
+      .material-symbols-outlined {
+        // width: 40px;
+        // height: 40px;
+        @include respond-to($large) {
+          font-size: 20px;
+        }
+      }
     }
   }
 }
-
-// 熱門酒吧
-
-
-
 
 // 熱門酒吧
 
@@ -600,14 +600,13 @@ $x-large: 1200px;
   }
 
   .button-row {
-    margin-top: 72px;
+    margin-top: 20px;
     margin-bottom: 24px;
-
+    padding: 0 100px;
     @include respond-to($large) {
       margin-top: 24px;
       margin-bottom: 20px;
     }
-
     .swiper-button {
       display: block;
       position: relative;
@@ -622,17 +621,18 @@ $x-large: 1200px;
       display: flex;
       justify-content: center;
       align-items: center;
-
+      transition: 0.3s;
       @include respond-to($large) {
         width: 40px;
         height: 40px;
       }
+      &:hover {
+        background-color: $primary-3;
+      }
     }
-
     .swiper-button-prev::after,
     .swiper-button-next::after {
       display: none;
-      /* Hide default arrow icons */
     }
   }
 
@@ -640,61 +640,47 @@ $x-large: 1200px;
     min-height: 530px;
     display: flex;
     flex-direction: column;
-
+    padding: 0 100px;
     .swiper-wrapper {
       flex-grow: 1;
-
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
         height: auto;
         text-align: start;
       }
     }
-
     img {
       height: 100%;
       object-fit: cover;
     }
-
     .tag {
       width: fit-content;
       color: $primary-4;
       font-size: 24px;
       padding: 12px 24px;
       background-color: $primary-1;
-
       @include respond-to($large) {
         font-size: 10px;
         padding: 4px 8px;
       }
     }
-
     .bar-pic {
       filter: brightness(0.7);
     }
   }
 
   .btn-big {
-    padding: 24px 40px;
-    background-color: $primary-3;
-    font-size: 24px;
     transition: 0.5s;
-
     width: fit-content;
-
-    @include respond-to($large) {
-      padding: 8px 12px;
-      font-size: 12px;
-    }
   }
 
   .btn-big:hover {
-    color: $primary-4;
-    background-color: $primary-1;
-    transition: 0.5s;
+    // color: $primary-4;
+    // background-color: $primary-1;
+    // transition: 0.5s;
 
     .material-symbols-outlined {
-      color: $primary-4;
+      // color: $primary-4;
     }
   }
 }
@@ -727,10 +713,12 @@ $x-large: 1200px;
 
   &-bg {
     width: 476px;
-    background-image: linear-gradient(180.02deg,
+    background-image: linear-gradient(
+        180.02deg,
         rgba(0, 0, 0, 0.8) 0.01%,
         rgba(0, 0, 0, 0) 50.5%,
-        rgba(0, 0, 0, 0.8) 99.99%),
+        rgba(0, 0, 0, 0.8) 99.99%
+      ),
       url(../images/index-event-bg.png);
     //background-size: cover;
     background-size: 450% auto;
@@ -912,9 +900,11 @@ $x-large: 1200px;
   transition: 0.5s;
   color: var(--bs-primary-1);
   border: 1px solid;
-  border-image-source: linear-gradient(100.25deg,
-      #ffc93d 4.04%,
-      #b5650e 97.53%);
+  border-image-source: linear-gradient(
+    100.25deg,
+    #ffc93d 4.04%,
+    #b5650e 97.53%
+  );
   border-image-slice: 1; //圖像切片設置
   justify-content: center;
   align-items: center;
@@ -936,5 +926,4 @@ $x-large: 1200px;
     background: var(--bs-primary-4);
     transition: 0.5s;
   }
-
 }
