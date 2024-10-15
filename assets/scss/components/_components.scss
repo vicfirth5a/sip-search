@@ -31,6 +31,7 @@
   color: $primary-1;
   background-color: transparent;
   border: 1px solid $primary-1;
+  transition: 0.5s;
   &:hover {
     background-color: $primary-3;
   }
