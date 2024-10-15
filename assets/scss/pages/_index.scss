@@ -559,8 +559,6 @@ $x-large: 1200px;
 
 // 熱門酒吧
 
-// 熱門酒吧
-
 .section-popular-bars {
   color: $primary-1;
 
@@ -595,15 +593,13 @@ $x-large: 1200px;
   }
 
   .button-row {
-    margin-top: 72px;
+    margin-top: 20px;
     margin-bottom: 24px;
     padding: 0 100px;
-
     @include respond-to($large) {
       margin-top: 24px;
       margin-bottom: 20px;
     }
-
     .swiper-button {
       display: block;
       position: relative;
@@ -618,17 +614,18 @@ $x-large: 1200px;
       display: flex;
       justify-content: center;
       align-items: center;
-
+      transition: 0.3s;
       @include respond-to($large) {
         width: 40px;
         height: 40px;
       }
+      &:hover {
+        background-color: $primary-3;
+      }
     }
-
     .swiper-button-prev::after,
     .swiper-button-next::after {
       display: none;
-      /* Hide default arrow icons */
     }
   }
 
@@ -637,52 +634,37 @@ $x-large: 1200px;
     display: flex;
     flex-direction: column;
     padding: 0 100px;
-
     .swiper-wrapper {
       flex-grow: 1;
-
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
         height: auto;
         text-align: start;
       }
     }
-
     img {
       height: 100%;
       object-fit: cover;
     }
-
     .tag {
       width: fit-content;
       color: $primary-4;
       font-size: 24px;
       padding: 12px 24px;
       background-color: $primary-1;
-
       @include respond-to($large) {
         font-size: 10px;
         padding: 4px 8px;
       }
     }
-
     .bar-pic {
       filter: brightness(0.7);
     }
   }
 
   .btn-big {
-    // padding: 24px 40px;
-    // background-color: $primary-3;
-    // font-size: 24px;
     transition: 0.5s;
-
     width: fit-content;
-
-    // @include respond-to($large) {
-    //   padding: 8px 12px;
-    //   font-size: 12px;
-    // }
   }
 
   .btn-big:hover {
