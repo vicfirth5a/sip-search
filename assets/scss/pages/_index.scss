@@ -451,6 +451,7 @@ $x-large: 1200px;
 
   .swiper-slide {
     width: 100%;
+    height: auto;
     max-width: 1100px;
     font-size: 18px;
     background-color: $primary-1;
@@ -516,9 +517,6 @@ $x-large: 1200px;
     }
   }
 }
-
-// 熱門酒吧
-
 .arrow {
   right: 48px;
 
@@ -674,26 +672,26 @@ $x-large: 1200px;
   }
 
   .btn-big {
-    padding: 24px 40px;
-    background-color: $primary-3;
-    font-size: 24px;
+    // padding: 24px 40px;
+    // background-color: $primary-3;
+    // font-size: 24px;
     transition: 0.5s;
 
     width: fit-content;
 
-    @include respond-to($large) {
-      padding: 8px 12px;
-      font-size: 12px;
-    }
+    // @include respond-to($large) {
+    //   padding: 8px 12px;
+    //   font-size: 12px;
+    // }
   }
 
   .btn-big:hover {
-    color: $primary-4;
-    background-color: $primary-1;
-    transition: 0.5s;
+    // color: $primary-4;
+    // background-color: $primary-1;
+    // transition: 0.5s;
 
     .material-symbols-outlined {
-      color: $primary-4;
+      // color: $primary-4;
     }
   }
 }
