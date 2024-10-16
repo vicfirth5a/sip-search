@@ -1,5 +1,11 @@
 @import "../base/font.scss";
 
+*,
+*::after,
+*::before {
+  outline: 1px solid white;
+}
+
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url(/assets/images/index-banner.png);
@@ -16,7 +22,7 @@
   }
 
   &-title {
-    margin: 0 auto;
+
     font-size: 72px;
     padding-bottom: 48px;
     text-align: center;
@@ -24,43 +30,35 @@
   }
 
   &-btn {
-    background: transparent;
-    color: $primary-1;
 
     &:focus {
-      background: $primary-3;
+      background: $primary-4;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
     }
 
-    .material-symbols-outlined {
-      font-size: 24px;
-    }
-
-    @media (max-width: 767px) {
-      .banner {
-        &-content {
-          padding-top: 160px;
-          padding-bottom: 112px;
-          max-width: 351px;
-        }
-
-        &-title {
-          max-width: 253px;
-          font-size: 24px;
-          padding-bottom: 24px;
-        }
-
-        &-btn {
-          font-size: 12px;
-          padding: 8px 12px;
-        }
-      }
-    }
   }
 
-  &-btn {
-    font-size: 12px;
-    padding: 8px 12px;
+
+}
+
+@media (max-width: 767px) {
+  .banner {
+    &-content {
+      padding-top: 160px;
+      padding-bottom: 112px;
+      max-width: 351px;
+    }
+
+    &-title {
+      max-width: 253px;
+      font-size: 24px;
+      padding-bottom: 24px;
+    }
+
+    &-btn {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
   }
 }
 
@@ -92,10 +90,11 @@
     padding: 24px;
     border: none;
     color: $primary-1;
+    // font-size: 24px;
 
     &::placeholder {
       color: $primary-2;
-      font-size: 24px;
+      // font-size: 24px;
     }
 
     &:focus {
@@ -238,16 +237,18 @@
 
     .btn-md {
       max-width: 248px;
-      background: $primary-3;
+      // background: $primary-3;
       display: flex;
       justify-content: center;
-      border-width: 1px;
+      border-width: 2px;
       border-style: solid;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
 
       a {
-        font-size: 24px;
+        width: 248px;
+        // font-size: 24px;
       }
+
     }
   }
 
@@ -260,15 +261,15 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .webinfo-1 {
     .discover-text {
       .btn-md {
-        max-width: 114px;
+        width: 114px;
 
         a {
-          font-size: 12px;
-          padding: 8px 12px;
+          // font-size: 12px;
+          // padding: 8px 12px;
 
           .material-symbols-outlined {
             font-size: 12px;
@@ -301,16 +302,16 @@
   }
 }
 
-.btn-md {
-  max-width: 248px;
-  background: $primary-3;
-  display: flex;
-  justify-content: center;
-  border-width: 1px;
-  border-style: solid;
+// .btn-md {
+//   max-width: 248px;
+//   background: $primary-3;
+//   display: flex;
+//   justify-content: center;
+//   border-width: 1px;
+//   border-style: solid;
 
-  border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
-}
+//   border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
+// }
 
 .webinfo-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
@@ -426,13 +427,16 @@ $x-large: 1200px;
     .wrap {
       width: 40px;
       height: 40px;
+
       @include respond-to($large) {
         width: 22px;
         height: 22px;
       }
+
       border-right: 1px solid $primary-4;
       border-bottom: 1px solid $primary-4;
       position: relative;
+
       &::before {
         content: "";
         display: block;
@@ -444,6 +448,7 @@ $x-large: 1200px;
         top: 0;
         left: 0;
         transform: translate(50%, 50%);
+
         @include respond-to($large) {
           width: 22px;
           height: 22px;
@@ -464,33 +469,42 @@ $x-large: 1200px;
     background-color: $primary-1;
     transition: 0.5s;
     text-align: start;
+
     @include respond-to($x-large) {
       max-width: 960px;
     }
+
     @include respond-to($large) {
       max-width: 295px;
     }
+
     &:hover {
       background-color: #fff;
     }
+
     .wind-card {
       @include respond-to($large) {
         max-height: 536px;
       }
     }
+
     img {
       max-width: 384px;
       max-height: 498px;
+
       @include respond-to($large) {
         max-width: 152px;
         max-height: 200px;
       }
     }
+
     .txt {
       width: 50%;
+
       @include respond-to($large) {
         width: auto;
       }
+
       .wine-name {
         h4 {
           @include respond-to($large) {
@@ -498,18 +512,23 @@ $x-large: 1200px;
           }
         }
       }
+
       .wine-tags {
         font-size: 20px;
+
         @include respond-to($large) {
           font-size: 10px;
         }
+
         span {
           display: flex;
           align-items: center;
         }
       }
+
       .wine-intro {
         font-size: 24px;
+
         @include respond-to($large) {
           font-size: 12px;
         }
@@ -519,11 +538,13 @@ $x-large: 1200px;
 
   .pic {
     width: 50%;
+
     @include respond-to($large) {
       width: auto;
     }
   }
 }
+
 .arrow {
   right: 48px;
 
@@ -554,6 +575,7 @@ $x-large: 1200px;
       }
 
       .material-symbols-outlined {
+
         // width: 40px;
         // height: 40px;
         @include respond-to($large) {
@@ -603,10 +625,12 @@ $x-large: 1200px;
     margin-top: 20px;
     margin-bottom: 24px;
     padding: 0 100px;
+
     @include respond-to($large) {
       margin-top: 24px;
       margin-bottom: 20px;
     }
+
     .swiper-button {
       display: block;
       position: relative;
@@ -622,14 +646,17 @@ $x-large: 1200px;
       justify-content: center;
       align-items: center;
       transition: 0.3s;
+
       @include respond-to($large) {
         width: 40px;
         height: 40px;
       }
+
       &:hover {
         background-color: $primary-3;
       }
     }
+
     .swiper-button-prev::after,
     .swiper-button-next::after {
       display: none;
@@ -641,29 +668,35 @@ $x-large: 1200px;
     display: flex;
     flex-direction: column;
     padding: 0 100px;
+
     .swiper-wrapper {
       flex-grow: 1;
+
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
         height: auto;
         text-align: start;
       }
     }
+
     img {
       height: 100%;
       object-fit: cover;
     }
+
     .tag {
       width: fit-content;
       color: $primary-4;
       font-size: 24px;
       padding: 12px 24px;
       background-color: $primary-1;
+
       @include respond-to($large) {
         font-size: 10px;
         padding: 4px 8px;
       }
     }
+
     .bar-pic {
       filter: brightness(0.7);
     }
@@ -713,12 +746,10 @@ $x-large: 1200px;
 
   &-bg {
     width: 476px;
-    background-image: linear-gradient(
-        180.02deg,
+    background-image: linear-gradient(180.02deg,
         rgba(0, 0, 0, 0.8) 0.01%,
         rgba(0, 0, 0, 0) 50.5%,
-        rgba(0, 0, 0, 0.8) 99.99%
-      ),
+        rgba(0, 0, 0, 0.8) 99.99%),
       url(../images/index-event-bg.png);
     //background-size: cover;
     background-size: 450% auto;
@@ -900,11 +931,9 @@ $x-large: 1200px;
   transition: 0.5s;
   color: var(--bs-primary-1);
   border: 1px solid;
-  border-image-source: linear-gradient(
-    100.25deg,
-    #ffc93d 4.04%,
-    #b5650e 97.53%
-  );
+  border-image-source: linear-gradient(100.25deg,
+      #ffc93d 4.04%,
+      #b5650e 97.53%);
   border-image-slice: 1; //圖像切片設置
   justify-content: center;
   align-items: center;
