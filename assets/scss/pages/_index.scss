@@ -420,13 +420,13 @@ $x-large: 1200px;
     .wrap {
       width: 40px;
       height: 40px;
+      border-right: 1px solid $primary-4;
+      border-bottom: 1px solid $primary-4;
+      position: relative;
       @include respond-to($large) {
         width: 22px;
         height: 22px;
       }
-      border-right: 1px solid $primary-4;
-      border-bottom: 1px solid $primary-4;
-      position: relative;
       &::before {
         content: "";
         display: block;
@@ -457,7 +457,6 @@ $x-large: 1200px;
     font-size: 18px;
     background-color: $primary-1;
     transition: 0.5s;
-    text-align: start;
     @include respond-to($x-large) {
       max-width: 960px;
     }
@@ -467,11 +466,11 @@ $x-large: 1200px;
     &:hover {
       background-color: #fff;
     }
-    .wind-card {
-      @include respond-to($large) {
-        max-height: 536px;
-      }
-    }
+    // .wind-card {
+    //   @include respond-to($large) {
+    //     max-height: 536px;
+    //   }
+    // }
     img {
       max-width: 384px;
       max-height: 498px;
@@ -520,39 +519,39 @@ $x-large: 1200px;
 }
 .arrow {
   right: 48px;
-
   & a {
     width: 80px;
     height: 80px;
-
+    background-color: $primary-4;
+    transition: 0.4s;
     @include respond-to($large) {
       width: 40px;
       height: 40px;
+      // .content {
+      //   padding: 96px 64px;
 
-      .content {
-        padding: 96px 64px;
+      //   @include respond-to($large) {
+      //     padding: 64px 24px;
+      //   }
 
-        @include respond-to($large) {
-          padding: 64px 24px;
-        }
+      //   .txt-content {
+      //     div {
+      //       width: 50%;
 
-        .txt-content {
-          div {
-            width: 50%;
-
-            @include respond-to($large) {
-              width: auto;
-            }
-          }
-        }
-      }
-
-      .material-symbols-outlined {
-        // width: 40px;
-        // height: 40px;
-        @include respond-to($large) {
-          font-size: 20px;
-        }
+      //       @include respond-to($large) {
+      //         width: auto;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+    &:hover {
+      background-color: $primary-3;
+    }
+    .material-symbols-outlined {
+      font-size: 40px;
+      @include respond-to($large) {
+        font-size: 20px;
       }
     }
   }
@@ -562,7 +561,6 @@ $x-large: 1200px;
 
 .section-popular-bars {
   color: $primary-1;
-
   .main-title {
     h2 {
       @include respond-to($large) {
@@ -570,7 +568,6 @@ $x-large: 1200px;
       }
     }
   }
-
   .content {
     padding: 96px 64px;
 
@@ -588,15 +585,13 @@ $x-large: 1200px;
       }
     }
   }
-
   .material-symbols-outlined {
     color: $primary-1;
   }
-
   .button-row {
     margin-top: 20px;
     margin-bottom: 24px;
-    padding: 0 100px;
+    // padding: 0 100px;
     @include respond-to($large) {
       margin-top: 24px;
       margin-bottom: 20px;
@@ -632,11 +627,14 @@ $x-large: 1200px;
 
   .swiper {
     min-height: 530px;
+    // max-height: 720px;
+    // height: 700px;
     display: flex;
     flex-direction: column;
-    padding: 0 100px;
+    // padding: 0 100px;
     .swiper-wrapper {
       flex-grow: 1;
+      height: auto;
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
         height: auto;
