@@ -67,20 +67,20 @@ document.getElementById("addTagsBtn").addEventListener("click", function () {
 });
 
 // 熱門酒吧swiper
-let popularBarsSwiper = new Swiper(".popularBarsSwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop: true,
-  breakpoints: {
-    768: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    992: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-  },
-});
+// let popularBarsSwiper = new Swiper(".popularBarsSwiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   loop: true,
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 1,
+//       slidesPerGroup: 1,
+//     },
+//     992: {
+//       slidesPerView: 2,
+//       slidesPerGroup: 2,
+//     },
+//   },
+// });
