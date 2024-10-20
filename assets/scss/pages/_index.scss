@@ -908,3 +908,75 @@ $x-large: 1200px;
     transition: 0.5s;
   }
 }
+
+//彈出視窗
+.custom-modal-width {
+  max-width: 700px;
+}
+.modal-border-primary-1 {
+  border: 1px solid $primary-1;
+  margin: 40px;
+}
+.modalImg {
+  height: 124px;
+  object-fit: contain;
+}
+
+.decoration {
+  margin-top: -16px;
+  margin-left: -16px;
+  .wrap-1 {
+    width: 40px;
+    height: 40px;
+    @include respond-to($large) {
+      width: 22px;
+      height: 22px;
+    }
+    border-right: 1px solid $primary-1;
+    border-bottom: 1px solid $primary-1;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-left: 1px solid $primary-1;
+      border-top: 1px solid $primary-1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, 50%);
+      @include respond-to($large) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  .wrap-2 {
+    width: 40px;
+    height: 40px;
+    @include respond-to($large) {
+      width: 22px;
+      height: 22px;
+    }
+    border-right: 1px solid $primary-1;
+    border-bottom: 1px solid $primary-1;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 36px;
+      border-left: 1px solid $primary-1;
+      border-top: 1px solid $primary-1;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(50%, 50%);
+      @include respond-to($large) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
