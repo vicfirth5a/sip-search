@@ -24,7 +24,7 @@
     <%- include('./layout/header'); -%>
 
     <!-- 彈出視窗 -->
-    <!-- Age Verification Modal -->
+
     <div
       class="modal fade"
       id="ageVerificationModal"
@@ -34,21 +34,43 @@
       data-bs-backdrop="static"
       data-bs-keyboard="false"
     >
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered custom-modal-width">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="ageVerificationModalLabel">年齡確認</h5>
-          </div>
-          <div class="modal-body">
-            <p>您是否已年滿18歲？</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success" id="btnYes">
-              是，我已滿18歲
-            </button>
-            <button type="button" class="btn btn-danger" id="btnNo">
-              否，我未滿18歲
-            </button>
+          <div class="modal-body modal-border-primary-1">
+            <div class="decoration">
+              <div class="wrap-1"></div>
+            </div>
+            <img
+              class="modalImg mt-lg-9 mb-lg-12"
+              src="/assets/images/image-sip&search chi.png"
+              alt="sip&search"
+            />
+            <div class="text-center mb-lg-13">
+              <h5 class="text-primary-1 mb-lg-6" id="ageVerificationModalLabel">
+                請問您是否已年滿18歲？
+              </h5>
+              <p class="text-primary-1 fs-lg-6">未滿18歲禁止飲酒</p>
+              <p class="text-primary-1 fs-lg-6">禁止酒駕</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button
+                type="button"
+                class="btn btn-index-primary1 fs-lg-6 py-lg-6 px-lg-9 mb-lg-6"
+                id="btnYes"
+              >
+                是，我已滿18歲
+              </button>
+              <button
+                type="button"
+                class="btn btn-index-primaryl-transparent fs-lg-6 py-lg-6 px-lg-9"
+                id="btnNo"
+              >
+                否，我未滿18歲
+              </button>
+            </div>
+            <div class="decoration">
+              <div class="wrap-2 ms-auto"></div>
+            </div>
           </div>
         </div>
       </div>

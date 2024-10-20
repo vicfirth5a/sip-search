@@ -74,7 +74,7 @@ const swiper_popular_bars = new Swiper(".swiper-popular-bars", {
   // 當用戶點擊 "是" 按鈕時，允許訪問網站
   $('#btnYes').click(function() {
       $('#ageVerificationModal').modal('hide');
-      window.location.href = 'https://www.yourwebsite.com'; // 替換為你的網站首頁
+      window.location.href = '#'; // 替換為你的網站首頁
   });
 
   // 當用戶點擊 "否" 按鈕時，重定向到其他網站
