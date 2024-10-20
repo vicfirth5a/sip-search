@@ -322,8 +322,6 @@
   background-position: center;
 
   .join-input {
-    padding-top: 48px;
-
     &-text {
       width: 597px;
       border: 0.8px solid $primary-1;
@@ -337,15 +335,15 @@
           font-variation-settings: "FILL" 1;
         }
       }
-    }
 
-    .form-control {
-      border: none;
-      background: transparent;
+      .form-control {
+        border: none;
+        background: transparent;
 
-      &::placeholder {
-        color: $primary-1;
-        font-size: 24px;
+        &::placeholder {
+          color: $primary-1;
+          font-size: 24px;
+        }
       }
     }
 
@@ -362,6 +360,9 @@
 
 @media (max-width: 767px) {
   .webinfo-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     .join-input {
       width: 223px;
       flex-wrap: wrap;
@@ -371,12 +372,12 @@
           font-size: 12px;
         }
       }
-    }
 
-    &-btn {
-      padding: 8px 12px;
-      margin-left: 0;
-      margin-top: 16px;
+      &-btn {
+        padding: 8px 12px;
+        margin-left: 0;
+        margin-top: 16px;
+      }
     }
   }
 }
@@ -666,16 +667,6 @@ $x-large: 1200px;
     transition: 0.5s;
     width: fit-content;
   }
-
-  // .btn-big:hover {
-  // color: $primary-4;
-  // background-color: $primary-1;
-  // transition: 0.5s;
-
-  // .material-symbols-outlined {
-  // color: $primary-4;
-  // }
-  // }
 }
 
 //活動
