@@ -3,135 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>about</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <section
-      class="section section-bar-search-banner text-center text-primary-1"
-      style="
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.6)
-          ),
-          url(../assets/images/barsearch/bar-search-banner.png);
-      "
-    >
-      <div class="container">
-        <div class="main-title mb-6 mb-md-11">
-          <h1 class="fs-6 fs-md-1">尋找你周圍最棒的酒吧</h1>
-        </div>
-        <div class="main-content text-primary-1">
-          <div class="input-group mx-auto mb-5">
-            <input
-              type="text"
-              class="form-control p-2 p-md-6 search-input"
-              placeholder="立即搜尋"
-              aria-label="Search"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            />
-            <span
-              class="input-group-text material-symbols-outlined fs-8 fs-md-5"
-            >
-              search
-            </span>
+    <div class="section-ab1">
+      <div class="banner">
+        <div class="container ps-10">
+          <div class="about-content">
+            <h2 class="fs-lg-2 text-end text-primary-1">關於我們</h2>
           </div>
-          <div id="selected-tags" class="d-flex flex-wrap mx-auto"></div>
-        </div>
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  你想找哪兒的酒吧
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-primary-1">
-                <div class="region mb-6">
-                  <div class="area text-start mb-5">北部</div>
-                  <div class="city-list">
-                    <span class="city-item">台北市</span>
-                    <span class="city-item">新北市</span>
-                    <span class="city-item">基隆市</span>
-                    <span class="city-item">桃園市</span>
-                    <span class="city-item">新竹市</span>
-                    <span class="city-item">新竹縣</span>
-                  </div>
-                </div>
-                <div class="region mb-6">
-                  <div class="area text-start mb-5">中南部</div>
-                  <div class="city-list">
-                    <span class="city-item">台中市</span>
-                    <span class="city-item">苗栗縣</span>
-                    <span class="city-item">彰化縣</span>
-                    <span class="city-item">南投縣</span>
-                    <span class="city-item">雲林縣</span>
-                    <span class="city-item">台南市</span>
-                    <span class="city-item">高雄市</span>
-                    <span class="city-item">嘉義市</span>
-                    <span class="city-item">屏東縣</span>
-                  </div>
-                </div>
-                <div class="region mb-6">
-                  <div class="area text-start mb-5">東部</div>
-                  <div class="city-list">
-                    <span class="city-item">宜蘭縣</span>
-                    <span class="city-item">花蓮縣</span>
-                    <span class="city-item">台東縣</span>
-                  </div>
-                </div>
-                <div class="region mb-6">
-                  <div class="area text-start mb-5">其他</div>
-                  <div class="other-list">
-                    <span class="other-item">可訂位</span>
-                    <span class="other-item">2~3人</span>
-                    <span class="other-item">4~6人</span>
-                    <span class="other-item">6人以上</span>
-                    <span class="other-item">有包廂</span>
-                    <span class="other-item">停車場</span>
-                    <span class="other-item">可刷卡</span>
-                    <span class="other-item">不限時</span>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-light fs-7 rounded-pill"
-                  data-bs-dismiss="modal"
-                >
-                  關閉
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-outline-light fs-7 rounded-pill"
-                  data-bs-dismiss="modal"
-                  id="addTagsBtn"
-                >
-                  儲存變更
-                </button>
-              </div>
+          <div class="pb-lg-13">
+            <p class="text-primary-1 fs-lg-6">「sip&search 微醺酒吧」</p>
+            <p class="text-primary-1 fs-lg-7">
+              是您探索調酒與酒吧的最佳夥伴。在這裡,您可以輕鬆搜尋豐富的酒譜,無論是簡單的家常調酒,還是精緻的專業配方,我們應有盡有。
+            </p>
+            <p class="text-primary-1 fs-lg-7">
+              同時,我們幫助您發現身邊的特色酒吧,無論在哪裡,都能找到屬於自己的微醺角落。
+            </p>
+            <div class="mt-lg-12 fw-bold">
+              <p class="text-primary-1 fs-lg-6">
+                探索風味,尋找微醺,讓每一杯酒都成為您的故事。
+              </p>
+            </div>
+            <div class="mt-lg-12">
+              <button
+                class="btn btn-index-primary1 fs-lg-6 py-lg-3 px-lg-7 mb-lg-6"
+              >
+                加入我們
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="section-ab2 mb-lg-13">
+      <div class="container">
+        <div class="aboutText mt-lg-13 mb-lg-13">
+          <h2 class="fw-bold text-primary-1 text-center mb-6 fs-7 fs-lg-2">
+            一起共享，分享體驗
+          </h2>
+        </div>
+        <div class="aboutContent eng-font">
+          <div class="counter-container">
+            <span class="material-symbols-outlined fs-1"> account_circle </span>
+            <div class="d-flex">
+              <div class="counter" data-target="3000">3000</div>
+              <span class="fs-3">+</span>
+            </div>
+            <span class="fs-6 fw-bold">會員數</span>
+          </div>
+          <div class="counter-container">
+            <span class="material-symbols-outlined fs-1"> wine_bar </span>
+            <div class="d-flex">
+              <div class="counter" data-target="200">200</div>
+              <span class="fs-3">+</span>
+            </div>
+            <span class="fs-6 fw-bold">酒譜</span>
+          </div>
+          <div class="counter-container">
+            <span class="material-symbols-outlined fs-1"> restaurant </span>
+            <div class="d-flex">
+              <div class="counter" data-target="500">500</div>
+              <span class="fs-3">+</span>
+            </div>
+            <span class="fs-6 fw-bold">酒吧</span>
+          </div>
+          <div class="counter-container">
+            <span class="material-symbols-outlined fs-1"> nightlife </span>
+            <div class="d-flex">
+              <div class="counter" data-target="100">100+</div>
+              <span class="fs-3">+</span>
+            </div>
+            <span class="fs-6 fw-bold">特色活動</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
