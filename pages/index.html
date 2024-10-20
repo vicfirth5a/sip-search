@@ -23,6 +23,58 @@
   <body>
     <%- include('./layout/header'); -%>
 
+    <!-- 彈出視窗 -->
+    <div
+      class="modal fade"
+      id="ageVerificationModal"
+      tabindex="-1"
+      aria-labelledby="ageVerificationModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered custom-modal-width">
+        <div class="modal-content">
+          <div class="modal-body modal-border-primary-1">
+            <div class="decoration">
+              <div class="wrap-1"></div>
+            </div>
+            <img
+              class="modalImg mt-lg-9 mb-lg-12"
+              src="/assets/images/image-sip&search chi.png"
+              alt="sip&search"
+            />
+            <div class="text-center mb-lg-13">
+              <h5 class="text-primary-1 mb-lg-6" id="ageVerificationModalLabel">
+                請問您是否已年滿18歲？
+              </h5>
+              <p class="text-primary-1 fs-lg-6">未滿18歲禁止飲酒</p>
+              <p class="text-primary-1 fs-lg-6">禁止酒駕</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button
+                type="button"
+                class="btn btn-index-primary1 fs-lg-6 py-lg-6 px-lg-9 mb-lg-6"
+                id="btnYes"
+              >
+                是，我已滿18歲
+              </button>
+              <button
+                type="button"
+                class="btn btn-index-primaryl-transparent fs-lg-6 py-lg-6 px-lg-9"
+                id="btnNo"
+              >
+                否，我未滿18歲
+              </button>
+            </div>
+            <div class="decoration">
+              <div class="wrap-2 ms-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 第一區 -->
     <div class="banner">
       <div class="container">
@@ -1499,6 +1551,8 @@
 
     <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
