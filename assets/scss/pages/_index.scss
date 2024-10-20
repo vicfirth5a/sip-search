@@ -570,15 +570,12 @@ $x-large: 1200px;
   }
   .content {
     padding: 96px 64px;
-
     @include respond-to($large) {
       padding: 64px 24px;
     }
-
     .txt-content {
       div {
         width: 50%;
-
         @include respond-to($large) {
           width: auto;
         }
@@ -626,9 +623,7 @@ $x-large: 1200px;
   }
 
   .swiper {
-    min-height: 530px;
-    // max-height: 720px;
-    // height: 700px;
+    // min-height: 530px;
     display: flex;
     flex-direction: column;
     // padding: 0 100px;
@@ -637,8 +632,12 @@ $x-large: 1200px;
       height: auto;
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
-        height: auto;
+        height: 800px;
         text-align: start;
+        @include respond-to($large) {
+          height: auto;
+          min-height: 530px;
+        }
       }
     }
     img {
