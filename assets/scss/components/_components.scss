@@ -305,7 +305,8 @@ $line-thickness: 1px;
 
 //酒吧搜尋頁標籤
 .sectionPopularBars .tag,
-.section-unique-bars .tag {
+.section-unique-bars .tag,
+.section-barContent .tag {
   padding: 12px 24px;
   font-size: 24px;
   border-radius: 1000px;
