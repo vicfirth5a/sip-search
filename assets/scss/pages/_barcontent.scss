@@ -1,0 +1,22 @@
+// 定義變數
+$medium: 768px;
+$large: 992px;
+$x-large: 1200px;
+
+@mixin respond-to($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+.section-breadcrumb {
+  background-color: $dark-brown;
+  padding: 0;
+  margin: 64px 0;
+  @include respond-to($medium) {
+    margin: 40px 0;
+  }
+  .breadcrumb {
+    color: $primary-1;
+  }
+}
