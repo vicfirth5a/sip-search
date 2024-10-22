@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    console.log("jQuery is working from CDN!");
+  });
+
+
+
 
 $(document).ready(function() {
     var $scrollContainer = $('#scroll-container');
@@ -46,3 +52,33 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
+
+let swiper = new Swiper(".mySwiper-rs", {
+    slidesPerView: "auto",
+    spaceBetween: 24    ,
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    pagination: {
+      el: ".swiper-pagination-custom",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".custom-button-next",
+      prevEl: null,
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 48,
+      },
+    },
+  });
+  
+  
+  
+  
+  

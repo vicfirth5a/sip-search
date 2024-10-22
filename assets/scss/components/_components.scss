@@ -56,11 +56,38 @@
   background-color: $primary-4;
   transition: 0.5s;
   &:hover {
-    background-color: $neutral-3;
+    background-color: $primary-3;
     color: #fbfbfb;
   }
   &:active {
     background-color: $primary-3;
+    opacity: 0.8;
+  }
+}
+.btn-rs-primary-3 {
+  color: $primary-1;
+  background-color: $primary-3;
+  transition: 0.5s;
+  &:hover {
+    background-color: $primary-1;
+    color: $primary-3;
+  }
+  &:active {
+    background-color: $primary-3;
+    color: $primary-1;
+  }
+}
+.btn-rs-primary-4 {
+  color: $primary-1;
+  background-color: $primary-3;
+  transition: 0.5s;
+  &:hover {
+    background-color: $primary-4;
+    color: $primary-1;
+  }
+  &:active {
+    background-color: $primary-3;
+    color: $primary-1;
   }
 }
 

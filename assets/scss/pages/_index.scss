@@ -356,7 +356,6 @@
   background-position: center;
 
   .join-input {
-
     &-text {
       width: 597px;
       border: 0.8px solid $primary-1;
@@ -369,14 +368,11 @@
           font-size: 36px;
           font-variation-settings: "FILL" 1;
         }
-
-
       }
 
       .form-control {
         border: none;
         background: transparent;
-
 
         &::placeholder {
           color: $primary-1;
@@ -384,8 +380,6 @@
         }
       }
     }
-
-
 
     &-btn {
       color: $primary-1;
@@ -465,15 +459,14 @@ $x-large: 1200px;
     .wrap {
       width: 40px;
       height: 40px;
+      border-right: 1px solid $primary-4;
+      border-bottom: 1px solid $primary-4;
+      position: relative;
 
       @include respond-to($large) {
         width: 22px;
         height: 22px;
       }
-
-      border-right: 1px solid $primary-4;
-      border-bottom: 1px solid $primary-4;
-      position: relative;
 
       &::before {
         content: "";
@@ -506,7 +499,6 @@ $x-large: 1200px;
     font-size: 18px;
     background-color: $primary-1;
     transition: 0.5s;
-    text-align: start;
 
     @include respond-to($x-large) {
       max-width: 960px;
@@ -520,12 +512,11 @@ $x-large: 1200px;
       background-color: #fff;
     }
 
-    .wind-card {
-      @include respond-to($large) {
-        max-height: 536px;
-      }
-    }
-
+    // .wind-card {
+    //   @include respond-to($large) {
+    //     max-height: 536px;
+    //   }
+    // }
     img {
       max-width: 384px;
       max-height: 498px;
@@ -589,36 +580,40 @@ $x-large: 1200px;
   & a {
     width: 80px;
     height: 80px;
+    background-color: $primary-4;
+    transition: 0.4s;
 
     @include respond-to($large) {
       width: 40px;
       height: 40px;
+      // .content {
+      //   padding: 96px 64px;
 
-      .content {
-        padding: 96px 64px;
+      //   @include respond-to($large) {
+      //     padding: 64px 24px;
+      //   }
 
-        @include respond-to($large) {
-          padding: 64px 24px;
-        }
+      //   .txt-content {
+      //     div {
+      //       width: 50%;
 
-        .txt-content {
-          div {
-            width: 50%;
+      //       @include respond-to($large) {
+      //         width: auto;
+      //       }
+      //     }
+      //   }
+      // }
+    }
 
-            @include respond-to($large) {
-              width: auto;
-            }
-          }
-        }
-      }
+    &:hover {
+      background-color: $primary-3;
+    }
 
-      .material-symbols-outlined {
+    .material-symbols-outlined {
+      font-size: 40px;
 
-        // width: 40px;
-        // height: 40px;
-        @include respond-to($large) {
-          font-size: 20px;
-        }
+      @include respond-to($large) {
+        font-size: 20px;
       }
     }
   }
@@ -662,8 +657,8 @@ $x-large: 1200px;
   .button-row {
     margin-top: 20px;
     margin-bottom: 24px;
-    padding: 0 100px;
 
+    // padding: 0 100px;
     @include respond-to($large) {
       margin-top: 24px;
       margin-bottom: 20px;
@@ -702,18 +697,24 @@ $x-large: 1200px;
   }
 
   .swiper {
-    min-height: 530px;
+    // min-height: 530px;
     display: flex;
     flex-direction: column;
-    padding: 0 100px;
 
+    // padding: 0 100px;
     .swiper-wrapper {
       flex-grow: 1;
+      height: auto;
 
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
-        height: auto;
+        height: 800px;
         text-align: start;
+
+        @include respond-to($large) {
+          height: auto;
+          min-height: 530px;
+        }
       }
     }
 
@@ -744,8 +745,6 @@ $x-large: 1200px;
     transition: 0.5s;
     width: fit-content;
   }
-
-
 }
 
 //活動
@@ -984,5 +983,89 @@ $x-large: 1200px;
   &:active {
     background: var(--bs-primary-4);
     transition: 0.5s;
+  }
+}
+
+//彈出視窗
+.custom-modal-width {
+  max-width: 700px;
+}
+
+.modal-border-primary-1 {
+  border: 1px solid $primary-1;
+  margin: 40px;
+}
+
+.modalImg {
+  height: 124px;
+  object-fit: contain;
+}
+
+.decoration {
+  margin-top: -16px;
+  margin-left: -16px;
+
+  .wrap-1 {
+    width: 40px;
+    height: 40px;
+
+    @include respond-to($large) {
+      width: 22px;
+      height: 22px;
+    }
+
+    border-right: 1px solid $primary-1;
+    border-bottom: 1px solid $primary-1;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-left: 1px solid $primary-1;
+      border-top: 1px solid $primary-1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, 50%);
+
+      @include respond-to($large) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  .wrap-2 {
+    width: 40px;
+    height: 40px;
+
+    @include respond-to($large) {
+      width: 22px;
+      height: 22px;
+    }
+
+    border-right: 1px solid $primary-1;
+    border-bottom: 1px solid $primary-1;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 36px;
+      border-left: 1px solid $primary-1;
+      border-top: 1px solid $primary-1;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(50%, 50%);
+
+      @include respond-to($large) {
+        width: 22px;
+        height: 22px;
+      }
+    }
   }
 }
