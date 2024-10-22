@@ -394,6 +394,11 @@
       border: 1px solid $primary-3;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
       margin-left: 40px;
+
+
+      // &:hover {
+      //   opacity: 0.8;
+      // }
     }
   }
 }
@@ -740,15 +745,7 @@ $x-large: 1200px;
     width: fit-content;
   }
 
-  .btn-big:hover {
-    // color: $primary-4;
-    // background-color: $primary-1;
-    // transition: 0.5s;
 
-    .material-symbols-outlined {
-      // color: $primary-4;
-    }
-  }
 }
 
 //活動
