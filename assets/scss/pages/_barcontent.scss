@@ -232,7 +232,7 @@ $x-large: 1200px;
     color: $primary-4;
     font-size: 24px;
   background-color: $primary-1;
-  background-image: linear-gradient(#0001,#0002);
+  background-image: linear-gradient(#0001,#0001);
   .user-item{
     display: flex;
     align-items: center;
@@ -265,7 +265,38 @@ $x-large: 1200px;
     display: grid;  
     grid-template-columns: 200px 1fr;
     gap: 20px;
-    margin-block: 20px;
+    margin-block: 28px;
   }
 }
+}
+
+.section-similar-bars{
+  padding-block: 60px;
+  color: $primary-1;
+  .similar-bars-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    .similar-bars-item{
+      min-height: 500px;
+      background-position: center;
+      background-size: cover;
+      .txt{
+        .bar-name{
+          text-align: center;
+          margin-bottom: 16px;
+        }
+        .tags{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          .tag{
+            background-color: $primary-3;
+            background-image: linear-gradient(#0002,#0005);
+          }
+        }
+      }
+    }
+  }
 }
