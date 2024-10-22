@@ -277,6 +277,12 @@ $line-thickness: 1px;
   border-top-right-radius: 50rem;
 }
 
+//modal的裝飾
+.modal-border-primary-1 {
+  border: 1px solid $primary-1;
+  margin: 40px;
+}
+
 //響應式
 @media (max-width: 992px) {
 }

@@ -4,6 +4,20 @@
   //outline: 1px solid rgb(110, 131, 5);
 }
 
+.pages-change{
+  color: $primary-1;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
+.tags-change{
+  color: $primary-3;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
 .wine-content-title {
   margin-bottom: 120px;
   @media (max-width: 768px) {
@@ -89,6 +103,9 @@
   @media (max-width: 768px) {
     padding: 4px 8px;
   }
+  &:hover{
+    background:$primary-1;
+  }
 }
 
 .methods-item-2 {
@@ -134,7 +151,7 @@
   }
 }
 
-/* 使用者信息區塊 */
+//使用者信息區塊 
 .user-info {
   display: flex;
   align-items: center;
@@ -147,7 +164,7 @@
   height: 80px;
 }
 
-/* 留言框區塊 */
+//留言框區塊 
 .comments-box {
   border: 1px solid #9b5b34;
   border-radius: 5px;
@@ -196,10 +213,7 @@
   gap: 40px;
   margin-top: 48px;
   margin-bottom: 72px;
-  &-item {
-    gap: 20px;
-    color: $neutral-1;
-  }
+  
   &-area {
     background: $primary-3;
     padding: 12px 24px;
@@ -207,6 +221,8 @@
   }
   &-item {
     //display: flex;
+    gap: 20px;
+    color: $neutral-1;
     flex-direction: row;
     align-items: center;
     @media (max-width: 768px) {
@@ -214,6 +230,14 @@
       align-items: start;
     }
   }
+  &-info{
+    gap: 20px;
+    @media (max-width: 768px) {
+      gap: 8px;
+    }
+  }
+
+
   &-area {
     @media (max-width: 768px) {
       width: 100%;
@@ -230,11 +254,11 @@
 .wine-comments-btn {
   color: $primary-4;
   &:hover {
-    color: $primary-3;
+    opacity: 0.6;
   }
-  &:active {
-    color: $neutral-3;
-  }
+  //&:active {
+    //color: $neutral-3;
+  //}
 }
 
 // 第三區 -推薦酒譜
@@ -263,11 +287,11 @@
 &-btn {
   color: $primary-1;
   &:hover {
-    color: $primary-3;
+    opacity: 0.6;
   }
-  &:active {
-    color: $neutral-3;
-  }
+  //&:active {
+    //color: $neutral-3;
+  //}
 }
 
 }
