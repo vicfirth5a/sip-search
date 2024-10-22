@@ -42,6 +42,14 @@
   .navItem:hover {
     opacity: 0.6;
   }
+
+  .nav-custom-border {
+    border-right: 1px solid #ecdec3;
+  }
+  .log-custom-border {
+    border-left: 1px solid #7f7973;
+    border-right: 1px solid #7f7973;
+  }
 }
 
 @media (max-width: 768px) {
@@ -56,6 +64,10 @@
     }
     .custom-class .border-end {
       border: 0px solid red;
+    }
+    .nav-custom-border,
+    .log-custom-border {
+      border: none;
     }
   }
 }

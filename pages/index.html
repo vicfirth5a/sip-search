@@ -23,6 +23,58 @@
   <body>
     <%- include('./layout/header'); -%>
 
+    <!-- 彈出視窗 -->
+    <div
+      class="modal fade"
+      id="ageVerificationModal"
+      tabindex="-1"
+      aria-labelledby="ageVerificationModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered custom-modal-width">
+        <div class="modal-content">
+          <div class="modal-body modal-border-primary-1">
+            <div class="decoration">
+              <div class="wrap-1"></div>
+            </div>
+            <img
+              class="modalImg mt-lg-9 mb-lg-12"
+              src="/assets/images/image-sip&search chi.png"
+              alt="sip&search"
+            />
+            <div class="text-center mb-lg-13">
+              <h5 class="text-primary-1 mb-lg-6" id="ageVerificationModalLabel">
+                請問您是否已年滿18歲？
+              </h5>
+              <p class="text-primary-1 fs-lg-6">未滿18歲禁止飲酒</p>
+              <p class="text-primary-1 fs-lg-6">禁止酒駕</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button
+                type="button"
+                class="btn btn-index-primary1 fs-lg-6 py-lg-6 px-lg-9 mb-lg-6"
+                id="btnYes"
+              >
+                是，我已滿18歲
+              </button>
+              <button
+                type="button"
+                class="btn btn-index-primaryl-transparent fs-lg-6 py-lg-6 px-lg-9"
+                id="btnNo"
+              >
+                否，我未滿18歲
+              </button>
+            </div>
+            <div class="decoration">
+              <div class="wrap-2 ms-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 第一區 -->
     <div class="banner">
       <div class="container">
@@ -662,7 +714,7 @@
     <section class="section section-popular-recipes bg-dark-brown">
       <div class="container-fluid">
         <div class="main-title text-primary-1 text-center mb-6 mb-md-15">
-          <h3 class="fs-8 fs-md-5 mb-1 mb-md-4">Popular Recipes</h3>
+          <h3 class="fs-8 fs-md-5 mb-1 mb-md-4 eng-font">Popular Recipes</h3>
           <h2>熱門酒譜</h2>
         </div>
 
@@ -680,7 +732,7 @@
                   >
                     <div class="txt d-flex flex-column text-primary-4">
                       <div class="wine-name">
-                        <h3 class="fs-4 fs-lg-1 mb-3">Jungle Bird</h3>
+                        <h3 class="fs-4 fs-lg-1 mb-3 eng-font">Jungle Bird</h3>
                         <h4>叢林鳥</h4>
                       </div>
                       <div class="wine-tags d-flex mt-6 mt-lg-auto mb-6 gap-4">
@@ -707,12 +759,10 @@
                       />
                       <div class="arrow position-absolute bottom-0 end-0">
                         <a
-                          href="#"
-                          class="d-flex align-items-center justify-content-center bg-primary-4 text-white rounded-circle"
+                          href="/sip-search/wine-content.html"
+                          class="d-flex align-items-center justify-content-center text-white rounded-circle"
                         >
-                          <span
-                            class="material-symbols-outlined d-block fs-lg-4"
-                          >
+                          <span class="material-symbols-outlined d-block">
                             arrow_forward
                           </span>
                         </a>
@@ -732,7 +782,7 @@
                   >
                     <div class="txt w-lg-50 d-flex flex-column text-primary-4">
                       <div class="wine-name">
-                        <h3 class="fs-4 fs-lg-1 mb-3">Negroni</h3>
+                        <h3 class="fs-4 fs-lg-1 mb-3 eng-font">Negroni</h3>
                         <h4>尼格羅尼</h4>
                       </div>
                       <div class="wine-tags d-flex mt-6 mt-lg-auto mb-6 gap-4">
@@ -759,8 +809,8 @@
                       />
                       <div class="arrow position-absolute bottom-0 end-0">
                         <a
-                          href="#"
-                          class="d-flex align-items-center justify-content-center bg-primary-4 text-white rounded-circle"
+                          href="/sip-search/wine-content.html"
+                          class="d-flex align-items-center justify-content-center text-white rounded-circle"
                         >
                           <span
                             class="material-symbols-outlined d-block fs-lg-4"
@@ -784,7 +834,7 @@
                   >
                     <div class="txt w-lg-50 d-flex flex-column text-primary-4">
                       <div class="wine-name">
-                        <h3 class="fs-4 fs-lg-1 mb-3">Margarita</h3>
+                        <h3 class="fs-4 fs-lg-1 mb-3 eng-font">Margarita</h3>
                         <h4>瑪格麗特</h4>
                       </div>
                       <div class="wine-tags d-flex mt-6 mt-lg-auto mb-6 gap-4">
@@ -811,8 +861,8 @@
                       />
                       <div class="arrow position-absolute bottom-0 end-0">
                         <a
-                          href="#"
-                          class="d-flex align-items-center justify-content-center bg-primary-4 text-white rounded-circle"
+                          href="/sip-search/wine-content.html"
+                          class="d-flex align-items-center justify-content-center text-white rounded-circle"
                         >
                           <span
                             class="material-symbols-outlined d-block fs-lg-4"
@@ -836,7 +886,7 @@
                   >
                     <div class="txt w-lg-50 d-flex flex-column text-primary-4">
                       <div class="wine-name">
-                        <h3 class="fs-4 fs-lg-1 mb-3">Boulevardier</h3>
+                        <h3 class="fs-4 fs-lg-1 mb-3 eng-font">Boulevardier</h3>
                         <h4>花花公子</h4>
                       </div>
                       <div class="wine-tags d-flex mt-6 mt-lg-auto mb-6 gap-4">
@@ -863,8 +913,8 @@
                       />
                       <div class="arrow position-absolute bottom-0 end-0">
                         <a
-                          href="#"
-                          class="d-flex align-items-center justify-content-center bg-primary-4 text-white rounded-circle"
+                          href="/sip-search/wine-content.html"
+                          class="d-flex align-items-center justify-content-center text-white rounded-circle"
                         >
                           <span
                             class="material-symbols-outlined d-block fs-lg-4"
@@ -888,7 +938,9 @@
                   >
                     <div class="txt w-lg-50 d-flex flex-column text-primary-4">
                       <div class="wine-name">
-                        <h3 class="fs-4 fs-lg-1 mb-3">Aperol Spritz</h3>
+                        <h3 class="fs-4 fs-lg-1 mb-3 eng-font">
+                          Aperol Spritz
+                        </h3>
                         <h4>阿佩羅雞尾酒</h4>
                       </div>
                       <div class="wine-tags d-flex mt-6 mt-lg-auto mb-6 gap-4">
@@ -915,8 +967,8 @@
                       />
                       <div class="arrow position-absolute bottom-0 end-0">
                         <a
-                          href="#"
-                          class="d-flex align-items-center justify-content-center bg-primary-4 text-white rounded-circle"
+                          href="/sip-search/wine-content.html"
+                          class="d-flex align-items-center justify-content-center text-white rounded-circle"
                         >
                           <span
                             class="material-symbols-outlined d-block fs-lg-4"
@@ -940,7 +992,7 @@
                   >
                     <div class="txt w-lg-50 d-flex flex-column text-primary-4">
                       <div class="wine-name">
-                        <h3 class="fs-4 fs-lg-1 mb-3">Olympic</h3>
+                        <h3 class="fs-4 fs-lg-1 mb-3 eng-font">Olympic</h3>
                         <h4>奧林匹克</h4>
                       </div>
                       <div class="wine-tags d-flex mt-6 mt-lg-auto mb-6 gap-4">
@@ -967,8 +1019,8 @@
                       />
                       <div class="arrow position-absolute bottom-0 end-0">
                         <a
-                          href="#"
-                          class="d-flex align-items-center justify-content-center bg-primary-4 text-white rounded-circle"
+                          href="/sip-search/wine-content.html"
+                          class="d-flex align-items-center justify-content-center text-white rounded-circle"
                         >
                           <span
                             class="material-symbols-outlined d-block fs-lg-4"
@@ -992,11 +1044,11 @@
     <section class="section section-popular-bars bg-dark-brown">
       <div class="container">
         <div class="main-title text-center">
-          <h3 class="fs-8 fs-md-5 mb-1 mb-md-4">Popular Bars</h3>
+          <h3 class="fs-8 fs-md-5 mb-1 mb-md-4 eng-font">Popular Bars</h3>
           <h2>熱門酒吧</h2>
         </div>
 
-        <div class="d-flex button-row justify-content-end">
+        <div class="button-row d-flex justify-content-end">
           <div class="d-flex justify-content-center me-3 me-md-8">
             <a href="#" class="swiper-button-prev swiper-button">
               <span class="material-symbols-outlined fs-7 fs-lg-4 inherit">
@@ -1020,7 +1072,6 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-
                 <div class="swiper-slide position-relative">
                   <img
                     src="../assets/images/index_bar/bar01.png"
@@ -1034,7 +1085,9 @@
                     <div
                       class="main-content d-flex flex-column justify-content-between flex-grow-1"
                     >
-                      <h2 class="title fs-6 fs-lg-2">貓下去敦北俱樂部</h2>
+                      <h2 class="title fs-6 fs-lg-2 eng-font">
+                        貓下去敦北俱樂部
+                      </h2>
 
                       <div class="txt mt-auto d-flex flex-column">
                         <div
@@ -1050,7 +1103,7 @@
                             結合復古風情與現代創意，提供精緻調酒與特別氛圍，是品味夜晚的絕佳去處！
                           </div>
 
-                          <div class="d-flex align-items-center">
+                          <div class="d-flex">
                             <a
                               href="#"
                               class="d-flex more btn-index btn-index-primary1 align-items-center gap-3 align-self-lg-end ms-auto mt-6 mt-lg-0"
@@ -1079,7 +1132,7 @@
                     <div
                       class="main-content d-flex flex-column justify-content-between flex-grow-1"
                     >
-                      <h2 class="title fs-6 fs-lg-2">
+                      <h2 class="title fs-6 fs-lg-2 eng-font">
                         Indulge Experimental Bistro
                       </h2>
 
@@ -1126,7 +1179,9 @@
                     <div
                       class="main-content d-flex flex-column justify-content-between flex-grow-1"
                     >
-                      <h2 class="title fs-6 fs-lg-2">酒客 Bar Pun</h2>
+                      <h2 class="title fs-6 fs-lg-2">
+                        酒客 <span class="eng-font"> Bar Pun</span>
+                      </h2>
 
                       <div class="txt mt-auto d-flex flex-column">
                         <div
@@ -1171,7 +1226,7 @@
                     <div
                       class="main-content d-flex flex-column justify-content-between flex-grow-1"
                     >
-                      <h2 class="title fs-6 fs-lg-2">Bar Mood</h2>
+                      <h2 class="title fs-6 fs-lg-2 eng-font">Bar Mood</h2>
 
                       <div class="txt mt-auto d-flex flex-column">
                         <div
@@ -1257,7 +1312,7 @@
       <div class="swiper-button-next"></div> -->
 
               <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
+              <!-- <div class="swiper-scrollbar"></div> -->
             </div>
           </div>
         </div>
@@ -1499,6 +1554,8 @@
 
     <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
