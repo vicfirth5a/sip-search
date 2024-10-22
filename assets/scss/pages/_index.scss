@@ -1,10 +1,10 @@
 @import "../base/font.scss";
 
-*,
-*::after,
-*::before {
-  outline: 1px solid white;
-}
+// *,
+// *::after,
+// *::before {
+//   outline: 1px solid white;
+// }
 
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
@@ -252,6 +252,7 @@
 
       a {
         width: 248px;
+        align-items: center;
         // font-size: 24px;
       }
 
@@ -382,8 +383,8 @@
     }
 
     &-btn {
-      color: $primary-1;
-      background: $primary-3;
+      // color: $primary-1;
+      // background: $primary-3;
       padding: 24px 40px;
       border: 1px solid $primary-3;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
@@ -416,6 +417,8 @@
         padding: 8px 12px;
         margin-left: 0;
         margin-top: 16px;
+
+
       }
     }
   }
