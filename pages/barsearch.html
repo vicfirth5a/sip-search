@@ -453,7 +453,7 @@
                 </div>
               </div>
 
-              <div class="btn-more text-primary-1 text-center">
+              <div class="btn-more text-center">
                 <a
                   href="#"
                   class="d-inline-block fs-9 fs-md-6 py-2 py-md-6 px-3 px-10"
@@ -611,29 +611,61 @@
         <h2 class="h3 text-primary-1 text-center fs-lg-1 fs-6 mb-lg-11 mb-6">
           加入會員<br />解鎖每月專屬微醺體驗
         </h2>
-        <div class="text-center d-flex justify-content-center join-input m-auto">
+        <div
+          class="text-center d-flex justify-content-center join-input m-auto"
+        >
           <div class="input-group join-input-text">
             <span class="input-group-text">
-              <span class="material-symbols-outlined text-primary-1 fs-lg-4 fs-8">
+              <span
+                class="material-symbols-outlined text-primary-1 fs-lg-4 fs-8"
+              >
                 mail
               </span>
             </span>
-            <input type="text" placeholder="請輸入您的 Email" class="form-control text-primary-1" />
+            <input
+              type="text"
+              placeholder="請輸入您的 Email"
+              class="form-control text-primary-1"
+            />
           </div>
-          <a href="#" class="join-input-btn fs-lg-6 fs-9 text-nowrap">加入會員</a>
+          <a href="#" class="join-input-btn fs-lg-6 fs-9 text-nowrap"
+            >加入會員</a
+          >
         </div>
       </div>
     </div>
 
-    <!-- <%- include('./layout/footer'); -%> -->
+    <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+
+    <!-- 熱門酒吧swiper -->
+    <script>
+      let popularBarsSwiper = new Swiper(".popularBarsSwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          992: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+      });
+    </script>
 
     <script>
       // 周邊酒吧活動
@@ -644,7 +676,7 @@
         breakpoints: {
           992: {
             spaceBetween: 30,
-          }
+          },
         },
         navigation: {
           nextEl: ".swiper-button-next",
