@@ -76,10 +76,13 @@ $x-large: 1200px;
     .pic-item {
       cursor: pointer;
       position: relative;
+      overflow: hidden;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        scale: 1;
+        transition: 0.5s;
       }
       &:nth-child(3n + 1) {
         grid-column-end: span 2;
@@ -99,12 +102,126 @@ $x-large: 1200px;
       &:hover::before {
         opacity: 1;
       }
+      &:hover img {
+        scale: 1.1;
+      }
     }
   }
 }
 
 .section-about {
+  padding-block: 60px;
   .txt {
     color: $primary-1;
+    width: 55%;
+    position: relative;
+
+    h3 {
+      background-color: $primary-4;
+      padding: 0.5em;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "";
+        height: 2px;
+        background-color: currentColor;
+        flex-grow: 1;
+        margin-left: 10px;
+      }
+    }
+    .bar-intro {
+      background-color: #0006;
+      font-size: 28px;
+      padding: 1em;
+      position: absolute;
+      line-height: 2;
+    }
+  }
+  .pic {
+    width: 75%;
+    margin-left: auto;
+  }
+}
+
+.section-activity {
+  padding-block: 60px;
+  .txt {
+    color: $primary-1;
+    width: 40%;
+    margin-left: auto;
+    position: relative;
+
+    h3 {
+      background-color: $primary-4;
+      padding: 0.5em;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "";
+        height: 2px;
+        background-color: currentColor;
+        flex-grow: 1;
+        margin-left: 10px;
+      }
+    }
+    .activity-intro {
+      background-color: #0006;
+      font-size: 28px;
+      padding: 1em;
+      position: absolute;
+      line-height: 2;
+    }
+  }
+  .pic {
+    width: 75%;
+    margin-right: auto;
+  }
+}
+
+.section-contact {
+  color: $primary-1;
+  padding-block: 60px;
+  .container {
+    display: flex;
+    gap: 20px;
+    .pic {
+      width: 50%;
+    }
+    .txt {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      .title {
+        background-color: $primary-3;
+        padding: 0.75em;
+      }
+      .contact-detail {
+        font-size: 24px;
+        padding-inline: 2em;
+        flex-grow: 1;
+        margin: auto;
+        .location,
+        .tel {
+          display: flex;
+          align-items: center;
+        }
+        .material-symbols-outlined {
+          margin-right: 4px;
+        }
+      }
+      .opentimes {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        font-size: 24px;
+      }
+      .week-item + .week-item {
+        margin-top: 4px;
+      }
+      .opentimes-item + .opentimes-item {
+        margin-top: 4px;
+      }
+    }
   }
 }
