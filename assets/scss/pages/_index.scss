@@ -1,5 +1,11 @@
 @import "../base/font.scss";
 
+// *,
+// *::after,
+// *::before {
+//   outline: 1px solid white;
+// }
+
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url(/assets/images/index-banner.png);
@@ -16,7 +22,7 @@
   }
 
   &-title {
-    margin: 0 auto;
+
     font-size: 72px;
     padding-bottom: 48px;
     text-align: center;
@@ -24,43 +30,52 @@
   }
 
   &-btn {
-    background: transparent;
-    color: $primary-1;
+
+    padding: 24px 40px;
 
     &:focus {
-      background: $primary-3;
+      background: $primary-4;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
     }
 
-    .material-symbols-outlined {
-      font-size: 24px;
-    }
-
-    @media (max-width: 767px) {
-      .banner {
-        &-content {
-          padding-top: 160px;
-          padding-bottom: 112px;
-          max-width: 351px;
-        }
-
-        &-title {
-          max-width: 253px;
-          font-size: 24px;
-          padding-bottom: 24px;
-        }
-
-        &-btn {
-          font-size: 12px;
-          padding: 8px 12px;
-        }
-      }
-    }
   }
 
-  &-btn {
-    font-size: 12px;
-    padding: 8px 12px;
+
+}
+
+@media (max-width: 992px) {
+
+  .banner {
+
+    &-title {
+      font-size: 48px;
+    }
+
+    &-btn {
+      padding: 12px 16px;
+
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    &-content {
+      padding-top: 160px;
+      padding-bottom: 112px;
+      max-width: 351px;
+    }
+
+    &-title {
+      max-width: 253px;
+      font-size: 24px;
+      padding-bottom: 24px;
+    }
+
+    &-btn {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
   }
 }
 
@@ -80,11 +95,12 @@
 }
 
 .banner-selector-input {
-  justify-content: space-between;
+
 
   .input-group {
     border: 1px solid $primary-1;
     align-items: center;
+
   }
 
   .form-control {
@@ -107,13 +123,29 @@
 
 @media (max-width: 992px) {
   .banner-selector-input {
-    padding: 12px;
+
+    .input-group {
+      max-width: 400px;
+    }
+
+    .form-control {
+      padding: 12px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+
+    }
+
   }
 }
 
 @media (max-width: 767px) {
   .banner-selector-input {
     .input-group {
+
+      max-width: 195px;
+
       .material-symbols-outlined {
         font-size: 12px;
       }
@@ -129,55 +161,28 @@
   }
 }
 
-@media (max-width: 992px) {
-  .banner-selector-input {
-    padding: 12px;
-  }
-}
 
-@media (max-width: 767px) {
-  .banner-selector-input {
-    .input-group {
-      .material-symbols-outlined {
-        font-size: 12px;
-      }
-    }
-
-    .form-control {
-      padding: 8px;
-
-      &::placeholder {
-        font-size: 12px;
-      }
-    }
-  }
-}
 
 .search {
-  margin-left: 24px;
-  max-width: 729px;
+
+  &-empty {
+    width: 260px;
+  }
 
   &-result {
     align-items: center;
+    width: 729px;
+
 
     &-items {
       background-color: $primary-1;
 
       .picked-items {
-        align-items: center;
+        vertical-align: middle;
         padding: 6px 8px;
         color: $primary-4;
-        cursor: pointer;
       }
 
-      .items-close-btn {
-        margin-left: 8px;
-        color: $primary-4;
-      }
-    }
-
-    &-clean a {
-      color: $primary-1;
     }
   }
 }
@@ -238,16 +243,19 @@
 
     .btn-md {
       max-width: 248px;
-      background: $primary-3;
+      // background: $primary-3;
       display: flex;
       justify-content: center;
-      border-width: 1px;
+      border-width: 2px;
       border-style: solid;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
 
       a {
-        font-size: 24px;
+        width: 248px;
+        align-items: center;
+        // font-size: 24px;
       }
+
     }
   }
 
@@ -260,15 +268,30 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+
+  .search {
+
+    &-result {
+
+      width: 398px;
+    }
+
+    // max-width: 200px;
+
+    &-empty {
+      width: 208px;
+    }
+  }
+
   .webinfo-1 {
     .discover-text {
       .btn-md {
-        max-width: 114px;
+        width: 114px;
 
         a {
-          font-size: 12px;
-          padding: 8px 12px;
+          // font-size: 12px;
+          // padding: 8px 12px;
 
           .material-symbols-outlined {
             font-size: 12px;
@@ -277,40 +300,52 @@
       }
     }
   }
+}
 
-  @media (max-width: 767px) {
-    .webinfo-1 {
-      padding-top: 40px;
+@media (max-width: 767px) {
+  .search {
+    &-result {
+      width: 195px;
+    }
+
+    &-empty {
+      width: 104px;
+    }
+
+  }
+
+  .webinfo-1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .discover-container {
+      padding: 16px;
+    }
+
+    .discover-cocktail {
       padding-bottom: 40px;
+    }
 
-      .discover-container {
-        padding: 16px;
-      }
-
-      .discover-cocktail {
-        padding-bottom: 40px;
-      }
-
-      .img-ctrl {
-        &::before {
-          top: 8px;
-          left: 8px;
-        }
+    .img-ctrl {
+      &::before {
+        top: 8px;
+        left: 8px;
       }
     }
   }
 }
 
-.btn-md {
-  max-width: 248px;
-  background: $primary-3;
-  display: flex;
-  justify-content: center;
-  border-width: 1px;
-  border-style: solid;
 
-  border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
-}
+// .btn-md {
+//   max-width: 248px;
+//   background: $primary-3;
+//   display: flex;
+//   justify-content: center;
+//   border-width: 1px;
+//   border-style: solid;
+
+//   border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
+// }
 
 .webinfo-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
@@ -348,12 +383,17 @@
     }
 
     &-btn {
-      color: $primary-1;
-      background: $primary-3;
+      // color: $primary-1;
+      // background: $primary-3;
       padding: 24px 40px;
       border: 1px solid $primary-3;
       border-image: linear-gradient(to right, #ffc93d, #b5650e) 1;
       margin-left: 40px;
+
+
+      // &:hover {
+      //   opacity: 0.8;
+      // }
     }
   }
 }
@@ -377,6 +417,8 @@
         padding: 8px 12px;
         margin-left: 0;
         margin-top: 16px;
+
+
       }
     }
   }
@@ -423,10 +465,12 @@ $x-large: 1200px;
       border-right: 1px solid $primary-4;
       border-bottom: 1px solid $primary-4;
       position: relative;
+
       @include respond-to($large) {
         width: 22px;
         height: 22px;
       }
+
       &::before {
         content: "";
         display: block;
@@ -438,6 +482,7 @@ $x-large: 1200px;
         top: 0;
         left: 0;
         transform: translate(50%, 50%);
+
         @include respond-to($large) {
           width: 22px;
           height: 22px;
@@ -457,15 +502,19 @@ $x-large: 1200px;
     font-size: 18px;
     background-color: $primary-1;
     transition: 0.5s;
+
     @include respond-to($x-large) {
       max-width: 960px;
     }
+
     @include respond-to($large) {
       max-width: 295px;
     }
+
     &:hover {
       background-color: #fff;
     }
+
     // .wind-card {
     //   @include respond-to($large) {
     //     max-height: 536px;
@@ -474,16 +523,20 @@ $x-large: 1200px;
     img {
       max-width: 384px;
       max-height: 498px;
+
       @include respond-to($large) {
         max-width: 152px;
         max-height: 200px;
       }
     }
+
     .txt {
       width: 50%;
+
       @include respond-to($large) {
         width: auto;
       }
+
       .wine-name {
         h4 {
           @include respond-to($large) {
@@ -491,18 +544,23 @@ $x-large: 1200px;
           }
         }
       }
+
       .wine-tags {
         font-size: 20px;
+
         @include respond-to($large) {
           font-size: 10px;
         }
+
         span {
           display: flex;
           align-items: center;
         }
       }
+
       .wine-intro {
         font-size: 24px;
+
         @include respond-to($large) {
           font-size: 12px;
         }
@@ -512,18 +570,22 @@ $x-large: 1200px;
 
   .pic {
     width: 50%;
+
     @include respond-to($large) {
       width: auto;
     }
   }
 }
+
 .arrow {
   right: 48px;
+
   & a {
     width: 80px;
     height: 80px;
     background-color: $primary-4;
     transition: 0.4s;
+
     @include respond-to($large) {
       width: 40px;
       height: 40px;
@@ -545,11 +607,14 @@ $x-large: 1200px;
       //   }
       // }
     }
+
     &:hover {
       background-color: $primary-3;
     }
+
     .material-symbols-outlined {
       font-size: 40px;
+
       @include respond-to($large) {
         font-size: 20px;
       }
@@ -561,6 +626,7 @@ $x-large: 1200px;
 
 .section-popular-bars {
   color: $primary-1;
+
   .main-title {
     h2 {
       @include respond-to($large) {
@@ -568,31 +634,39 @@ $x-large: 1200px;
       }
     }
   }
+
   .content {
     padding: 96px 64px;
+
     @include respond-to($large) {
       padding: 64px 24px;
     }
+
     .txt-content {
       div {
         width: 50%;
+
         @include respond-to($large) {
           width: auto;
         }
       }
     }
   }
+
   .material-symbols-outlined {
     color: $primary-1;
   }
+
   .button-row {
     margin-top: 20px;
     margin-bottom: 24px;
+
     // padding: 0 100px;
     @include respond-to($large) {
       margin-top: 24px;
       margin-bottom: 20px;
     }
+
     .swiper-button {
       display: block;
       position: relative;
@@ -608,14 +682,17 @@ $x-large: 1200px;
       justify-content: center;
       align-items: center;
       transition: 0.3s;
+
       @include respond-to($large) {
         width: 40px;
         height: 40px;
       }
+
       &:hover {
         background-color: $primary-3;
       }
     }
+
     .swiper-button-prev::after,
     .swiper-button-next::after {
       display: none;
@@ -626,35 +703,42 @@ $x-large: 1200px;
     // min-height: 530px;
     display: flex;
     flex-direction: column;
+
     // padding: 0 100px;
     .swiper-wrapper {
       flex-grow: 1;
       height: auto;
+
       // flex-direction: column; //swiper已經有下display:flex
       .swiper-slide {
         height: 800px;
         text-align: start;
+
         @include respond-to($large) {
           height: auto;
           min-height: 530px;
         }
       }
     }
+
     img {
       height: 100%;
       object-fit: cover;
     }
+
     .tag {
       width: fit-content;
       color: $primary-4;
       font-size: 24px;
       padding: 12px 24px;
       background-color: $primary-1;
+
       @include respond-to($large) {
         font-size: 10px;
         padding: 4px 8px;
       }
     }
+
     .bar-pic {
       filter: brightness(0.7);
     }
@@ -694,12 +778,10 @@ $x-large: 1200px;
 
   &-bg {
     width: 476px;
-    background-image: linear-gradient(
-        180.02deg,
+    background-image: linear-gradient(180.02deg,
         rgba(0, 0, 0, 0.8) 0.01%,
         rgba(0, 0, 0, 0) 50.5%,
-        rgba(0, 0, 0, 0.8) 99.99%
-      ),
+        rgba(0, 0, 0, 0.8) 99.99%),
       url(../images/index-event-bg.png);
     //background-size: cover;
     background-size: 450% auto;
@@ -881,11 +963,9 @@ $x-large: 1200px;
   transition: 0.5s;
   color: var(--bs-primary-1);
   border: 1px solid;
-  border-image-source: linear-gradient(
-    100.25deg,
-    #ffc93d 4.04%,
-    #b5650e 97.53%
-  );
+  border-image-source: linear-gradient(100.25deg,
+      #ffc93d 4.04%,
+      #b5650e 97.53%);
   border-image-slice: 1; //圖像切片設置
   justify-content: center;
   align-items: center;
@@ -913,10 +993,12 @@ $x-large: 1200px;
 .custom-modal-width {
   max-width: 700px;
 }
+
 .modal-border-primary-1 {
   border: 1px solid $primary-1;
   margin: 40px;
 }
+
 .modalImg {
   height: 124px;
   object-fit: contain;
@@ -925,16 +1007,20 @@ $x-large: 1200px;
 .decoration {
   margin-top: -16px;
   margin-left: -16px;
+
   .wrap-1 {
     width: 40px;
     height: 40px;
+
     @include respond-to($large) {
       width: 22px;
       height: 22px;
     }
+
     border-right: 1px solid $primary-1;
     border-bottom: 1px solid $primary-1;
     position: relative;
+
     &::before {
       content: "";
       display: block;
@@ -946,22 +1032,27 @@ $x-large: 1200px;
       top: 0;
       left: 0;
       transform: translate(50%, 50%);
+
       @include respond-to($large) {
         width: 22px;
         height: 22px;
       }
     }
   }
+
   .wrap-2 {
     width: 40px;
     height: 40px;
+
     @include respond-to($large) {
       width: 22px;
       height: 22px;
     }
+
     border-right: 1px solid $primary-1;
     border-bottom: 1px solid $primary-1;
     position: relative;
+
     &::before {
       content: "";
       display: block;
@@ -973,6 +1064,7 @@ $x-large: 1200px;
       bottom: 0;
       right: 0;
       transform: translate(50%, 50%);
+
       @include respond-to($large) {
         width: 22px;
         height: 22px;
