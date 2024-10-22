@@ -18,8 +18,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script type="module" crossorigin src="/sip-search/assets/main-638e7d36.js"></script>
-    <link rel="stylesheet" href="/sip-search/assets/main-ffe7281f.css">
+    <script type="module" crossorigin src="/sip-search/assets/main-40449329.js"></script>
+    <link rel="stylesheet" href="/sip-search/assets/main-d6213386.css">
   </head>
 
   <body>
@@ -70,7 +70,10 @@
         </li>
       </ul>
       <div class="log-custom-border">
-        <a class="px-lg-9 py-lg-6 text-primary-1 d-block navItem" href="#">
+        <a
+          class="px-lg-9 py-lg-6 text-primary-1 d-block navItem"
+          href="member-login.html"
+        >
           註冊/登入
           <i class="bi bi-search text-primary-1"></i>
         </a>
@@ -96,28 +99,31 @@
               <div class="wrap-1"></div>
             </div>
             <img
-              class="modalImg mt-lg-9 mb-lg-12"
+              class="modalImg mt-lg-9 mb-lg-12 mb-3"
               src="/sip-search/assets/image-sip_search chi-567d2af7.png"
               alt="sip&search"
             />
-            <div class="text-center mb-lg-13">
-              <h5 class="text-primary-1 mb-lg-6" id="ageVerificationModalLabel">
+            <div class="text-center mb-lg-13 mb-3">
+              <h5
+                class="text-primary-1 mb-lg-6 fs-8 fs-lg-5"
+                id="ageVerificationModalLabel"
+              >
                 請問您是否已年滿18歲？
               </h5>
-              <p class="text-primary-1 fs-lg-6">未滿18歲禁止飲酒</p>
-              <p class="text-primary-1 fs-lg-6">禁止酒駕</p>
+              <p class="text-primary-1 fs-lg-6 fs-9">未滿18歲禁止飲酒</p>
+              <p class="text-primary-1 fs-lg-6 fs-9">禁止酒駕</p>
             </div>
             <div class="d-flex flex-column align-items-center">
               <button
                 type="button"
-                class="btn btn-index-primary1 fs-lg-6 py-lg-6 px-lg-9 mb-lg-6"
+                class="btn btn-index-primary1 fs-lg-6 py-lg-6 px-lg-9 mb-lg-6 fs-8 mb-4"
                 id="btnYes"
               >
                 是，我已滿18歲
               </button>
               <button
                 type="button"
-                class="btn btn-index-primaryl-transparent fs-lg-6 py-lg-6 px-lg-9"
+                class="btn btn-index-primaryl-transparent fs-lg-6 py-lg-6 px-lg-9 fs-8"
                 id="btnNo"
               >
                 否，我未滿18歲
@@ -134,13 +140,15 @@
     <!-- 第一區 -->
     <div class="banner">
       <div class="container">
-        <div class="banner-content m-auto">
-          <h2 class="banner-title">探索微醺魅力，從這裡開始</h2>
-          <div class="d-flex mb-lg-6 mb-3 banner-selector-input">
-            <div class="d-flex text-nowrap me-lg-6 me-1">
+        <div class="banner-content">
+          <h2 class="banner-title m-auto">探索微醺魅力，從這裡開始</h2>
+          <div
+            class="d-flex mb-lg-6 mb-3 banner-selector-input justify-content-center align-items-center"
+          >
+            <div class="d-flex text-nowrap me-lg-6 me-md-3 me-1">
               <button
                 type="button"
-                class="btn text-primary-1 border-primary-1 py-lg-6 px-lg-10 fs-lg-6 banner-btn"
+                class="btn-index-primaryl-transparent banner-btn fs-lg-6 fs-md-8 fs-9"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop"
               >
@@ -148,7 +156,7 @@
               </button>
               <button
                 type="button"
-                class="btn text-primary-1 border-primary-1 py-lg-6 px-lg-10 banner-btn fs-lg-6"
+                class="btn-index-primaryl-transparent py-lg-6 px-lg-10 banner-btn fs-lg-6 fs-md-8 fs-9"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop-2"
               >
@@ -617,49 +625,53 @@
               <label for="search" class="form-label d-none">搜尋</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control fs-lg-6 fs-md-8 fs-9"
                 id="search"
                 placeholder="立即搜尋"
                 aria-label="立即搜尋"
                 aria-describedby="button-addon2"
               />
-              <button class="btn button-addon2" type="button">
+              <a href="#" class="p-lg-3 p-md-2 p-1">
                 <span
                   href="#"
-                  class="material-symbols-outlined text-primary-1 align-middle"
+                  class="material-symbols-outlined text-primary-1 align-middle fs-lg-5 fs-md-7 fs-8"
                   >search</span
                 >
-              </button>
+              </a>
             </div>
           </div>
-          <div class="search ms-auto">
-            <ul class="search-result d-flex gap-6">
-              <li
-                class="search-result-items rounded-pill d-flex justify-content-between"
-              >
-                <div class="d-flex picked-items">
-                  <a href="#">台北市</a>
-                  <span
-                    class="material-symbols-outlined align-bottom items-close-btn"
-                    >close</span
+
+          <div
+            class="search d-flex justify-content-lg-start justify-content-md-start justify-content-center align-items-center"
+          >
+            <div class="search-empty me-lg-6 me-md-3 me-1"></div>
+            <div class="search-result d-flex justify-content-between">
+              <ul class="d-flex gap-6 m-0 text-nowrap">
+                <li class="search-result-items rounded-pill">
+                  <a
+                    href="#"
+                    class="d-flex picked-items fs-lg-7 fs-md-9 fs-10 align-items-center"
+                    >台北市<span
+                      class="material-symbols-outlined ms-2 fs-lg-6 fs-8"
+                      >close</span
+                    ></a
                   >
-                </div>
-              </li>
-              <li
-                class="search-result-items rounded-pill d-flex justify-content-center"
-              >
-                <div class="d-flex picked-items">
-                  <a href="#">停車場</a>
-                  <span
-                    class="material-symbols-outlined align-bottom items-close-btn"
-                    >close</span
+                </li>
+                <li class="search-result-items rounded-pill">
+                  <a
+                    href="#"
+                    class="d-flex picked-items fs-lg-7 fs-md-9 fs-10 align-items-center"
+                    >停車場<span
+                      class="material-symbols-outlined ms-2 fs-lg-6 fs-8"
+                      >close</span
+                    ></a
                   >
-                </div>
-              </li>
-              <li class="search-result-clean ms-auto">
+                </li>
+              </ul>
+              <div class="ms-auto text-primary-1 d-none d-md-block d-lg-block">
                 <a href="#" class="text-center">清除所有條件</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -668,7 +680,7 @@
     <!-- 第二三區 -->
     <div class="webinfo-1">
       <div class="container container-md container-sm">
-        <h3 class="fs-lg-3 fs-8 text-center text-primary-4">
+        <h3 class="fs-lg-3 fs-8 text-center text-primary-4 eng-font">
           Discover Recipes & Local Bars
         </h3>
         <h3 class="fs-lg-2 fs-md-4 fs-7 text-center text-primary-4">
@@ -693,11 +705,9 @@
               </p>
               <div class="btn-md">
                 <a
-                  href="#"
-                  class="text-primary-1 px-lg-3 py-lg-6 d-flex align-items-center"
-                  >我想找酒譜<span
-                    class="material-symbols-outlined text-primary-1 ms-3"
-                  >
+                  href="https://vicfirth5a.github.io/sip-search/recipessearch"
+                  class="btn-index btn-index-primaryl-light d-flex"
+                  >我想找酒譜<span class="material-symbols-outlined ms-3">
                     arrow_forward_ios
                   </span></a
                 >
@@ -716,10 +726,10 @@
                 發現喝酒的好去處！
               </p>
               <div class="btn-md">
-                <a href="#" class="text-primary-1 d-flex px-lg-3 py-lg-6"
-                  >我想找酒吧<span
-                    class="material-symbols-outlined text-primary-1 ms-3"
-                  >
+                <a
+                  href="https://vicfirth5a.github.io/sip-search/barsearch"
+                  class="btn-index btn-index-primary1 d-flex"
+                  >我想找酒吧<span class="material-symbols-outlined ms-3">
                     arrow_forward_ios
                   </span></a
                 >
@@ -756,10 +766,12 @@
             <input
               type="text"
               placeholder="請輸入您的 Email"
-              class="form-control text-primary-1"
+              class="form-control text-primary-1 eng-font mt-2"
             />
           </div>
-          <a href="#" class="join-input-btn fs-lg-6 fs-9 text-nowrap"
+          <a
+            href="#"
+            class="btn-rs-primary-4 join-input-btn fs-lg-6 fs-9 text-nowrap"
             >加入會員</a
           >
         </div>
@@ -1379,7 +1391,7 @@
     <div class="container">
       <section class="event">
         <div class="event-title text-center">
-          <p class="fs-8 fs-md-5 text-primary-1 mb-4">Latest Events</p>
+          <p class="eng-font fs-8 fs-md-5 text-primary-1 mb-4">Latest Events</p>
           <h2 class="fs-7 fs-md-2 text-primary-1">最新活動</h2>
         </div>
 
@@ -1405,13 +1417,14 @@
                   <div
                     class="event-list-card-date fs-9 fs-md-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
                   >
-                    <p class="me-2 me-md-4">週三</p>
-                    <p>9/11</p>
+                    <p>週三
+                      <span class="eng-font ms-1 ms-md-2">9/11</span>
+                    </p>
                   </div>
                   <div
                     class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
                   >
-                    <p class="fs-8 fs-md-5">台北＿Fuzzy April 四月餐酒館</p>
+                    <p class="fs-8 fs-md-5">台北＿<span class="eng-font">Fuzzy April</span>四月餐酒館</p>
                     <span class="material-symbols-outlined">
                       arrow_forward_ios
                     </span>
@@ -1424,13 +1437,14 @@
                   <div
                     class="event-list-card-date fs-9 fs-md-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
                   >
-                    <p class="me-2 me-md-4">週五</p>
-                    <p>9/13</p>
+                    <p>週五
+                      <span class="eng-font ms-1 ms-md-2">9/13</span>
+                    </p>
                   </div>
                   <div
                     class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
                   >
-                    <p class="fs-8 fs-md-5">台北＿Mono Mono</p>
+                    <p class="fs-8 fs-md-5">台北＿<span class="eng-font">Mono Mono</span></p>
                     <span class="material-symbols-outlined">
                       arrow_forward_ios
                     </span>
@@ -1443,8 +1457,9 @@
                   <div
                     class="event-list-card-date fs-9 fs-md-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
                   >
-                    <p class="me-2 me-md-4">週二</p>
-                    <p>9/17</p>
+                    <p>週二
+                      <span class="eng-font ms-1 ms-md-2">9/17</span>
+                    </p>
                   </div>
                   <div
                     class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
@@ -1462,13 +1477,15 @@
                   <div
                     class="event-list-card-date fs-9 fs-md-6 d-flex justify-content-center align-items-center bg-primary-1 text-primary-4"
                   >
-                    <p class="me-2 me-md-4">週六</p>
-                    <p>9/21</p>
+                    <p>週六
+                      <span class="eng-font ms-1 ms-md-2">9/21</span>
+                    </p>
+                
                   </div>
                   <div
                     class="list-card-name mt-1 d-flex justify-content-between align-items-center text-neutral-1"
                   >
-                    <p class="fs-8 fs-md-5">台中＿P.S. I LOVE YOU BAR</p>
+                    <p class="fs-8 fs-md-5">台中＿<span class="eng-font">P.S. I LOVE YOU BAR</span></p>
                     <span class="material-symbols-outlined">
                       arrow_forward_ios
                     </span>
@@ -1494,7 +1511,7 @@
     <div class="container">
       <section class="comments text-primary-4">
         <div class="comments-title text-center">
-          <p class="fs-8 fs-md-5 text-primary-1 mb-4">Top Comments</p>
+          <p class="eng-font fs-8 fs-md-5 text-primary-1 mb-4">Top Comments</p>
           <h2 class="fs-7 fs-md-2 text-primary-1">熱門留言</h2>
         </div>
 
@@ -1503,12 +1520,12 @@
             <div class="comments-list-item-title d-flex mb-8">
               <img src="/sip-search/assets/Ellipse 6-9bd47e25.png" alt="user-1" />
               <div class="comments-list-item-name ms-5">
-                <h3 class="fs-7 fs-md-5 text-primary-3 mb-2">eilloee</h3>
+                <h3 class="eng-font fs-7 fs-md-5 text-primary-3 mb-2">eilloee</h3>
                 <div class="d-flex align-items-center">
                   <span class="material-symbols-outlined comments-icon">
                     location_on
                   </span>
-                  <p class="fs-8 fs-md-6 ms-2">The Whiskey House</p>
+                  <p class="eng-font fs-8 fs-md-6 ms-2">The Whiskey House</p>
                 </div>
               </div>
             </div>
@@ -1530,7 +1547,7 @@
             <div class="comments-list-item-title d-flex mb-8">
               <img src="/sip-search/assets/Ellipse 2-cff7cb20.png" alt="user-2" />
               <div class="comments-list-item-name ms-5">
-                <h3 class="fs-7 fs-md-5 text-primary-3 mb-2">Mindy Lo</h3>
+                <h3 class="eng-font fs-7 fs-md-5 text-primary-3 mb-2">Mindy Lo</h3>
                 <div class="d-flex align-items-center">
                   <span class="material-symbols-outlined comments-icon">
                     location_on
@@ -1557,12 +1574,12 @@
             <div class="comments-list-item-title d-flex mb-8">
               <img src="/sip-search/assets/Ellipse 7-4519e2bc.png" alt="user-3" />
               <div class="comments-list-item-name ms-5">
-                <h3 class="fs-7 fs-md-5 text-primary-3 mb-2">bboyhaha</h3>
+                <h3 class="eng-font fs-7 fs-md-5 text-primary-3 mb-2">bboyhaha</h3>
                 <div class="d-flex align-items-center">
                   <span class="material-symbols-outlined comments-icon">
                     location_on
                   </span>
-                  <p class="fs-8 fs-md-6 ms-2">Speakeasy</p>
+                  <p class="eng-font fs-8 fs-md-6 ms-2">Speakeasy</p>
                 </div>
               </div>
             </div>
@@ -1584,12 +1601,12 @@
             <div class="comments-list-item-title d-flex mb-8">
               <img src="/sip-search/assets/Ellipse 5-7b8a6ed2.png" alt="user-4" />
               <div class="comments-list-item-name ms-5">
-                <h3 class="fs-7 fs-md-5 text-primary-3 mb-2">xxxcindysss</h3>
+                <h3 class="eng-font fs-7 fs-md-5 text-primary-3 mb-2">xxxcindysss</h3>
                 <div class="d-flex align-items-center">
                   <span class="material-symbols-outlined comments-icon">
                     location_on
                   </span>
-                  <p class="fs-8 fs-md-6 ms-2">MoMo Lane</p>
+                  <p class="eng-font fs-8 fs-md-6 ms-2">MoMo Lane</p>
                 </div>
               </div>
             </div>
