@@ -1,0 +1,85 @@
+
+.memberinfo-btn{
+  background: $primary-1 ;
+  color: $primary-4;
+  font-size: 24px;
+  padding: 20px 16px;//py與預設a連結樣式相同才能對齊
+  
+  &:active{
+    background: $primary-3;
+  }
+}
+
+
+
+.nav-link { 
+  cursor: pointer; 
+  color: $primary-4;
+  font-size: 24px;
+  
+  &:hover{
+    color: $primary-4; //預設為藍色，所以要再加上 color: $primary-4
+    opacity: 0.6;
+  }
+}
+
+.memberinfo-accordion{
+  background: $primary-1;
+}
+
+.content-section { 
+  display: none; 
+}
+.active-section { 
+  display: block; 
+}
+
+//修改手風琴按鈕展開時的底色，當按鈕處於展開狀態時，會去掉 collapsed 類別 
+.memberinfo-btn:not(.collapsed) {
+  background-color:$primary-4; 
+  color: $primary-1;
+  box-shadow: none; //消除預設的藍色陰影
+}
+
+.memberinfo-btn.collapsed{
+  box-shadow: none;
+}
+
+
+
+//修改手風琴按鈕展開時的箭頭顏色 
+.memberinfo-btn:not(.collapsed)::after {
+  color:$primary-4; //箭頭 
+}
+
+//右側內容
+.profile-img-btn{
+  width: 90%;
+  border-radius: 20px;
+  background: $primary-1;
+  &:hover{
+    //background: $primary-4;
+  }
+  &-text{
+    color: $primary-4;
+    &:hover{
+      opacity: 0.6;
+    }
+  
+  }
+}
+
+.profile-userimg{
+  width: 160px;
+  height: 160px;
+}
+
+.profile-box-1{
+  padding: 40px;
+  background: $primary-4;
+  
+}
+
+.profile-record li:hover{
+  opacity: 0.6;
+}
