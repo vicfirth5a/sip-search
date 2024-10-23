@@ -19,12 +19,10 @@
     z-index: 2;
   }
 
-  .my-180 {
-    margin-top: 180px;
-  }
-
   .banner-rs {
+    padding: 230px 0 100px;
     .input-group {
+      margin: auto;
       max-width: 729px;
       border: 1px solid $primary-1;
       position: relative;
@@ -146,6 +144,20 @@
 }
 
 @media (max-width: 992px) {
+  .banner-rs {
+    .input-group {
+      max-width: 400px;
+    }
+
+    .form-control {
+      padding: 12px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+
   .section-rs3 {
     .rs-content {
       height: 100%;
@@ -180,7 +192,26 @@
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 2;
     }
+
+    .banner-rs {
+      padding: 60px 0 100px;
+      .input-group {
+        max-width: 195px;
+
+        .material-symbols-outlined {
+          font-size: 12px;
+        }
+        .form-control {
+          padding: 8px;
+
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
+
   .section-rs3 {
     .custom-button-next {
       display: none;
