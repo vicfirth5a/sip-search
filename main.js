@@ -4,8 +4,6 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "./assets/js/about";
 import "./assets/js/index";
 import "./assets/js/recipessearch";
-import "./assets/js/barsearch";
-
-
+// import "./assets/js/barsearch";
 
 console.log("Hello world!");
