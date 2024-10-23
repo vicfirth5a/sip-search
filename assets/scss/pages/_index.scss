@@ -815,7 +815,7 @@ $x-large: 1200px;
 
     &-card-date {
       width: 160px;
-      padding: 12px 20px;
+      padding: 12px 24px;
       margin-bottom: 16px;
 
       @media (max-width: 768px) {
@@ -829,13 +829,13 @@ $x-large: 1200px;
     color: var(--bs-primary-1);
 
     &:hover {
-      color: var(--bs-primary-2);
+      opacity:0.6;
       transition: 0.5s;
     }
 
-    &:active {
-      color: var(--bs-primary-3);
-    }
+    //&:active {
+      //color: var(--bs-primary-3);
+    //}
   }
 }
 
@@ -953,15 +953,14 @@ $x-large: 1200px;
   }
 
   &:hover {
-    background: var(--bs-neutral-3);
-    color: var(--bs-neutral-1);
+    background: $primary-4;
     transition: 0.5s;
   }
 
-  &:active {
-    background: var(--bs-primary-4);
-    transition: 0.5s;
-  }
+  //&:active {
+    //background: var(--bs-primary-4);
+    //transition: 0.5s;
+  //}
 }
 
 //彈出視窗
