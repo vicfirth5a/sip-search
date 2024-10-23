@@ -418,6 +418,11 @@ $x-large: 1200px;
 // 周圍最新活動
 
 .nearby-event {
+
+  .eng-font {
+    line-height: 1.5;
+  }
+
   .swiper-wrapper .swipe-slide {
     margin: 0 auto;
 
@@ -459,6 +464,7 @@ $x-large: 1200px;
       }
 
       .event-more {
+
 
         &:hover {
           filter: brightness(50%);
@@ -514,6 +520,8 @@ $x-large: 1200px;
 
 @media (max-width: 992px) {
   .nearby-event {
+    background-color: none;
+
     .nearby-card {
       & img {
         width: 241px;
