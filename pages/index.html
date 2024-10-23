@@ -40,28 +40,31 @@
               <div class="wrap-1"></div>
             </div>
             <img
-              class="modalImg mt-lg-9 mb-lg-12"
+              class="modalImg mt-lg-9 mb-lg-12 mb-3"
               src="/assets/images/image-sip&search chi.png"
               alt="sip&search"
             />
-            <div class="text-center mb-lg-13">
-              <h5 class="text-primary-1 mb-lg-6" id="ageVerificationModalLabel">
+            <div class="text-center mb-lg-13 mb-3">
+              <h5
+                class="text-primary-1 mb-lg-6 fs-8 fs-lg-5"
+                id="ageVerificationModalLabel"
+              >
                 請問您是否已年滿18歲？
               </h5>
-              <p class="text-primary-1 fs-lg-6">未滿18歲禁止飲酒</p>
-              <p class="text-primary-1 fs-lg-6">禁止酒駕</p>
+              <p class="text-primary-1 fs-lg-6 fs-9">未滿18歲禁止飲酒</p>
+              <p class="text-primary-1 fs-lg-6 fs-9">禁止酒駕</p>
             </div>
             <div class="d-flex flex-column align-items-center">
               <button
                 type="button"
-                class="btn btn-index-primary1 fs-lg-6 py-lg-6 px-lg-9 mb-lg-6"
+                class="btn btn-index-primary1 fs-lg-6 py-lg-6 px-lg-9 mb-lg-6 fs-8 mb-4"
                 id="btnYes"
               >
                 是，我已滿18歲
               </button>
               <button
                 type="button"
-                class="btn btn-index-primaryl-transparent fs-lg-6 py-lg-6 px-lg-9"
+                class="btn btn-index-primaryl-transparent fs-lg-6 py-lg-6 px-lg-9 fs-8"
                 id="btnNo"
               >
                 否，我未滿18歲
@@ -78,13 +81,15 @@
     <!-- 第一區 -->
     <div class="banner">
       <div class="container">
-        <div class="banner-content m-auto">
-          <h2 class="banner-title">探索微醺魅力，從這裡開始</h2>
-          <div class="d-flex mb-lg-6 mb-3 banner-selector-input">
-            <div class="d-flex text-nowrap me-lg-6 me-1">
+        <div class="banner-content">
+          <h2 class="banner-title m-auto">探索微醺魅力，從這裡開始</h2>
+          <div
+            class="d-flex mb-lg-6 mb-3 banner-selector-input justify-content-center align-items-center"
+          >
+            <div class="d-flex text-nowrap me-lg-6 me-md-3 me-1">
               <button
                 type="button"
-                class="btn text-primary-1 border-primary-1 py-lg-6 px-lg-10 fs-lg-6 banner-btn"
+                class="btn-index-primaryl-transparent banner-btn fs-lg-6 fs-md-8 fs-9"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop"
               >
@@ -92,7 +97,7 @@
               </button>
               <button
                 type="button"
-                class="btn text-primary-1 border-primary-1 py-lg-6 px-lg-10 banner-btn fs-lg-6"
+                class="btn-index-primaryl-transparent py-lg-6 px-lg-10 banner-btn fs-lg-6 fs-md-8 fs-9"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop-2"
               >
@@ -561,49 +566,53 @@
               <label for="search" class="form-label d-none">搜尋</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control fs-lg-6 fs-md-8 fs-9"
                 id="search"
                 placeholder="立即搜尋"
                 aria-label="立即搜尋"
                 aria-describedby="button-addon2"
               />
-              <button class="btn button-addon2" type="button">
+              <a href="#" class="p-lg-3 p-md-2 p-1">
                 <span
                   href="#"
-                  class="material-symbols-outlined text-primary-1 align-middle"
+                  class="material-symbols-outlined text-primary-1 align-middle fs-lg-5 fs-md-7 fs-8"
                   >search</span
                 >
-              </button>
+              </a>
             </div>
           </div>
-          <div class="search ms-auto">
-            <ul class="search-result d-flex gap-6">
-              <li
-                class="search-result-items rounded-pill d-flex justify-content-between"
-              >
-                <div class="d-flex picked-items">
-                  <a href="#">台北市</a>
-                  <span
-                    class="material-symbols-outlined align-bottom items-close-btn"
-                    >close</span
+
+          <div
+            class="search d-flex justify-content-lg-start justify-content-md-start justify-content-center align-items-center"
+          >
+            <div class="search-empty me-lg-6 me-md-3 me-1"></div>
+            <div class="search-result d-flex justify-content-between">
+              <ul class="d-flex gap-6 m-0 text-nowrap">
+                <li class="search-result-items rounded-pill">
+                  <a
+                    href="#"
+                    class="d-flex picked-items fs-lg-7 fs-md-9 fs-10 align-items-center"
+                    >台北市<span
+                      class="material-symbols-outlined ms-2 fs-lg-6 fs-8"
+                      >close</span
+                    ></a
                   >
-                </div>
-              </li>
-              <li
-                class="search-result-items rounded-pill d-flex justify-content-center"
-              >
-                <div class="d-flex picked-items">
-                  <a href="#">停車場</a>
-                  <span
-                    class="material-symbols-outlined align-bottom items-close-btn"
-                    >close</span
+                </li>
+                <li class="search-result-items rounded-pill">
+                  <a
+                    href="#"
+                    class="d-flex picked-items fs-lg-7 fs-md-9 fs-10 align-items-center"
+                    >停車場<span
+                      class="material-symbols-outlined ms-2 fs-lg-6 fs-8"
+                      >close</span
+                    ></a
                   >
-                </div>
-              </li>
-              <li class="search-result-clean ms-auto">
+                </li>
+              </ul>
+              <div class="ms-auto text-primary-1 d-none d-md-block d-lg-block">
                 <a href="#" class="text-center">清除所有條件</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -612,7 +621,7 @@
     <!-- 第二三區 -->
     <div class="webinfo-1">
       <div class="container container-md container-sm">
-        <h3 class="fs-lg-3 fs-8 text-center text-primary-4">
+        <h3 class="fs-lg-3 fs-8 text-center text-primary-4 eng-font">
           Discover Recipes & Local Bars
         </h3>
         <h3 class="fs-lg-2 fs-md-4 fs-7 text-center text-primary-4">
@@ -637,11 +646,9 @@
               </p>
               <div class="btn-md">
                 <a
-                  href="#"
-                  class="text-primary-1 px-lg-3 py-lg-6 d-flex align-items-center"
-                  >我想找酒譜<span
-                    class="material-symbols-outlined text-primary-1 ms-3"
-                  >
+                  href="https://vicfirth5a.github.io/sip-search/recipessearch"
+                  class="btn-index btn-index-primaryl-light d-flex"
+                  >我想找酒譜<span class="material-symbols-outlined ms-3">
                     arrow_forward_ios
                   </span></a
                 >
@@ -660,10 +667,10 @@
                 發現喝酒的好去處！
               </p>
               <div class="btn-md">
-                <a href="#" class="text-primary-1 d-flex px-lg-3 py-lg-6"
-                  >我想找酒吧<span
-                    class="material-symbols-outlined text-primary-1 ms-3"
-                  >
+                <a
+                  href="https://vicfirth5a.github.io/sip-search/barsearch"
+                  class="btn-index btn-index-primary1 d-flex"
+                  >我想找酒吧<span class="material-symbols-outlined ms-3">
                     arrow_forward_ios
                   </span></a
                 >
@@ -700,10 +707,12 @@
             <input
               type="text"
               placeholder="請輸入您的 Email"
-              class="form-control text-primary-1"
+              class="form-control text-primary-1 eng-font mt-2"
             />
           </div>
-          <a href="#" class="join-input-btn fs-lg-6 fs-9 text-nowrap"
+          <a
+            href="#"
+            class="btn-rs-primary-4 join-input-btn fs-lg-6 fs-9 text-nowrap"
             >加入會員</a
           >
         </div>
