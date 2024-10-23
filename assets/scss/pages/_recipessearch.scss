@@ -19,12 +19,10 @@
     z-index: 2;
   }
 
-  .my-180 {
-    margin-top: 180px;
-  }
-
   .banner-rs {
+    padding: 230px 0 100px;
     .input-group {
+      margin: auto;
       max-width: 729px;
       border: 1px solid $primary-1;
       position: relative;
@@ -119,10 +117,15 @@
   }
 
   .swiper-slide img {
-    display: block;
+    // display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    scale: 1;
+    transition: 0.5s;
+    &:hover {
+      scale: 0.97;
+    }
   }
 
   .swiper-slide {
@@ -141,6 +144,27 @@
 }
 
 @media (max-width: 992px) {
+  .section-rs1 {
+    height: 720px;
+
+    margin-top: -230px;
+    padding-top: 230px;
+  }
+
+  .banner-rs {
+    .input-group {
+      max-width: 400px;
+    }
+
+    .form-control {
+      padding: 12px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+
   .section-rs3 {
     .rs-content {
       height: 100%;
@@ -159,11 +183,11 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 375px;
+    height: 500px;
     background-image: url(/assets/images/image-banner-drinks.png);
     background-size: cover;
-    margin-top: -104px;
-    padding-top: 104px;
+    margin-top: -210px;
+    padding-top: 210px;
 
     &.section-rs1::after {
       content: "";
@@ -175,7 +199,26 @@
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 2;
     }
+
+    .banner-rs {
+      padding: 60px 0 100px;
+      .input-group {
+        max-width: 195px;
+
+        .material-symbols-outlined {
+          font-size: 12px;
+        }
+        .form-control {
+          padding: 8px;
+
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
+
   .section-rs3 {
     .custom-button-next {
       display: none;
