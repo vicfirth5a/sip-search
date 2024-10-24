@@ -829,12 +829,12 @@ $x-large: 1200px;
     color: var(--bs-primary-1);
 
     &:hover {
-      opacity:0.6;
+      opacity: 0.6;
       transition: 0.5s;
     }
 
     //&:active {
-      //color: var(--bs-primary-3);
+    //color: var(--bs-primary-3);
     //}
   }
 }
@@ -958,8 +958,8 @@ $x-large: 1200px;
   }
 
   //&:active {
-    //background: var(--bs-primary-4);
-    //transition: 0.5s;
+  //background: var(--bs-primary-4);
+  //transition: 0.5s;
   //}
 }
 

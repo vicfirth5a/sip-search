@@ -5,8 +5,8 @@
   height: 720px;
   background-image: url(/assets/images/image-banner-drinks.png);
   background-size: cover;
-  margin-top: -104px;
-  padding-top: 104px;
+  // margin-top: -104px;
+  // padding-top: 104px;
 
   &::after {
     content: "";
@@ -20,7 +20,7 @@
   }
 
   .banner-rs {
-    padding: 230px 0 100px;
+    padding-top: 330px;
     .input-group {
       margin: auto;
       max-width: 729px;
@@ -147,8 +147,8 @@
   .section-rs1 {
     height: 720px;
 
-    margin-top: -230px;
-    padding-top: 230px;
+    // margin-top: -310px;
+    // padding-top: 310px;
   }
 
   .banner-rs {
@@ -186,8 +186,8 @@
     height: 500px;
     background-image: url(/assets/images/image-banner-drinks.png);
     background-size: cover;
-    margin-top: -210px;
-    padding-top: 210px;
+    // margin-top: -230px;
+    // padding-top: 230px;
 
     &.section-rs1::after {
       content: "";
@@ -201,7 +201,7 @@
     }
 
     .banner-rs {
-      padding: 60px 0 100px;
+      padding-top: 300px;
       .input-group {
         max-width: 195px;
 
