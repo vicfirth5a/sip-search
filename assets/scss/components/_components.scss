@@ -314,8 +314,10 @@ $line-thickness: 1px;
 }
 @media (max-width: 768px) {
   .sectionPopularBars .tag,
-  .section-unique-bars .tag {
+  .section-unique-bars .tag,
+  .section-barContent .tag,
+.section-similar-bars .tag {
     padding: 4px 8px;
-    font-size: 10px;
+    font-size: 16px;
   }
 }
