@@ -1,5 +1,6 @@
 .navbar {
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 2;
   background: linear-gradient(
     180deg,
@@ -47,8 +48,13 @@
     border-right: 1px solid #ecdec3;
   }
   .log-custom-border {
+    display: flex;
+    align-items: center;
     border-left: 1px solid #7f7973;
     border-right: 1px solid #7f7973;
+    height: 104px;
+    margin-bottom: -16px;
+    margin-top: -16px;
   }
 }
 
