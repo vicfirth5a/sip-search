@@ -508,12 +508,15 @@
         const swiper = new Swiper(".nearby-event-swipe", {
           loop: true,
           watchSlidesProgress: true,
-          slidesPerView: 2,
-          slidesPerGroup: 2,
+          slidesPerView: "auto",
+          slidesPerGroup: 1,
+          spaceBetween: 30,
           breakpoints: {
             992: {
+
               spaceBetween: 30,
-              // slidesPerView: "auto",
+              slidesPerView: 2,
+              slidesPerGroup: 2,
             },
           },
           navigation: {
