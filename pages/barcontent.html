@@ -80,7 +80,7 @@
             </p>
           </div>
         </div>
-        <div class="pic" data-aos="fade-left" data-aos-duration="800">
+        <div class="pic" data-aos="fade-left" data-aos-duration="1000">
           <img src="../assets/images/barcontent/bar_about.jpg" alt="" />
         </div>
       </div>
@@ -88,28 +88,28 @@
 
     <section class="section section-activity">
       <div class="container">
-        <div class="txt">
+        <div class="txt" data-aos="fade-left" data-aos-duration="1000">
           <div class="title">
             <h3 class="fs-4 fs-lg-3">最新活動</h3>
             <p class="activity-intro">
               每個週六夜晚！Kaoru Uno Quartet 烏野薰四重奏
-              由演奏/教學資歷豐富的鋼琴名家烏野薰老師領銜
-              搭檔樂壇摯友重奏組 跳脫音符的酷派爵士 繞樑入魂
+              由演奏/教學資歷豐富的鋼琴名家烏野薰老師領銜 搭檔樂壇摯友重奏組
+              跳脫音符的酷派爵士 繞樑入魂
             </p>
           </div>
         </div>
-        <div class="pic">
+        <div class="pic" data-aos="fade-right" data-aos-duration="1000">
           <img src="../assets/images/barcontent/bar_activity.jpg" alt="" />
         </div>
       </div>
     </section>
 
     <section class="section section-contact">
-      <div class="container ">
-        <div class="pic">
+      <div class="container">
+        <div class="pic" data-aos="fade-right" data-aos-duration="1000">
           <img src="../assets/images/barcontent/bar_map.png" alt="" />
         </div>
-        <div class="txt">
+        <div class="txt" data-aos="fade-left" data-aos-duration="1000">
           <div class="title text-center mb-lg-4">
             <h3 class="fs-4 fs-lg-3">聯繫我們</h3>
           </div>
@@ -126,7 +126,7 @@
           </div>
 
           <div class="title text-center mb-lg-4">
-            <h3 class="fs-4 fs-lg-3 ">營業時間</h3>
+            <h3 class="fs-4 fs-lg-3">營業時間</h3>
           </div>
           <div class="opentimes p-4">
             <ul class="week-list">
@@ -152,7 +152,11 @@
       </div>
     </section>
 
-    <section class="section section-bar-comment">
+    <section
+      class="section section-bar-comment"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="container">
         <h2 class="text-center mb-4 fs-4 fs-lg-3">聊聊這間酒吧</h2>
         <div class="user-item">
@@ -210,12 +214,18 @@
       </div>
     </section>
 
-    <section class="section section-similar-bars">
+    <section
+      class="section section-similar-bars"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="container">
-        <h2 class="text-center mb-8">你或許會喜歡</h2>
+        <h2 class="text-center mb-8 fs-4 fs-lg-3">你或許會喜歡</h2>
         <div class="similar-bars-list">
           <div
             class="similar-bars-item"
+            data-aos="flip-left"
+            data-aos-duration="1200"
             style="
               background-image: linear-gradient(
                   rgba(0, 0, 0, 0.2),
@@ -238,6 +248,8 @@
           </div>
           <div
             class="similar-bars-item"
+            data-aos="flip-left"
+            data-aos-duration="1200"
             style="
               background-image: linear-gradient(
                   rgba(0, 0, 0, 0.2),
@@ -260,6 +272,8 @@
           </div>
           <div
             class="similar-bars-item"
+            data-aos="flip-left"
+            data-aos-duration="1200"
             style="
               background-image: linear-gradient(
                   rgba(0, 0, 0, 0.3),
@@ -287,7 +301,7 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

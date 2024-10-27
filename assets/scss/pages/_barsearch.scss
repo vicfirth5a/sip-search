@@ -21,7 +21,6 @@ $x-large: 1200px;
   padding: 284px 0 100px;
   background-size: cover;
   background-position: center;
-  margin-top: -105px;
 
   @include respond-to($medium) {
     padding: 160px 0 76px;
@@ -35,7 +34,6 @@ $x-large: 1200px;
     }
 
     .main-content {
-
       // display: flex;
       // justify-content: center;
       .input-group {
@@ -50,7 +48,7 @@ $x-large: 1200px;
         }
 
         .form-control:focus,
-        .form-control:focus+.input-group-text {
+        .form-control:focus + .input-group-text {
           border-color: $primary-3;
           // box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* 藍色陰影效果 */
           box-shadow: none;
@@ -187,7 +185,6 @@ $x-large: 1200px;
   }
 
   .swiper {
-
     // width: 100%;
     .swiper-wrapper {
       .swiper-slide {
@@ -418,15 +415,12 @@ $x-large: 1200px;
 // 周圍最新活動
 
 .nearby-event {
-
   .eng-font {
     line-height: 1.5;
   }
 
   .swiper-wrapper .swipe-slide {
     margin: 0 auto;
-
-
   }
 
   .nearby-card {
@@ -435,16 +429,12 @@ $x-large: 1200px;
     align-items: center;
     overflow: hidden;
 
-
-
-
     & img {
       position: absolute;
       width: 437px;
       height: 924px;
       object-fit: cover;
       filter: brightness(50%);
-
     }
 
     .card-body {
@@ -460,12 +450,9 @@ $x-large: 1200px;
         display: flex;
         justify-content: space-between;
         width: 159px;
-
       }
 
       .event-more {
-
-
         &:hover {
           filter: brightness(50%);
           transition: 0.4s;

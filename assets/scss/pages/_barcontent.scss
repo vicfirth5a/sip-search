@@ -1,23 +1,22 @@
 // 定義變數
-@mixin responsive-columns($desktop: 4, $tablet: 3,  $mobile: 1) {
+@mixin responsive-columns($desktop: 4, $tablet: 3, $mobile: 1) {
   display: grid;
   grid-template-columns: repeat($desktop, 1fr);
-  
+
   @media (max-width: 992px) {
     grid-template-columns: repeat($tablet, 1fr);
     grid-auto-rows: 200px;
   }
-  
+
   @media (max-width: 768px) {
     grid-template-columns: repeat($mobile, 1fr);
     grid-auto-rows: 500px;
   }
-  
+
   @media (max-width: 576px) {
     grid-template-columns: repeat($mobile, 1fr);
   }
 }
-
 
 $medium: 768px;
 $large: 992px;
@@ -31,11 +30,13 @@ $x-large: 1200px;
 
 .section-breadcrumb {
   background-color: $dark-brown;
-  padding: 0;
-  margin: 64px 0;
+  padding-top: 120px;
+  padding-bottom: 0;
+  margin-bottom: 30px;
   color: $primary-1;
   @include respond-to($medium) {
-    margin: 40px 0;
+    padding-top: 80px;
+    margin-bottom: 20px;
   }
   .breadcrumb-item {
     a {
@@ -56,24 +57,24 @@ $x-large: 1200px;
     align-items: center;
     gap: 20px;
     margin-bottom: 16px;
-    @include respond-to($medium){
+    @include respond-to($medium) {
       display: block;
       text-align: center;
     }
     .icon-list {
       display: flex;
       gap: 16px;
-      @include respond-to($medium){
+      @include respond-to($medium) {
         justify-content: center;
       }
       span {
         font-size: 28px;
         color: $primary-1;
-        @include respond-to($large){
+        @include respond-to($large) {
           font-size: 24px;
         }
       }
-      .icon-item{
+      .icon-item {
         display: flex;
         align-items: center;
       }
@@ -91,7 +92,7 @@ $x-large: 1200px;
     display: flex;
     gap: 16px;
     margin: 20px 0;
-    @include respond-to($medium){
+    @include respond-to($medium) {
       justify-content: center;
       margin: 16px 0;
     }
@@ -128,10 +129,9 @@ $x-large: 1200px;
         grid-column-end: span 2;
         grid-row-end: span 2;
 
-        @media (max-width:768px) {
-        grid-column-end: span 1;
-        grid-row-end: span 1;
-          
+        @media (max-width: 768px) {
+          grid-column-end: span 1;
+          grid-row-end: span 1;
         }
       }
       &::before {
@@ -150,8 +150,8 @@ $x-large: 1200px;
       }
       &:hover img {
         scale: 1.1;
-        @include respond-to($large){
-          scale:1
+        @include respond-to($large) {
+          scale: 1;
         }
       }
     }
@@ -160,18 +160,17 @@ $x-large: 1200px;
 
 .section-about {
   padding-block: 60px;
-  @include respond-to($large){
-    padding-block :20px; ;
+  @include respond-to($large) {
+    padding-block: 10px;
   }
   .txt {
     color: $primary-1;
     width: 55%;
     position: relative;
     z-index: 2;
-@include respond-to($large){
-  width: 100%;
- 
-}
+    @include respond-to($large) {
+      width: 100%;
+    }
     h3 {
       background-color: $primary-4;
       padding: 0.5em;
@@ -191,18 +190,17 @@ $x-large: 1200px;
       padding: 1em;
       position: absolute;
       line-height: 2;
-      @include respond-to($large){
+      @include respond-to($large) {
         position: relative;
         font-size: 22px;
       }
-      
     }
   }
   .pic {
     width: 75%;
     margin-left: auto;
     z-index: 1;
-    @include respond-to($large){
+    @include respond-to($large) {
       width: 100%;
     }
   }
@@ -210,15 +208,16 @@ $x-large: 1200px;
 
 .section-activity {
   padding-block: 60px;
-  @include respond-to($large){
-    padding-block :20px; ;
+  @include respond-to($large) {
+    padding-block: 10px;
   }
   .txt {
     color: $primary-1;
     width: 40%;
     margin-left: auto;
     position: relative;
-    @include respond-to($large){
+    z-index: 2;
+    @include respond-to($large) {
       width: 100%;
     }
     h3 {
@@ -240,17 +239,17 @@ $x-large: 1200px;
       padding: 1em;
       position: absolute;
       line-height: 2;
-      @include respond-to($large){
+      @include respond-to($large) {
         position: relative;
         font-size: 22px;
       }
-      
     }
   }
   .pic {
     width: 75%;
     margin-right: auto;
-    @include respond-to($large){
+    z-index: 1;
+    @include respond-to($large) {
       width: 100%;
     }
   }
@@ -259,19 +258,19 @@ $x-large: 1200px;
 .section-contact {
   color: $primary-1;
   padding-block: 60px;
-  @include respond-to($large){
-    padding-block :20px; ;
+  @include respond-to($large) {
+    padding-block: 10px;
   }
   .container {
     display: flex;
     gap: 20px;
-    @include respond-to($large){
+    @include respond-to($large) {
       flex-direction: column;
       gap: 10px;
     }
     .pic {
       width: 50%;
-      @include respond-to($large){
+      @include respond-to($large) {
         width: auto;
       }
     }
@@ -288,7 +287,7 @@ $x-large: 1200px;
         padding-inline: 2em;
         flex-grow: 1;
         margin: auto;
-        @include respond-to($large){
+        @include respond-to($large) {
           font-size: 20px;
         }
         .location,
@@ -306,7 +305,7 @@ $x-large: 1200px;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         font-size: 24px;
-        @include respond-to($large){
+        @include respond-to($large) {
           font-size: 20px;
         }
       }
@@ -321,8 +320,8 @@ $x-large: 1200px;
 }
 .section-bar-comment {
   padding-block: 60px;
-  @include respond-to($large){
-    padding-block :20px; ;
+  @include respond-to($large) {
+    padding-block: 10px;
   }
   .container {
     padding: 80px;
@@ -330,7 +329,7 @@ $x-large: 1200px;
     font-size: 24px;
     background-color: $primary-1;
     background-image: linear-gradient(#0001, #0001);
-    @include respond-to($large){
+    @include respond-to($large) {
       padding: 20px;
     }
     .user-item {
@@ -365,10 +364,10 @@ $x-large: 1200px;
       grid-template-columns: 200px 1fr;
       gap: 20px;
       margin-block: 28px;
-      @include respond-to($large){
-        grid-template-columns: repeat(1,1fr);
+      @include respond-to($large) {
+        grid-template-columns: repeat(1, 1fr);
       }
-      .user-past-comment{
+      .user-past-comment {
         color: $primary-1;
         background-color: $primary-3;
         padding: 0.5em;
@@ -382,23 +381,23 @@ $x-large: 1200px;
 .section-similar-bars {
   padding: 60px 0 120px;
   color: $primary-1;
-  @include respond-to($large){
-    padding: 30px 0 60px;
+  @include respond-to($large) {
+    padding: 10px 0 30px;
   }
   .similar-bars-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    @include respond-to($large){
+    @include respond-to($large) {
       grid-template-columns: repeat(1, 1fr);
-
+      gap: 10px;
     }
     .similar-bars-item {
       min-height: 600px;
       background-position: center;
       background-size: cover;
       position: relative;
-      @include respond-to($large){
+      @include respond-to($large) {
         min-height: 450px;
       }
       .txt {
@@ -443,7 +442,7 @@ $x-large: 1200px;
           bottom: 50%;
           transform: translate(-50%, calc(50% + 500px));
           transition: 0.5s;
-          @include respond-to($large){
+          @include respond-to($large) {
             display: none;
           }
           &:hover {
@@ -456,7 +455,7 @@ $x-large: 1200px;
         }
         &:hover .bar-intro {
           opacity: 0;
-          @include respond-to($large){
+          @include respond-to($large) {
             opacity: 1;
           }
         }
