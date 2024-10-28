@@ -21,7 +21,6 @@ $x-large: 1200px;
   padding: 284px 0 100px;
   background-size: cover;
   background-position: center;
-  margin-top: -105px;
 
   @include respond-to($medium) {
     padding: 160px 0 76px;
@@ -418,7 +417,6 @@ $x-large: 1200px;
 // 周圍最新活動
 
 .nearby-event {
-
   .eng-font {
     line-height: 1.5;
   }
@@ -435,16 +433,12 @@ $x-large: 1200px;
     align-items: center;
     overflow: hidden;
 
-
-
-
     & img {
       position: absolute;
       width: 437px;
       height: 924px;
       object-fit: cover;
       filter: brightness(50%);
-
     }
 
     .card-body {
@@ -460,12 +454,9 @@ $x-large: 1200px;
         display: flex;
         justify-content: space-between;
         width: 159px;
-
       }
 
       .event-more {
-
-
         &:hover {
           filter: brightness(50%);
           transition: 0.4s;

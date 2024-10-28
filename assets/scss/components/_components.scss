@@ -198,7 +198,7 @@ $line-thickness: 1px;
 }
 
 .pageBtn {
-  height: 44px;
+  // height: 44px;
   width: 48px;
   min-width: 0px;
 }
@@ -311,15 +311,19 @@ $line-thickness: 1px;
 
 //酒吧搜尋頁標籤
 .sectionPopularBars .tag,
-.section-unique-bars .tag {
+.section-unique-bars .tag,
+.section-barContent .tag,
+.section-similar-bars .tag {
   padding: 12px 24px;
   font-size: 24px;
   border-radius: 1000px;
 }
 @media (max-width: 768px) {
   .sectionPopularBars .tag,
-  .section-unique-bars .tag {
+  .section-unique-bars .tag,
+  .section-barContent .tag,
+.section-similar-bars .tag {
     padding: 4px 8px;
-    font-size: 10px;
+    font-size: 16px;
   }
 }
