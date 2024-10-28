@@ -4,6 +4,11 @@
   //outline: 1px solid rgb(110, 131, 5);
 }
 
+
+
+.pages-box{
+  padding-top: 96px;//將麵包屑往下推：32(navbar最下面高度)+64(與navbar的間距)
+}
 .pages-change{
   color: $primary-1;
   &:hover{
