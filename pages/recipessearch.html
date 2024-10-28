@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>recipse</title>
   </head>
 
@@ -13,12 +14,14 @@
       <div class="container">
         <div class="banner-rs">
           <h6
+            data-aos="fade-up"
             class="fw-bold text-primary-1 position-relative text-center z-3 fs-lg-1 fs-md-4 mb-md-11 mb-6"
           >
             在家調出酒吧級質感，品味專屬調酒
           </h6>
 
           <div
+            data-aos="fade-up"
             class="input-group boder-primary-1 d-flex align-items-center mt-lg-8"
           >
             <label for="search" class="form-label d-none">搜尋</label>
@@ -48,6 +51,7 @@
         <div class="row px-lg-0 px-6 mb-6">
           <div class="col-12 mt-lg-15 mt-10">
             <h2
+              data-aos="fade-up"
               class="fw-bold text-primary-1 text-center fs-lg-2 fs-7 mb-lg-15 mb-6"
             >
               輕鬆篩選，找到你的完美調酒
@@ -506,7 +510,7 @@
           class="row gx-lg-13 gy-lg-13 gy-md-10 gy-0 gx-md-6 mb-lg-13 flex-md-wrap flex-nowrap overflow-x-scroll scrollBar"
         >
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card position-relative">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -608,7 +612,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -713,7 +717,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -814,7 +818,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -914,7 +918,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -1016,7 +1020,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-9 overflow-hidden">
-            <div class="card-container">
+            <div data-aos="fade-up" class="card-container">
               <div class="card">
                 <div class="card-content mt-6 mt-md-9 mt-lg-0">
                   <div class="cross-container">
@@ -1176,7 +1180,10 @@
             每一杯，都有故事
           </h2>
         </div>
-        <div class="row gx-0 mb-lg-14 mb-9 gradient-border">
+        <div
+          data-aos="fade-right"
+          class="row gx-0 mb-lg-14 mb-9 gradient-border"
+        >
           <div class="col-lg-3 col bg-primary-4 pb-lg-0 pb-10">
             <div class="cross-container">
               <div class="cross-1">
@@ -1420,7 +1427,10 @@
             </div>
           </div>
         </div>
-        <div class="row gx-0 mb-lg-14 mb-13 gradient-border">
+        <div
+          data-aos="fade-left"
+          class="row gx-0 mb-lg-14 mb-13 gradient-border"
+        >
           <div class="col-lg-3 col bg-primary-1 pb-lg-0 pb-10">
             <div class="cross-container">
               <div class="cross-1">
@@ -1624,7 +1634,11 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
