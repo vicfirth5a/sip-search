@@ -5,9 +5,7 @@ import "./assets/js/about";
 import "./assets/js/memberarea";
 import "./assets/js/index";
 import "./assets/js/recipessearch";
-import "./assets/js/barsearch";
-
-
+// import "./assets/js/barsearch";
 
 
 console.log("Hello world!");

@@ -141,6 +141,12 @@
     z-index: 10;
     cursor: pointer;
   }
+  .material-symbols-outlined:hover,
+  .material-symbols-outlined:active {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+    transition: 0.5s;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 992px) {
