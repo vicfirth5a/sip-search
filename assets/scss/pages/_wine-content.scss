@@ -4,12 +4,10 @@
   //outline: 1px solid rgb(110, 131, 5);
 }
 
-.wine-content-body{
-  margin-top: -64px; //將navbar上方空白消除
-}
+
 
 .pages-box{
-  padding-top: 168px;//將麵包屑往下推：104 (navbar高度)+64(與navbar的間距)
+  padding-top: 96px;//將麵包屑往下推：32(navbar最下面高度)+64(與navbar的間距)
 }
 .pages-change{
   color: $primary-1;
