@@ -147,7 +147,11 @@
     </section>
 
     <!-- 全台熱門酒吧 -->
-    <section class="section sectionPopularBars">
+    <section
+      class="section sectionPopularBars"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div class="container">
         <div class="main-title">
           <div class="main-title text-center mb-6 mb-md-12 mb-lg-15">
@@ -374,7 +378,11 @@
     </section>
 
     <!-- 獨特酒吧 -->
-    <section class="section section-unique-bars text-primary-1">
+    <section
+      class="section section-unique-bars text-primary-1"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="container">
         <div class="row">
           <div class="col">
@@ -493,7 +501,11 @@
     </section>
 
     <!-- 周圍酒吧活動 -->
-    <div class="nearby-event bg-primary-4">
+    <div
+      class="nearby-event bg-primary-4"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="container py-lg-15 py-10">
         <div class="nearby-event-title mb-lg-15 mb-6">
           <h3
@@ -659,7 +671,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="../main.js"></script>
-
     <!-- 熱門酒吧swiper -->
     <script>
       let popularBarsSwiper = new Swiper(".popularBarsSwiper", {
@@ -701,6 +712,12 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
