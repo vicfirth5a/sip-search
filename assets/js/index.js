@@ -1,3 +1,5 @@
+AOS.init();
+
 //首頁熱門酒譜swiper
 const swiper_popular_recipe = new Swiper(".swiper-popular-recipe", {
   direction: "horizontal",
