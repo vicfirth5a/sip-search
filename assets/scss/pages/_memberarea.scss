@@ -1,4 +1,14 @@
 
+//將member-bg往下推：104(navbar高度)
+
+.member-bg{
+  padding-top: 104px;
+  @media (max-width: 768px) {
+    padding-top: 36px;
+  }
+}
+
+
 .memberinfo-btn{
   background: $primary-1 ;
   color: $primary-4;
