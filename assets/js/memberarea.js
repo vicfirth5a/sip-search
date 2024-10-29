@@ -36,4 +36,21 @@ document.addEventListener('DOMContentLoaded', function() {
   function showContent(targetId) {
     document.getElementById(targetId).classList.add('active-section');
   }
+
+
+
+  $('.notify-toggle-switch').click(function() {
+    const input = $(this).find('input');
+    input.prop('checked', !input.prop('checked')); // 切換狀態
+    $(this).toggleClass('active'); // 切換外觀
+  });
+
+
+
+
+
 });
+
+
+//通知
+

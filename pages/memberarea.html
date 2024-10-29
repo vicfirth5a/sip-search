@@ -21,13 +21,13 @@
     <section class="member-bg">
         <div class="container text-primary-1 d-flex align-items-center py-8 gap-6">
             <span class="material-symbols-outlined fs-1"> account_circle </span>
-            <h2 >會員專區</h2>
+            <h2 class="fs-5 fs-lg-2">會員專區</h2>
         </div>
     </section>
 
     <section class="member-content-bg bg-primary-1">
         <div class="container">
-            <div class="memberinfo pt-13 text-primary-4">
+            <div class="memberinfo pt-8 pt-lg-13 text-primary-4">
                 <!--<div class="memberinfo-list">              
                 </div>
                 <div class="memberinfo-desc"></div>-->
@@ -78,15 +78,16 @@
                     <!-- 右側內容區 -->
                     <div class="col-md-9">
                       <div id="profile-content" class="content-section active-section">
-                        <h3 class="fs-4 mb-10">個人檔案</h3>
-                        <section class="profile-img d-flex gap-10">
-                            <div class="profile-box-1 d-flex flex-column align-items-center gap-12 w-25">
+                        <h3 class="fs-8 fs-lg-5 mb-10 fw-bold mt-5">個人檔案</h3>
+                        <section class="profile-img d-flex gap-12">
+                            <div class="profile-box-1 d-flex flex-column align-items-center gap-8 w-50 w-lg-25">
                                 <img class="profile-userimg" src="/assets/images/Ellipse 5.png" alt="">
-                                <a class="profile-img-btn d-block text-center" href="#">
+                                <p class="eng-font text-primary-1 fs-10 fs-lg-7">emma</p>
+                                <a class="profile-img-btn d-block text-center p-1" href="#">
                                     <p class="profile-img-btn-text fs-10 fs-lg-7">編輯檔案</p>
                                 </a>
                             </div>
-                            <ul class="profile-record w-75">
+                            <ul class="d-flex flex-column profile-record w-50 w-lg-75 fs-9 fs-lg-6 gap-2">
                                 <li>
                                     <a href="">收藏酒譜(10)</a>
                                 </li>
@@ -100,12 +101,79 @@
                                     <a href="">生日優惠券(2)</a>
                                 </li>
                             </ul>
-
-
-
-
                         </section>
                       </div>
+
+                      <!-- 帳號管理 -->
+
+                      <section class="account-mg mt-10 mb-12">
+                        <div class="account-title bg-primary-4 p-3 mb-4">
+                          <h3 class="text-primary-1 fs-8 fs-lg-5 fw-bold ">帳號管理</h3>
+                        </div>
+
+                        <div class="account-content fs-9 fs-lg-6">
+                          <form class="d-flex flex-column ">
+                            <label class="fw-bold" for="email">當前信箱</label>
+
+                            <div class="position-relative">
+                              <input class="account-content-box d-block w-50 p-1 mt-4 mb-10" type="email" name="email" id="email" value="123456@gmail.com">
+
+                              <a href="#" class=" account-icon ">
+                                <span class="material-symbols-outlined fs-8 fs-lg-6">
+                                edit_square
+                                </span>
+                              </a>      
+
+                            </div>
+                                               
+                          </form>
+
+                          <div class="account-security mb-15">
+                            <h6 class="fs-9 fs-lg-6 fw-bold">安全設定</h6>
+                            <div class="d-flex align-items-center fs-10 fs-lg-7 mt-4">
+                              <p>密碼</p>
+                              <a href="#" class="account-password-btn d-block bg-primary-4 ms-4 text-primary-1 text-center p-1">變更密碼</a>
+                            </div>
+                          </div>
+
+                          <div class="mb-10">                          
+                            <div class="d-flex align-items-center fs-10 fs-lg-7 mt-4">
+                              <h6 class="fs-9 fs-lg-6 fw-bold">停用帳號</h6>
+                              <a href="#" class="account-password-btn d-block bg-primary-4 ms-4 text-primary-1 text-center p-1">停用帳號</a>
+                            </div>
+                            <p class="fs-10 fs-lg-7 mt-4">停用帳號將會關閉您的個人檔案以及您分享過的所有訊息。
+                            <br>
+                            重新登入您的帳號將會啟用被停用的帳號</p>
+                          </div>
+
+                          <div class="mb-10">                          
+                            <div class="d-flex align-items-center fs-10 fs-lg-7 mt-4">
+                              <h6 class="fs-9 fs-lg-6 fw-bold">刪除帳號</h6>
+                              <a href="#" class="account-password-btn d-block bg-primary-4 ms-4 text-primary-1 text-center p-1">刪除帳號</a>
+                            </div>
+                            <p class="fs-10 fs-lg-7 mt-4">將帳號永久刪除。 
+                            <br>
+                            在帳號被刪除後，你將無法重新恢復你的帳號，也無法再取得你張貼過的任何資訊。</p>
+                          </div>
+                          
+
+
+                        </div>
+
+                        <div class=" bg-primary-4 p-3 mb-4">
+                          <h3 class="text-primary-1 fs-8 fs-lg-5 fw-bold">通知</h3>
+                        </div>
+                        <div class="notify-content">
+                            <label for="email-toggle" class="toggle-label fs-9 fs-lg-6">電子郵件通知</label>
+                            <div class="notify-toggle-switch mt-1">
+                              <input type="checkbox" id="email-toggle">
+                              <span class="slider"></span>
+                            </div>                                                
+                        </div>
+                        <p class="fs-10 fs-lg-7 mt-4">接收最新的酒吧活動訊息</p>
+
+
+                      </section>
 
 
 
@@ -114,7 +182,7 @@
 
                       <!-- 帳號管理 -->
                       <div id="account-content" class="content-section">
-                        <h3>帳號管理</h3>
+                        <h3 class="fs-9 fs-lg-6">帳號管理</h3>
                         <p>錨點跳至帳號管理的區塊</p>
                       </div>
                       <div id="notification-content" class="content-section">
@@ -153,12 +221,9 @@
             </div>
         </div>
 
-        <!--測試-->>
+       
 
-        <div class="container mt-5">
-           
-          </div>
-         
+      
 
     </section>
 
