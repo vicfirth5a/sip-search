@@ -2,49 +2,80 @@
 .btn-index {
   font-size: 24px;
   padding: 24px 40px;
+
   @media (max-width: 992px) {
     font-size: 12px;
     padding: 8px 12px;
   }
 }
+
 .btn-index-primary1 {
   color: $primary-1;
   background-color: $primary-3;
   transition: 0.5s;
+
   &:hover {
     color: $primary-3;
     background-color: $primary-1;
+
     .material-symbols-outlined {
       color: $primary-3;
     }
   }
 }
+
 .btn-index-primaryl-light {
   color: $primary-1;
   background-color: $primary-3;
   transition: 0.5s;
+
   &:hover {
     background-color: $primary-4;
   }
 }
+
 .btn-index-primaryl-transparent {
   color: $primary-1;
   background-color: transparent;
   border: 1px solid $primary-1;
   transition: 0.5s;
+
   &:hover {
     background-color: $primary-3;
   }
 }
+
+.index-brightness {
+  color: $primary-1;
+
+  &:hover {
+    filter: brightness(50%);
+    transition: 0.4s;
+  }
+}
+
+.index-rounded-btn {
+  background-color: $primary-1;
+  padding: 6px 8px;
+
+  &:hover {
+    filter: brightness(80%);
+    transition: 0.4s;
+  }
+}
+
+
 .wineBtn-outline {
   color: $primary-3;
   background-color: transparent;
   border: 1px solid $primary-3;
   transition: 0.5s;
+
   &:hover {
     background-color: $primary-1;
     color: $primary-3;
   }
+
   &:active {
     background-color: $primary-3;
     color: $primary-1;
@@ -55,36 +86,44 @@
   color: #fbfbfb;
   background-color: $primary-4;
   transition: 0.5s;
+
   &:hover {
     background-color: $primary-3;
     color: #fbfbfb;
   }
+
   &:active {
     background-color: $primary-3;
     opacity: 0.8;
   }
 }
+
 .btn-rs-primary-3 {
   color: $primary-1;
   background-color: $primary-3;
   transition: 0.5s;
+
   &:hover {
     background-color: $primary-1;
     color: $primary-3;
   }
+
   &:active {
     background-color: $primary-3;
     color: $primary-1;
   }
 }
+
 .btn-rs-primary-4 {
   color: $primary-1;
   background-color: $primary-3;
   transition: 0.5s;
+
   &:hover {
     background-color: $primary-4;
     color: $primary-1;
   }
+
   &:active {
     background-color: $primary-3;
     color: $primary-1;
@@ -127,6 +166,7 @@ $line-thickness: 1px;
       top: 50%;
       left: 100%;
     }
+
     .vertical {
       top: 50%;
       left: 100%;
@@ -138,6 +178,7 @@ $line-thickness: 1px;
       top: 100%;
       left: 50%;
     }
+
     .vertical {
       top: 0;
       left: 150%;
@@ -153,6 +194,7 @@ $line-thickness: 1px;
     background-color: inherit;
     margin-top: 10px;
     margin-left: 10px;
+
     .cross-line {
       position: absolute;
       background-color: $line-color;
@@ -182,6 +224,7 @@ $line-thickness: 1px;
   min-width: 92px;
   white-space: nowrap;
 }
+
 .cardBtn {
   position: absolute;
   bottom: 8%;
@@ -231,6 +274,7 @@ $line-thickness: 1px;
   opacity: 0;
   transform: translateY(150px);
 }
+
 .card-hoverImg {
   height: 180px;
   object-fit: cover;
@@ -256,7 +300,8 @@ $line-thickness: 1px;
   display: inline-block;
   width: 100%;
   height: 73%;
-  padding: 3px; /* 為邊框創造空間 */
+  padding: 3px;
+  /* 為邊框創造空間 */
 }
 
 .img-container::before {
@@ -271,6 +316,7 @@ $line-thickness: 1px;
   border-top-right-radius: 50rem;
   z-index: -1;
 }
+
 .img-gradient-border {
   display: block;
   border-top-left-radius: 50rem;
@@ -284,17 +330,18 @@ $line-thickness: 1px;
 }
 
 //響應式
-@media (max-width: 992px) {
-}
+@media (max-width: 992px) {}
 
 @media (max-width: 768px) {
   .wineBtn {
     min-width: 37px;
   }
+
   .section-rs2 {
     .card-container {
       height: 420px;
     }
+
     .cardImg {
       max-width: 128px;
       height: 190px;
@@ -302,6 +349,7 @@ $line-thickness: 1px;
       object-fit: cover;
     }
   }
+
   .section-rs3 {
     .img-container {
       margin-bottom: 8px;
@@ -318,7 +366,9 @@ $line-thickness: 1px;
   font-size: 24px;
   border-radius: 1000px;
 }
+
 @media (max-width: 768px) {
+
   .sectionPopularBars .tag,
   .section-unique-bars .tag,
   .section-barContent .tag,
