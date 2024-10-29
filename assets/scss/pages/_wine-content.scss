@@ -5,23 +5,23 @@
 }
 
 
+//.pages-box{
+ // padding-top: 168px;//將麵包屑往下推：32(navbar最下面高度)+64(與navbar的間距)
+//}
 
-.pages-box{
-  padding-top: 96px;//將麵包屑往下推：32(navbar最下面高度)+64(與navbar的間距)
-}
-.pages-change{
-  color: $primary-1;
-  &:hover{
-    opacity: 0.6;
-  }
-}
+//.pages-change{
+  //color: $primary-1;
+ // &:hover{
+    //opacity: 0.6;
+  //}
+//}
 
-.tags-change{
-  color: $primary-3;
-  &:hover{
-    opacity: 0.6;
-  }
-}
+//.tags-change{
+  //color: $primary-3;
+  //&:hover{
+    //opacity: 0.6;
+  //}
+//}
 
 .wine-content-title {
   margin-bottom: 120px;
