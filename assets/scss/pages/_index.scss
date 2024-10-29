@@ -931,10 +931,11 @@ $x-large: 1200px;
 }
 
 .comments-list-item-btn {
+  max-width: 223px;
   display: block;
-  background: var(--bs-primary-3);
+  background: $primary-3;
   transition: 0.5s;
-  color: var(--bs-primary-1);
+  color: $primary-1;
   border: 1px solid;
   border-image-source: linear-gradient(
     100.25deg,
@@ -948,6 +949,7 @@ $x-large: 1200px;
   padding: 24px 40px;
 
   @media (max-width: 768px) {
+    max-width: 102px;
     padding: 8px 12px;
     font-size: 12px;
   }
